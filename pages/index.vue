@@ -90,7 +90,7 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/testominal1.jpeg" fluid alt="Responsive image"></b-img>
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.webp" fluid alt="Responsive image"></b-img>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -112,7 +112,7 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/testominal1.jpeg" fluid alt="Responsive image"></b-img>
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.webp" fluid alt="Responsive image"></b-img>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -134,7 +134,7 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/testominal1.jpeg" fluid alt="Responsive image"></b-img>
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.webp" fluid alt="Responsive image"></b-img>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -156,7 +156,7 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/testominal1.jpeg" fluid alt="Responsive image"></b-img>
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -178,7 +178,7 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/testominal1.jpeg" fluid alt="Responsive image"></b-img>
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.webp" fluid alt="Responsive image"></b-img>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -203,62 +203,141 @@
       </b-container>
     </section>
 
+    <section class="services" data-aos="fade-zoom" data-aos-once="true">
+      <b-container>
+        <b-row> 
+          <b-col>
+            <b-card class="service--item mb-3" img-src="../assets/img/man-room-devices-secured@2x.jpg" img-left>
+              <b-card-text>
+                <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
+                <div>
+                  <p class="mb-5 medium">
+                    <span>
+                      <span>Do you use Windows at work, macOS at home, and Linux for your special projects? No problem. There’s a NordVPN application for each of these, plus apps for iOS, Android, and Android TV. Oh, and also encrypted proxy extensions for Chrome and Firefox.</span>
+                      <span>Best of all, with one NordVPN account, you can secure <strong><span>up to 6 devices</span></strong> at the same time.</span>
+                    </span>
+                  </p>
+                </div>
+                <a class="btn btn-primary rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="See all features" role="button" tabindex="0">
+                  <span>See All Features</span>
+                </a>
+              </b-card-text>
+            </b-card>
+          </b-col>
+        </b-row>
+        <b-row> 
+          <b-col>
+            <b-card class="service--item mb-3" img-src="../assets/img/man-room-devices-secured@2x.jpg" img-right>
+              <b-card-text>
+                <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
+                <div>
+                  <p class="mb-5 medium">
+                    <span>
+                      <span>Do you use Windows at work, macOS at home, and Linux for your special projects? No problem. There’s a NordVPN application for each of these, plus apps for iOS, Android, and Android TV. Oh, and also encrypted proxy extensions for Chrome and Firefox.</span>
+                      <span>Best of all, with one NordVPN account, you can secure <strong><span>up to 6 devices</span></strong> at the same time.</span>
+                    </span>
+                  </p>
+                </div>
+                <a class="btn btn-primary rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="See all features" role="button" tabindex="0">
+                  <span>See All Features</span>
+                </a>
+              </b-card-text>
+            </b-card>
+          </b-col>
+        </b-row>
+        <b-row> 
+          <b-col>
+            <b-card class="service--item mb-3" img-src="../assets/img/man-room-devices-secured@2x.jpg" img-left>
+              <b-card-text>
+                <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
+                <div>
+                  <p class="mb-5 medium">
+                    <span>
+                      <span>Do you use Windows at work, macOS at home, and Linux for your special projects? No problem. There’s a NordVPN application for each of these, plus apps for iOS, Android, and Android TV. Oh, and also encrypted proxy extensions for Chrome and Firefox.</span>
+                      <span>Best of all, with one NordVPN account, you can secure <strong><span>up to 6 devices</span></strong> at the same time.</span>
+                    </span>
+                  </p>
+                </div>
+                <a class="btn btn-primary rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="See all features" role="button" tabindex="0">
+                  <span>See All Features</span>
+                </a>
+              </b-card-text>
+            </b-card>
+          </b-col>
+        </b-row>
+      </b-container>
+    </section>
+
     <section class="say-about-us" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
       <b-container>
         <h2 class="text-center">Opiniões sobre ZMOT</h2>
         <p class="text-center">Veja o que pessoas que passaram a conhecer o ZMOT estão falando sobre esse framework.</p>
         <div class="testimonial-list">
-          <b-row>
+          <b-row class="testimonial-item-wrapper">
             <b-col>
-              <b-row  class="testimonial-item-wrapper">
-                <b-col class="testimonial-item">
-                  <blockquote class="testimonial-item__quote">
-                    Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...
-                  </blockquote>
-                  <span class="testimonial-item__author">
-                    <b-img v-bind="testimonial_avatar" src="../assets/img/testominal1.jpeg" fluid alt="Responsive image"></b-img>
-                    Elvis Silva
-                  </span>
-                </b-col>
-              </b-row>
-              <b-row  class="testimonial-item-wrapper">
-                <b-col class="testimonial-item">
-                  <blockquote class="testimonial-item__quote">
-                    Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​
-                  </blockquote>
-                  <span class="testimonial-item__author">
-                    <b-img v-bind="testimonial_avatar" src="../assets/img/testominal2.jpeg" fluid alt="Responsive image"></b-img>
-                    Paulo Gomes
-                  </span>
-                </b-col>
-              </b-row>
+              <div class="testimonial-item">
+                <blockquote class="testimonial-item__quote">
+                  Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...
+                </blockquote>
+                <span class="testimonial-item__author">
+                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
+                  Elvis Silva
+                </span>
+              </div>
+              
             </b-col>
             <b-col>
-              <b-row  class="testimonial-item-wrapper">
-                <b-col class="testimonial-item">
-                  <blockquote class="testimonial-item__quote">
-                    Muito bom conteúdo, obrigado por compartilhar conosco este excelente conteúdo.
-                  </blockquote>
-                  <span class="testimonial-item__author">
-                    <b-img v-bind="testimonial_avatar" src="../assets/img/testominal3.png" fluid alt="Responsive image"></b-img>
-                    Elvis Silva
-                  </span>
-                </b-col>
-              </b-row>
-              <b-row  class="testimonial-item-wrapper">
-                <b-col class="testimonial-item">
-                  <blockquote class="testimonial-item__quote">
-                    Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​
-                  </blockquote>
-                  <span class="testimonial-item__author">
-                    <b-img v-bind="testimonial_avatar" src="../assets/img/testominal2.jpeg" fluid alt="Responsive image"></b-img>
-                    Paulo Gomes
-                  </span>
-                </b-col>
-              </b-row>
+              <div class="testimonial-item">
+                <blockquote class="testimonial-item__quote">
+                      Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​
+                </blockquote>
+                <span class="testimonial-item__author">
+                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
+                  Paulo Gomes
+                </span>
+              </div>
+            </b-col>
+          </b-row>
+          <b-row class="testimonial-item-wrapper">
+            <b-col>
+              <div class="testimonial-item">
+                <blockquote class="testimonial-item__quote">
+                  Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...
+                </blockquote>
+                <span class="testimonial-item__author">
+                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
+                  Elvis Silva
+                </span>
+              </div>
+              
+            </b-col>
+            <b-col>
+              <div class="testimonial-item">
+                <blockquote class="testimonial-item__quote">
+                      Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​
+                </blockquote>
+                <span class="testimonial-item__author">
+                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/NeilPatel.webp" fluid alt="Responsive image"></b-img>
+                  Paulo Gomes
+                </span>
+              </div>
             </b-col>
           </b-row>
         </div>
+      </b-container>
+    </section>
+    <section class="news-letter" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
+      <b-container>
+        <b-row>
+          <b-col offset-md="2" md="8">
+            <h2 class="text-center">Find the perfect domain name</h2>
+            <p class="text-center">Enter domain name of your choice and pick any extension name on the next step (choose between .com, .xyz, .online, .tech, .site, .net and many more)</p>
+            <div class="search-form">
+              <b-form-input placeholder="Enter your desired domain name"></b-form-input>
+              <b-button variant="danger">Search</b-button>
+            </div>
+          </b-col>
+        </b-row>
       </b-container>
     </section>
   </div>
@@ -295,7 +374,7 @@
           navButtons: false,
           dots: true,
           centerMode: true,
-        }
+        },
     }),
 }
 </script>

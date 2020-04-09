@@ -1,8 +1,10 @@
+@import 'variable';
 nav.navbar {
-    background-color: #f46322;
+    background-color: $bg_orange;
     .container {
         ul.navbar-nav {
             li {
+                padding: 0 .5rem;
                 a {
                     font-size: 1.3rem;
                     color: white;

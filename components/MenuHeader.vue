@@ -1,7 +1,7 @@
 <template>
     <b-navbar toggleable="lg" type="dark">
         <b-container class="bv-example-row bv-example-row-flex-cols">
-            <b-navbar-brand href="#"><b-img v-bind="logoProp" src="../assets/img/logo-branca-zmot.png" fluid></b-img></b-navbar-brand>
+            <b-navbar-brand href="#"><b-img v-bind="logoProp" src="../assets/img/zmot-logo.webp" fluid></b-img></b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -27,7 +27,7 @@ export default {
     name: "MenuHeader",
     components: {},
     data: () => ({
-        logoProp: {blank: false, width: 85, height: 85, class:'m1'}
+        logoProp: {blank: false, width: 250, class:'m2'}
     }),
     methods: {}
 };

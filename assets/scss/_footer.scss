@@ -1,13 +1,30 @@
+@import 'variable';
 .app-footer {
     background-color: #1A1A1A;
     border-top: 1px solid #EAEAEA;
     padding: 25px 0;
     .container {
-        justify-content: flex-start;
-        .copy-right {
-            font-size: .875em;
-            line-height: 100%;
-            color: #AAA;
+        .row {
+            align-items: center;
+            p {
+                margin-top: 2rem;
+                color: white;
+            }
+            .social-links {
+                display: flex;
+                a {
+                    color: white;
+                    background: #f46322;
+                    margin: 0 1rem;
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1.5rem;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
         }
     }
 }
