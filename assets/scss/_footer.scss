@@ -1,0 +1,13 @@
+.app-footer {
+    background-color: #1A1A1A;
+    border-top: 1px solid #EAEAEA;
+    padding: 25px 0;
+    .container {
+        justify-content: flex-start;
+        .copy-right {
+            font-size: .875em;
+            line-height: 100%;
+            color: #AAA;
+        }
+    }
+}
