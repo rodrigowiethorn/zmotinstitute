@@ -298,27 +298,4 @@
             }
         }
     }
-    section.news-letter {
-        padding: 5rem 0;
-        background-color: $light_orange;
-        color: $mat_purple;
-        .search-form {
-            position: relative;
-            input {
-                border-radius: 100px;
-                padding: 1.5rem;
-                outline: 0;
-            }
-            button {
-                position: absolute;
-                right: 0;
-                top: 0;
-                padding: 0.83rem 2rem;
-                border-radius: 100px;
-                background-color: $shinny_purple;
-                border: 0;
-                outline: 0;
-            }
-        }
-    }
 }

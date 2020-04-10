@@ -326,20 +326,7 @@
         </div>
       </b-container>
     </section>
-    <section class="news-letter" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
-      <b-container>
-        <b-row>
-          <b-col offset-md="2" md="8">
-            <h2 class="text-center">Find the perfect domain name</h2>
-            <p class="text-center">Enter domain name of your choice and pick any extension name on the next step (choose between .com, .xyz, .online, .tech, .site, .net and many more)</p>
-            <div class="search-form">
-              <b-form-input placeholder="Enter your desired domain name"></b-form-input>
-              <b-button variant="danger">Search</b-button>
-            </div>
-          </b-col>
-        </b-row>
-      </b-container>
-    </section>
+    <NewsLetter  />
   </div>
 </template>
 
@@ -361,9 +348,13 @@
       faArrowLeft,
       faArrowRight,
   );
+  
+  import NewsLetter from "@/components/NewsLetter.vue";
+
   export default {
     components: {
       'font-awesome-icon': FontAwesomeIcon,
+      'NewsLetter': NewsLetter,
     },
     data: () => ({
         testimonial_avatar: {blank: false, width: 36, height: 36, class:'m1'},
