@@ -1,0 +1,15 @@
+{
+    "navs": {
+        "home": {"title": "Home", "link": "/"}, 
+        "blog": {"title": "Blog", "link": "blog"}, 
+        "contact": {"title": "Contact Us", "link": "contact"}
+    },
+    "homepage": {
+        "banner_header": "ZMOT: a chave para sua Transformação Digital",
+        "banner_text": "O Comportamento do Consumidor a seu favor!",
+        "why_do_you_need_ZMOT": {
+            "header": "Por que preciso do ZMOT?",
+            "text": "Entender o Comportamento do Consumidor é a chave para uma comunicação eficiente. Auxilie seu cliente durante a Jornada de Compra e veja seus resultados crescerem exponencialmente."
+        }
+    }
+}

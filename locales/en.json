@@ -1,0 +1,15 @@
+{
+    "navs": {
+        "home": {"title": "Home", "link": "/"}, 
+        "blog": {"title": "Blog", "link": "blog"}, 
+        "contact": {"title": "Contact Us", "link": "contact"}
+    },
+    "homepage": {
+        "banner_header": "ZMOT: It is all about Moments of Truth",
+        "banner_text": "Influencing Consumer Behavior like a Legendary Marketer",
+        "why_do_you_need_ZMOT": {
+            "header": "Why do i need ZMOT?",
+            "text": "Understanding your Consumer Behavior and helping them to achieve their goals during the Customer Journey should be your top priority. As a marketer or entrepreneur, once you master some principles you'll have a way more effective communication."
+        }
+    }
+}

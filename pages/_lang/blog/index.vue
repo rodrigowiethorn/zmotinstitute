@@ -2,11 +2,11 @@
   <div>
 <b-container>
       <section id="blogs">
-        <a href="#" class="blog--item" data-aos="fade-up">
+        <nuxt-link to="/blog/blog-slug" class="blog--item" data-aos="fade-up">
           <b-card no-body class="overflow-hidden" >
             <b-row no-gutters>
               <b-col md="5" sm="5" xs="12">
-                <b-card-img src="../../assets/img/blogs/file-encryption.jpg" alt="Image" class="rounded-0"></b-card-img>
+                <b-card-img src="../../../assets/img/blogs/file-encryption.jpg" alt="Image" class="rounded-0"></b-card-img>
               </b-col>
               <b-col md="7" sm="7" xs="12">
                 <b-card-body title="Horizontal Card">
@@ -20,12 +20,12 @@
               </b-col>
             </b-row>
           </b-card>
-        </a>
-        <a href="#" class="blog--item"  data-aos="fade-up">
+        </nuxt-link>
+        <nuxt-link to="/blog/blog-slug" class="blog--item" data-aos="fade-up">
           <b-card no-body class="overflow-hidden">
             <b-row no-gutters>
               <b-col md="5" sm="5" xs="12">
-                <b-card-img src="../../assets/img/blogs/parents-guide-internet-safety-blog.jpg" alt="Image" class="rounded-0"></b-card-img>
+                <b-card-img src="../../../assets/img/blogs/parents-guide-internet-safety-blog.jpg" alt="Image" class="rounded-0"></b-card-img>
               </b-col>
               <b-col md="7" sm="7" xs="12">
                 <b-card-body title="Horizontal Card">
@@ -39,12 +39,12 @@
               </b-col>
             </b-row>
           </b-card>
-        </a>
-        <a href="#" class="blog--item"  data-aos="fade-up">
+        </nuxt-link>
+        <nuxt-link to="/blog/blog-slug" class="blog--item" data-aos="fade-up">
           <b-card no-body class="overflow-hidden">
             <b-row no-gutters>
               <b-col md="5" sm="5" xs="12">
-                <b-card-img src="../../assets/img/blogs/NordVPN-app-update-macos.png" alt="Image" class="rounded-0"></b-card-img>
+                <b-card-img src="../../../assets/img/blogs/NordVPN-app-update-macos.png" alt="Image" class="rounded-0"></b-card-img>
               </b-col>
               <b-col md="7" sm="7" xs="12">
                 <b-card-body title="Horizontal Card">
@@ -58,7 +58,7 @@
               </b-col>
             </b-row>
           </b-card>
-        </a>
+        </nuxt-link>
         <b-pagination-nav size="lg" number-of-pages="10" base-url="#"></b-pagination-nav>
       </section>
     </b-container>
@@ -79,8 +79,3 @@
     }),
 }
 </script>
-
-<style lang="scss">
-@import '../../assets/scss/blog.scss';
-</style>
-

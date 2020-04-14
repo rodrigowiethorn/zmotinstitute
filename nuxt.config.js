@@ -1,4 +1,3 @@
-
 module.exports = {
   mode: 'universal',
   /*
@@ -23,6 +22,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '@/assets/scss/style.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -35,8 +35,18 @@ module.exports = {
     { src: "@/plugins/aos", 
       ssr: false 
     },
-    { src: '@/plugins/vue-agile', ssr: false }
+    { src: '@/plugins/vue-agile',
+      ssr: false 
+    },
+    { src: "@/plugins/i18n", 
+      ssr: true
+    }
   ],
+  router: {
+    middleware: ['i18n'],
+    extendRoutes (routes, resolve) {
+    }
+  },
   /*
   ** Nuxt.js dev-modules
   */
@@ -48,12 +58,15 @@ module.exports = {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
   ],
   /*
   ** Build configuration
   */
   build: {
+    vendor: [
+      'vue-i18n',
+    ],
     /*
     ** You can extend webpack config here
     */

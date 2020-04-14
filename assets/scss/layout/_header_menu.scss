@@ -1,12 +1,14 @@
 @import 'variable';
 nav.navbar {
     background-color: $bg_orange;
+    padding: 1rem;
     .container {
         ul.navbar-nav {
-            li {
-                padding: 0 .5rem;
+            align-items: center;
+            li.pg-nav {
+                padding: 0 1rem;
                 a {
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                     color: white;
                     font-weight: 600;
                 }

@@ -1,7 +1,7 @@
 <template>
     <section class="news-letter">
       <b-container>
-        <b-row data-aos="zoom-in">
+        <b-row data-aos="zoom-in" data-aos-once="true">
           <b-col offset-md="2" md="8">
             <h2 class="text-center">Find the perfect domain name</h2>
             <p class="text-center">Enter domain name of your choice and pick any extension name on the next step (choose between .com, .xyz, .online, .tech, .site, .net and many more)</p>
@@ -24,6 +24,3 @@ export default {
     methods: {}
 };
 </script>
-<style lang="scss">
-@import '../assets/scss/newsletter.scss';
-</style>

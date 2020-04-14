@@ -37,6 +37,3 @@
         methods: {}
     };
 </script>
-<style lang="scss">
-@import '../assets/scss/footer.scss'
-</style>

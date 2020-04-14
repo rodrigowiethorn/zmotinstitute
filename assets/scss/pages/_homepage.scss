@@ -2,6 +2,7 @@
 
 #home-page {
     section.banner {
+        padding-bottom: 3rem;
         background-color: $bg_orange;
         .elementor-spacer {
           margin-bottom: 20px;
@@ -293,6 +294,34 @@
                 .card-text {
                     h3 {
                         font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+    }
+    section.blogs {
+        .blog--list {
+            margin-top: 4rem;
+            .blog--card {
+                box-shadow: 0 .5rem 1rem rgba(32,33,33,.15);
+                &:hover {
+                    transform: translate3d(0,-2px,5px);
+                }
+                .card-meta {
+                    margin-bottom: 1.5rem;
+                    .orange-text {
+                        color: $mat_orange;
+                    }
+                }
+                .card-title {
+                    margin-bottom: 2rem;
+                    a {
+                        color: black;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
