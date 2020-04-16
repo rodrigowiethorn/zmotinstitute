@@ -9,7 +9,55 @@
         "banner_text": "O Comportamento do Consumidor a seu favor!",
         "why_do_you_need_ZMOT": {
             "header": "Por que preciso do ZMOT?",
-            "text": "Entender o Comportamento do Consumidor é a chave para uma comunicação eficiente. Auxilie seu cliente durante a Jornada de Compra e veja seus resultados crescerem exponencialmente."
+            "text": "Entender o Comportamento do Consumidor é a chave para uma comunicação eficiente. Auxilie seu cliente durante a Jornada de Compra e veja seus resultados crescerem exponencialmente.",
+            "pertinencia": {
+                "title": "Relevância",
+                "description": "O consumidor moderno utiliza o Google como principal ferramenta para buscar informações. Estar bem posicionado nos sites de busca é garantia de estar presente no momento exato que as pessoas estão interessadas."
+            },
+            "reviews": {
+                "title": "Reviews",
+                "description": "A experiência de outras pessoas influência a sua tomada de decisão. O boca a boca está mais forte do que nunca."
+            },
+            "mobile": {
+                "title": "Mobile",
+                "description": "O consumidor tem controle total, eles encontram e compartilham informações a sua própria maneira e tempo."
+            }
+        },
+        "specialists": {
+            "header": "Os Especialistas",
+            "text": "ZMOT é coisa de gente grande. Veja o que os maiores especialistas mundiais em Marketing Digital tem falado sobre o assunto.",
+            "testominal_1": {
+                "description": "“Os consumidores pesquisam as informações na internet antes de comprar.”",
+                "avatar": "Marketing Guru"
+            },
+            "testominal_2": {
+                "description": "“É assim que os consumidores vivem, aprendem e tomam decisões hoje”",
+                "avatar": "Autor do ZMOT"
+            },
+            "testominal_3": {
+                "description": "“Marketing Digital é sobre entregar o conteúdo certo no momento certo”",
+                "avatar": "Marketing Guru"
+            }
+        },
+        "blog": {
+            "header": "Blog"
+        },
+        "real_people_talking": {
+            "header": "Opiniões sobre ZMOT",
+            "description": "Veja o que pessoas que passaram a conhecer o ZMOT estão falando sobre esse framework.",
+            "card_1": "Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​",
+            "card_2": "Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...",
+            "card_3": "Muito bom conteúdo, obrigado por compartilhar conosco este excelente conteúdo."
+        }
+    },
+    "contact": {
+        "banner": {
+            "header": "Aprenda o ZMOT com a ajuda dos melhores profissionais",
+            "text": "Email ou Live Chat, você escolhe a melhor opção",
+            "button": {
+                "send_email": "Enviar Email",
+                "access_live_chat": "Acessar Live Chat"
+            }
         }
     }
 }

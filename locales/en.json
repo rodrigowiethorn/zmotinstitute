@@ -11,5 +11,15 @@
             "header": "Why do i need ZMOT?",
             "text": "Understanding your Consumer Behavior and helping them to achieve their goals during the Customer Journey should be your top priority. As a marketer or entrepreneur, once you master some principles you'll have a way more effective communication."
         }
+    },
+    "contact": {
+        "banner": {
+            "header": "Learn ZMOT with the help of the best professionals",
+            "text": "Email or Live Chat, you choose the best option",
+            "button": {
+                "send_email": "Send Email",
+                "access_live_chat": "Access Live Chat"
+            }
+        }
     }
 }

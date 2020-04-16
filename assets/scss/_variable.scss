@@ -30,3 +30,11 @@ $theme-colors: map-merge(
         color: white;
     }
 }
+.btn-white {
+    background-color: white;
+    color: $shinny_orange;
+    &:hover {
+        background-color: white;
+        color: $shinny_orange;
+    }
+}

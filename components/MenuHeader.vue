@@ -19,8 +19,8 @@
                     </li>
                     <b-nav-item-dropdown text="Lang" right>
                         <b-dropdown-item :to="$route.fullPath.replace(/^\/[^\/]+/, '')">en</b-dropdown-item>
-                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/pt_br` + $route.fullPath">pt-br</b-dropdown-item>
-                        <b-dropdown-item v-else :to="`/pt_br` + $route.fullPath.replace(/^\/[^\/]+/, '')">pt-br</b-dropdown-item>
+                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/pt-br` + $route.fullPath">pt-br</b-dropdown-item>
+                        <b-dropdown-item v-else :to="`/pt-br` + $route.fullPath.replace(/^\/[^\/]+/, '')">pt-br</b-dropdown-item>
                         <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/es` + $route.fullPath">es</b-dropdown-item>
                         <b-dropdown-item v-else :to="`/es` + $route.fullPath.replace(/^\/[^\/]+/, '')">es</b-dropdown-item>
                     </b-nav-item-dropdown>
