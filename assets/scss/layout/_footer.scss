@@ -5,7 +5,15 @@
     padding: 25px 0;
     .container {
         .row {
-            align-items: center;
+            h5 {
+                color: white;
+            }
+            ul {
+                padding-left: 0.75rem;
+                a {
+                    color: white;
+                }
+            }
             p {
                 margin-top: 2rem;
                 color: white;
@@ -14,8 +22,7 @@
                 display: flex;
                 a {
                     color: white;
-                    background: #f46322;
-                    margin: 0 1rem;
+                    margin: 0 0.5rem;
                     width: 2rem;
                     height: 2rem;
                     font-size: 1.5rem;

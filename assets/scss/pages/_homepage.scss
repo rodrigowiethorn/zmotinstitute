@@ -1,6 +1,17 @@
 @import 'variable';
 
 #home-page {
+    section {
+        h2 {
+            font-size: 42px;
+            font-weight: 600;
+            margin-bottom: 3rem;
+        }
+        p {
+            font-size: 20px;
+            color: #868e96;
+        }
+    }
     section.banner {
         padding-bottom: 3rem;
         background-color: $bg_orange;
@@ -28,15 +39,6 @@
     }
     section.why-zmot {
         padding-top: 5rem;
-        h2 {
-            font-size: 42px;
-            font-weight: 600;
-            margin-bottom: 3rem;
-        }
-        p {
-            font-size: 20px;
-            color: #868e96;
-        }
         .feature__list {
             margin-top: 5rem;
             .feature__item {
@@ -118,15 +120,6 @@
     section.say-about-us {
         padding: 5rem 0;
         background-color: #f8f9fa;
-        h2 {
-            font-size: 42px;
-            font-weight: 600;
-            margin-bottom: 3rem;
-        }
-        p {
-            font-size: 20px;
-            color: #868e96;
-        }
         .testimonial-list {
             margin-top: 5rem;
             .testimonial-item-wrapper {
@@ -185,16 +178,6 @@
         margin-top: 3rem;
         margin-bottom: 3rem;
         .container {
-            > h2  {
-                font-size: 42px;
-                font-weight: 600;
-                margin-bottom: 3rem;
-            }
-            > p {
-                font-size: 20px;
-                color: #868e96;
-                margin-bottom: 4rem;
-            }
             .specialist__items {
                 .agile__actions {
                     justify-content: center;

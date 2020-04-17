@@ -3,7 +3,7 @@
 
     <section class="banner">
       <b-container>
-        <b-row>
+        <b-row class="mb-3">
           <b-col>
             <div class="elementor-spacer">
               <div class="elementor-spacer-inner"></div>
@@ -45,13 +45,10 @@
         <div class="feature__list">
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-img">
-                <b-img src="../../assets/img/planing.png" fluid alt="Responsive image"></b-img>
+                <b-img src="https://image.freepik.com/free-vector/it-expert-holding-big-magnifying-glass-illustration-search-information-invest_164911-26.jpg" fluid alt="Responsive image"></b-img>
             </b-col>
             <b-col class="feature__item-content-wrapper">
                 <div class="feature__item-content">
-                  <div class="feature__item-icon">
-                    <font-awesome-icon icon="search" />
-                  </div>
                   <h3>Relevância</h3>
                   <p>Esteja presente apenas quando seu cliente precisa de você. Estar no lugar certo e na hora certa deve ser o seu lema.</p>
               </div>
@@ -60,26 +57,20 @@
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-content-wrapper">
                 <div class="feature__item-content text-right">
-                <div class="feature__item-icon">
-                  <font-awesome-icon icon="users" />
-                </div>
                 <h3>Reviews</h3>
                 <p>A experiência de outras pessoas influência a sua tomada de decisão. O boca a boca está mais forte do que nunca.</p>
               </div>
             </b-col>
             <b-col class="feature__item-img">
-                <b-img src="../../assets/img/planing.png" fluid alt="Responsive image"></b-img>
+                <b-img src="https://image.freepik.com/free-vector/coworking-networking-people-business-community_81522-386.jpg" fluid alt="Responsive image"></b-img>
             </b-col>
           </b-row>
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-img">
-                <b-img src="../../assets/img/planing.png" fluid alt="Responsive image"></b-img>
+                <b-img src="https://image.freepik.com/free-vector/business-woman-sitting-work-desk-working-computer_81522-3373.jpg" fluid alt="Responsive image"></b-img>
             </b-col>
             <b-col class="feature__item-content-wrapper">
                 <div class="feature__item-content">
-                  <div class="feature__item-icon">
-                    <font-awesome-icon icon="mobile" />
-                  </div>
                   <h3>Mobile</h3>
                   <p>O consumidor tem controle total, eles encontram e compartilham informações a sua própria maneira e tempo.</p>
                 </div>
@@ -216,83 +207,11 @@
         </div>
       </b-container>
     </section>
-    <section class="blogs" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
-      <b-container>
-        <h2 class="text-center">Blog</h2>
-        <div class="blog--list">
-          <b-row>
-            <b-col>
-              <b-card
-                img-src="https://picsum.photos/600/300/?image=25"
-                img-alt="Image"
-                img-top
-                tag="article"
-                class="mb-2 blog--card"
-              >
-                <div class="card-meta">
-                  <span>
-                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
-                  </span>
-                  <span class="text-small mx-2">|</span>
-                  <span class="text-small">Apr 9, 2020</span>
-                </div>
-                <div class="card-title">
-                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
-                </div>
-                <b-button variant="outline-orange">Read More</b-button>
-              </b-card>
-            </b-col>
-            <b-col>
-              <b-card
-                img-src="https://picsum.photos/600/300/?image=25"
-                img-alt="Image"
-                img-top
-                tag="article"
-                class="mb-2 blog--card"
-              >
-                <div class="card-meta">
-                  <span>
-                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
-                  </span>
-                  <span class="text-small mx-2">|</span>
-                  <span class="text-small">Apr 9, 2020</span>
-                </div>
-                <div class="card-title">
-                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
-                </div>
-                <b-button variant="outline-orange">Read More</b-button>
-              </b-card>
-            </b-col>
-            <b-col>
-              <b-card
-                img-src="https://picsum.photos/600/300/?image=25"
-                img-alt="Image"
-                img-top
-                tag="article"
-                class="mb-2 blog--card"
-              >
-                <div class="card-meta">
-                  <span>
-                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
-                  </span>
-                  <span class="text-small mx-2">|</span>
-                  <span class="text-small">Apr 9, 2020</span>
-                </div>
-                <div class="card-title">
-                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
-                </div>
-                <b-button variant="outline-orange">Read More</b-button>
-              </b-card>
-            </b-col>
-          </b-row>
-        </div>
-      </b-container>
-    </section>
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <b-row> 
           <b-col>
-            <b-card class="service--item mb-3" img-src="../../assets/img/man-room-devices-secured@2x.jpg" img-left>
+            <b-card class="service--item mb-3" img-src="https://image.freepik.com/free-vector/flat-design-illustration-build-online-store-e-commerce_106954-15.jpg" img-left>
               <b-card-text>
                 <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
                 <div>
@@ -312,7 +231,7 @@
         </b-row>
         <b-row> 
           <b-col>
-            <b-card class="service--item mb-3" img-src="../../assets/img/man-room-devices-secured@2x.jpg" img-right>
+            <b-card class="service--item mb-3" img-src="https://image.freepik.com/free-vector/woman-business-speaker-podium-reads-report_82574-8509.jpg" img-right>
               <b-card-text>
                 <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
                 <div>
@@ -332,7 +251,7 @@
         </b-row>
         <b-row> 
           <b-col>
-            <b-card class="service--item mb-3" img-src="../../assets/img/man-room-devices-secured@2x.jpg" img-left>
+            <b-card class="service--item mb-3" img-src="https://image.freepik.com/free-vector/online-education-landing-page-with-girl-studying-with-computer_113065-180.jpg" img-left>
               <b-card-text>
                 <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
                 <div>
@@ -406,6 +325,78 @@
                   Paulo Gomes
                 </span>
               </div>
+            </b-col>
+          </b-row>
+        </div>
+      </b-container>
+    </section>
+    <section class="blogs mt-5 mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
+      <b-container>
+        <h2 class="text-center">Blog</h2>
+        <div class="blog--list">
+          <b-row>
+            <b-col>
+              <b-card
+                img-src="https://picsum.photos/600/300/?image=25"
+                img-alt="Image"
+                img-top
+                tag="article"
+                class="mb-2 blog--card"
+              >
+                <div class="card-meta">
+                  <span>
+                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
+                  </span>
+                  <span class="text-small mx-2">|</span>
+                  <span class="text-small">Apr 9, 2020</span>
+                </div>
+                <div class="card-title">
+                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
+                </div>
+                <b-button variant="btn btn-orange rounded-pill">Read More</b-button>
+              </b-card>
+            </b-col>
+            <b-col>
+              <b-card
+                img-src="https://picsum.photos/600/300/?image=25"
+                img-alt="Image"
+                img-top
+                tag="article"
+                class="mb-2 blog--card"
+              >
+                <div class="card-meta">
+                  <span>
+                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
+                  </span>
+                  <span class="text-small mx-2">|</span>
+                  <span class="text-small">Apr 9, 2020</span>
+                </div>
+                <div class="card-title">
+                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
+                </div>
+                <b-button variant="btn btn-orange rounded-pill">Read More</b-button>
+              </b-card>
+            </b-col>
+            <b-col>
+              <b-card
+                img-src="https://picsum.photos/600/300/?image=25"
+                img-alt="Image"
+                img-top
+                tag="article"
+                class="mb-2 blog--card"
+              >
+                <div class="card-meta">
+                  <span>
+                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
+                  </span>
+                  <span class="text-small mx-2">|</span>
+                  <span class="text-small">Apr 9, 2020</span>
+                </div>
+                <div class="card-title">
+                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
+                </div>
+                <b-button variant="btn btn-orange rounded-pill">Read More</b-button>
+              </b-card>
             </b-col>
           </b-row>
         </div>

@@ -18,11 +18,11 @@
                         <nuxt-link :to="$i18n.path('contact')">{{$t('navs.contact.title')}}</nuxt-link>
                     </li>
                     <b-nav-item-dropdown text="Lang" right>
-                        <b-dropdown-item :to="$route.fullPath.replace(/^\/[^\/]+/, '')">en</b-dropdown-item>
-                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/pt-br` + $route.fullPath">pt-br</b-dropdown-item>
-                        <b-dropdown-item v-else :to="`/pt-br` + $route.fullPath.replace(/^\/[^\/]+/, '')">pt-br</b-dropdown-item>
-                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/es` + $route.fullPath">es</b-dropdown-item>
-                        <b-dropdown-item v-else :to="`/es` + $route.fullPath.replace(/^\/[^\/]+/, '')">es</b-dropdown-item>
+                        <b-dropdown-item :to="$route.fullPath.replace(/^\/[^\/]+/, '')">EN</b-dropdown-item>
+                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/pt-br` + $route.fullPath">PT-BR</b-dropdown-item>
+                        <b-dropdown-item v-else :to="`/pt-br` + $route.fullPath.replace(/^\/[^\/]+/, '')">PT-BR</b-dropdown-item>
+                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/es` + $route.fullPath">ES</b-dropdown-item>
+                        <b-dropdown-item v-else :to="`/es` + $route.fullPath.replace(/^\/[^\/]+/, '')">ES</b-dropdown-item>
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>
