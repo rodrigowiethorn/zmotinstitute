@@ -3,11 +3,13 @@
       <b-container>
         <b-row data-aos="zoom-in" data-aos-once="true">
           <b-col offset-md="2" md="8">
-            <h2 class="text-center">Find the perfect domain name</h2>
-            <p class="text-center">Enter domain name of your choice and pick any extension name on the next step (choose between .com, .xyz, .online, .tech, .site, .net and many more)</p>
+            <h2 class="text-center">
+              {{$t('news_letter.header')}}
+            </h2>
+            <p class="text-center">{{$t('news_letter.text')}}</p>
             <div class="search-form">
-              <b-form-input placeholder="Enter your desired domain name"></b-form-input>
-              <b-button variant="danger">Search</b-button>
+              <b-form-input></b-form-input>
+              <b-button variant="danger">{{$t('news_letter.subscribe')}}</b-button>
             </div>
           </b-col>
         </b-row>

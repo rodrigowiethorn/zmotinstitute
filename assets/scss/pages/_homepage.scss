@@ -53,6 +53,7 @@
                         transition: -webkit-transform .2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow .2s cubic-bezier(.645,.045,.355,1);
                         transition: transform .2s cubic-bezier(.645,.045,.355,1),box-shadow .2s cubic-bezier(.645,.045,.355,1);
                         transition: transform .2s cubic-bezier(.645,.045,.355,1),box-shadow .2s cubic-bezier(.645,.045,.355,1),-webkit-transform .2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow .2s cubic-bezier(.645,.045,.355,1);
+                        width: 100%;
                     }
                     &:hover {
                         img {
@@ -264,19 +265,23 @@
     }
     section.services {
         margin: 5rem 0;
+        img {
+            width: 100%;
+            padding: 0 2rem;
+        }
+        .row {
+            margin: 2rem 0;
+        }
         .card.service--item {
             border: 0;
-            img {
-                width: 50%;
-                padding: 0 2rem;
-            }
             .card-body {
                 margin-left: 2rem;
                 display: flex;
                 align-items: center;
                 .card-text {
-                    h3 {
+                    h2 {
                         font-size: 2.2rem;
+                        color: #222;
                     }
                 }
             }

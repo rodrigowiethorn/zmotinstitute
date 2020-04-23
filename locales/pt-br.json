@@ -2,52 +2,46 @@
     "navs": {
         "home": {"title": "Home", "link": "/"}, 
         "blog": {"title": "Blog", "link": "blog"}, 
-        "contact": {"title": "Contact Us", "link": "contact"}
+        "contact": {"title": "Contato", "link": "contact"}
     },
     "homepage": {
-        "banner_header": "ZMOT: a chave para sua Transformação Digital",
-        "banner_text": "O Comportamento do Consumidor a seu favor!",
+        "banner": {
+            "header": "ZMOT: a chave para sua Transformação Digital",
+            "text": "Influenciando o Comportamento do Consumidor com Marketing Digital"
+        },
         "why_do_you_need_ZMOT": {
             "header": "Por que preciso do ZMOT?",
-            "text": "Entender o Comportamento do Consumidor é a chave para uma comunicação eficiente. Auxilie seu cliente durante a Jornada de Compra e veja seus resultados crescerem exponencialmente.",
-            "pertinencia": {
-                "title": "Relevância",
-                "description": "O consumidor moderno utiliza o Google como principal ferramenta para buscar informações. Estar bem posicionado nos sites de busca é garantia de estar presente no momento exato que as pessoas estão interessadas."
-            },
-            "reviews": {
-                "title": "Reviews",
-                "description": "A experiência de outras pessoas influência a sua tomada de decisão. O boca a boca está mais forte do que nunca."
-            },
-            "mobile": {
-                "title": "Mobile",
-                "description": "O consumidor tem controle total, eles encontram e compartilham informações a sua própria maneira e tempo."
-            }
+            "text": "Entender o Comportamento do Consumidor e auxiliar seu cliente durante a Jornada de Compra deve ser sua prioridade número um para construir um negócio de sucesso. Seja você um profissional de marketing, ou um empreendedor, sua comunicação será muito mais eficiente se entender alguns princípios.",
+            "category_1_header": "Relevância",
+            "category_1_text": "O consumidor moderno utiliza o Google como principal ferramenta para buscar informações. Estar bem posicionado nos sites de busca é garantia de estar presente no momento exato que as pessoas estão interessadas.",
+            "category_2_header": "Reviews",
+            "category_2_text": "A experiência de outras pessoas influência a sua tomada de decisão. O boca a boca está mais forte do que nunca.",
+            "category_3_header": "Mobile",
+            "category_3_text": "O consumidor tem controle total, eles encontram e compartilham informações a sua própria maneira e tempo."
         },
-        "specialists": {
+        "specialist": {
             "header": "Os Especialistas",
             "text": "ZMOT é coisa de gente grande. Veja o que os maiores especialistas mundiais em Marketing Digital tem falado sobre o assunto.",
-            "testominal_1": {
-                "description": "“Os consumidores pesquisam as informações na internet antes de comprar.”",
-                "avatar": "Marketing Guru"
-            },
-            "testominal_2": {
-                "description": "“É assim que os consumidores vivem, aprendem e tomam decisões hoje”",
-                "avatar": "Autor do ZMOT"
-            },
-            "testominal_3": {
-                "description": "“Marketing Digital é sobre entregar o conteúdo certo no momento certo”",
-                "avatar": "Marketing Guru"
-            }
+            "slide_1_text": "Os consumidores pesquisam as informações na internet antes de comprar.",
+            "slide_2_text": "É assim que os consumidores vivem, aprendem e tomam decisões hoje.",
+            "slide_3_text": "Marketing Digital é sobre entregar o conteúdo certo no momento certo"
         },
-        "blog": {
-            "header": "Blog"
+        "services": {
+            "header": "How can we help you?",
+            "service_1_header": "Auditoria ZMOT",
+            "service_1_description": "Podemos te mostrar o caminho, ou caminhar ao seu lado. Podemos te ajudar a sair da inércia, ou acelerar o seu foguete. No final, é você quem escolhe como implantar o ZMOT na suas ações de Marketing Digital.",
+            "service_2_header": "Palestras e Eventos",
+            "service_2_description": "Deseja encantar sua platéia com um conteúdo inovador, dinâmico e que fará as pessoas aplaudirem de pé?",
+            "service_3_header": "Cursos Online",
+            "service_3_description": "Aprenda a tudo sobre ZMOT com especialista no assunto e que tem ajudado suas organizações a alcançar resultados expressivos. Com nosso material você poderá conhecer e implementar as melhores estratégias de marketing digital ",
+            "get_a_quote": "Quero Contratar"
         },
-        "real_people_talking": {
+        "what_say": {
             "header": "Opiniões sobre ZMOT",
-            "description": "Veja o que pessoas que passaram a conhecer o ZMOT estão falando sobre esse framework.",
-            "card_1": "Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​",
-            "card_2": "Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...",
-            "card_3": "Muito bom conteúdo, obrigado por compartilhar conosco este excelente conteúdo."
+            "text": "Veja o que pessoas que passaram a conhecer o ZMOT estão falando sobre esse framework.",
+            "talking_1": "Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​",
+            "talking_2": "Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...",
+            "talking_3": "Muito bom conteúdo, obrigado por compartilhar conosco este excelente conteúdo."
         }
     },
     "contact": {
@@ -58,6 +52,20 @@
                 "send_email": "Enviar Email",
                 "access_live_chat": "Acessar Live Chat"
             }
+        },
+        "form": {
+            "send_email": "Enviar Email",
+            "contact": "Contacto",
+            "Email": "Email",
+            "Name": "Nome",
+            "Surename": "Sobrenome"
         }
-    }
+    },
+    "news_letter": {
+        "header": "Acompanhar o ZMOT de perto",
+        "text": "Fique ligado em todas as novidades sobre o ZMOT, assuntos relacionados a Marketing Digitral e Comportamento do Consumidor. Increva-se na nossa newsletter mensal ",
+        "subscribe": "Inscrever-se na News"
+    },
+    "cookie": "Nós usamos informações pessoais em nosso site para melhorar significativamente sua experiência de uso. Por favor clique em ACEITAR para que possamos melhor servi-lo.Para maiores informações por favor acesse nossa página de Política de Privacidade. ",
+    "footer": "Acreditamos na importância de pessoas e empresas fazerem negócios mutuamente benéficos "
 }

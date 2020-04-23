@@ -9,10 +9,10 @@
               <div class="elementor-spacer-inner"></div>
             </div>
             <div class="banner-widget-heading pa-2">
-              <h2>{{$t('homepage.banner_header')}}</h2>
+              <h2>{{$t('homepage.banner.header')}}</h2>
             </div>
             <div class="banner-widget-text pa-2">
-              <p>{{$t('homepage.banner_text')}}</p>
+              <p>{{$t('homepage.banner.text')}}</p>
             </div>
           </b-col>
           <b-col>
@@ -44,35 +44,35 @@
         </p>
         <div class="feature__list">
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-            <b-col class="feature__item-img">
-                <b-img src="https://image.freepik.com/free-vector/it-expert-holding-big-magnifying-glass-illustration-search-information-invest_164911-26.jpg" fluid alt="Responsive image"></b-img>
+            <b-col class="feature__item-img" sm="12" md="6">
+                <b-img src="../../assets/img/why-do-you-need/searching-block.webp" fluid alt="Responsive image"></b-img>
             </b-col>
-            <b-col class="feature__item-content-wrapper">
+            <b-col class="feature__item-content-wrapper" sm="12" md="6">
                 <div class="feature__item-content">
-                  <h3>Relevância</h3>
-                  <p>Esteja presente apenas quando seu cliente precisa de você. Estar no lugar certo e na hora certa deve ser o seu lema.</p>
+                  <h3>{{$t('homepage.why_do_you_need_ZMOT.category_1_header')}}</h3>
+                  <p>{{$t('homepage.why_do_you_need_ZMOT.category_1_text')}}</p>
               </div>
             </b-col>
           </b-row>
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-            <b-col class="feature__item-content-wrapper">
+            <b-col class="feature__item-content-wrapper" sm="12" md="6">
                 <div class="feature__item-content text-right">
-                <h3>Reviews</h3>
-                <p>A experiência de outras pessoas influência a sua tomada de decisão. O boca a boca está mais forte do que nunca.</p>
+                <h3>{{$t('homepage.why_do_you_need_ZMOT.category_2_header')}}</h3>
+                <p>{{$t('homepage.why_do_you_need_ZMOT.category_2_text')}}</p>
               </div>
             </b-col>
-            <b-col class="feature__item-img">
-                <b-img src="https://image.freepik.com/free-vector/coworking-networking-people-business-community_81522-386.jpg" fluid alt="Responsive image"></b-img>
+            <b-col class="feature__item-img" sm="12" md="6">
+                <b-img src="../../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Responsive image"></b-img>
             </b-col>
           </b-row>
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-            <b-col class="feature__item-img">
-                <b-img src="https://image.freepik.com/free-vector/business-woman-sitting-work-desk-working-computer_81522-3373.jpg" fluid alt="Responsive image"></b-img>
+            <b-col class="feature__item-img" sm="12" md="6">
+                <b-img src="../../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" fluid alt="Responsive image"></b-img>
             </b-col>
-            <b-col class="feature__item-content-wrapper">
+            <b-col class="feature__item-content-wrapper" sm="12" md="6">
                 <div class="feature__item-content">
-                  <h3>Mobile</h3>
-                  <p>O consumidor tem controle total, eles encontram e compartilham informações a sua própria maneira e tempo.</p>
+                  <h3>{{$t('homepage.why_do_you_need_ZMOT.category_3_header')}}</h3>
+                  <p>{{$t('homepage.why_do_you_need_ZMOT.category_3_text')}}</p>
                 </div>
             </b-col>
           </b-row>
@@ -82,8 +82,8 @@
     
     <section class="specialists" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
       <b-container>
-        <h2 class="text-center">Os Especialistas</h2>
-        <p class="text-center">ZMOT é coisa de gente grande. Veja o que os maiores especialistas mundiais em Marketing Digital tem falado sobre o assunto.</p>
+        <h2 class="text-center">{{$t('homepage.specialist.header')}}</h2>
+        <p class="text-center">{{$t('homepage.specialist.text')}}</p>
         <div class="specialist__items">
           <no-ssr placeholder="Loading...">
               <agile :options='agileOptions'>
@@ -91,7 +91,7 @@
                   <b-card no-body class="overflow-hidden spec__card">
                     <b-card-body>
                       <b-card-text>
-                        “Os consumidores pesquisam as informações na internet antes de comprar.”
+                        “{{$t('homepage.specialist.slide_1_text')}}”
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
@@ -113,7 +113,7 @@
                   <b-card no-body class="overflow-hidden spec__card">
                     <b-card-body>
                       <b-card-text>
-                        “Os consumidores pesquisam as informações na internet antes de comprar.”
+                        “{{$t('homepage.specialist.slide_2_text')}}”
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
@@ -135,29 +135,7 @@
                   <b-card no-body class="overflow-hidden spec__card">
                     <b-card-body>
                       <b-card-text>
-                        “Os consumidores pesquisam as informações na internet antes de comprar.”
-                      </b-card-text>
-                      <div class="spec__card-meta">
-                        <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../../assets/img/Specialist/NeilPatel.webp" fluid alt="Responsive image"></b-img>
-                        </div>
-                        <div class="spec__card-meta-details">
-                          <div class="name">
-                            Neil Patel
-                          </div>
-                          <div class="job">
-                            Marketing Guru
-                          </div>
-                        </div>
-                      </div>
-                    </b-card-body>
-                  </b-card>
-                </div>
-                <div class="slide slide--4">
-                  <b-card no-body class="overflow-hidden spec__card">
-                    <b-card-body>
-                      <b-card-text>
-                        “Os consumidores pesquisam as informações na internet antes de comprar.”
+                        “{{$t('homepage.specialist.slide_3_text')}}”
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
@@ -165,29 +143,7 @@
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
-                            Neil Patel
-                          </div>
-                          <div class="job">
                             Marketing Guru
-                          </div>
-                        </div>
-                      </div>
-                    </b-card-body>
-                  </b-card>
-                </div>
-                <div class="slide slide--5">
-                  <b-card no-body class="overflow-hidden spec__card">
-                    <b-card-body>
-                      <b-card-text>
-                        “Os consumidores pesquisam as informações na internet antes de comprar.”
-                      </b-card-text>
-                      <div class="spec__card-meta">
-                        <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../../assets/img/Specialist/David_Meerman_Scott.webp" fluid alt="Responsive image"></b-img>
-                        </div>
-                        <div class="spec__card-meta-details">
-                          <div class="name">
-                            Neil Patel
                           </div>
                           <div class="job">
                             Marketing Guru
@@ -210,60 +166,68 @@
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <b-row> 
-          <b-col>
-            <b-card class="service--item mb-3" img-src="https://image.freepik.com/free-vector/flat-design-illustration-build-online-store-e-commerce_106954-15.jpg" img-left>
+          <b-col md="6" sm="12">
+            <img src="../../assets/img/services/service-zmot_audito.png" alt="">
+          </b-col>
+          <b-col md="6" sm="12">
+            <b-card class="service--item mb-3">
               <b-card-text>
-                <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
+                <h2 class="h3 mb-4">{{$t('homepage.services.service_1_header')}}</h2>
                 <div>
                   <p class="mb-5 medium">
-                    <span>
-                      <span>Do you use Windows at work, macOS at home, and Linux for your special projects? No problem. There’s a NordVPN application for each of these, plus apps for iOS, Android, and Android TV. Oh, and also encrypted proxy extensions for Chrome and Firefox.</span>
-                      <span>Best of all, with one NordVPN account, you can secure <strong><span>up to 6 devices</span></strong> at the same time.</span>
-                    </span>
+                      <span>{{$t('homepage.services.service_1_description')}}</span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="See all features" role="button" tabindex="0">
-                  <span>See All Features</span>
+                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <span>
+                      {{$t('homepage.services.get_a_quote')}}
+                  </span>
                 </a>
               </b-card-text>
             </b-card>
           </b-col>
         </b-row>
         <b-row> 
-          <b-col>
-            <b-card class="service--item mb-3" img-src="https://image.freepik.com/free-vector/woman-business-speaker-podium-reads-report_82574-8509.jpg" img-right>
+          <b-col md="6" sm="12">
+            <img src="../../assets/img/services/service-lecture.webp" alt="">
+          </b-col>
+          <b-col md="6" sm="12">
+            <b-card class="service--item mb-3">
               <b-card-text>
-                <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
+                <h2 class="h3 mb-4">{{$t('homepage.services.service_2_header')}}</h2>
                 <div>
                   <p class="mb-5 medium">
-                    <span>
-                      <span>Do you use Windows at work, macOS at home, and Linux for your special projects? No problem. There’s a NordVPN application for each of these, plus apps for iOS, Android, and Android TV. Oh, and also encrypted proxy extensions for Chrome and Firefox.</span>
-                      <span>Best of all, with one NordVPN account, you can secure <strong><span>up to 6 devices</span></strong> at the same time.</span>
-                    </span>
+                      <span>{{$t('homepage.services.service_2_description')}}</span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="See all features" role="button" tabindex="0">
-                  <span>See All Features</span>
+                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <span>
+                      {{$t('homepage.services.get_a_quote')}}
+                  </span>
                 </a>
               </b-card-text>
             </b-card>
           </b-col>
         </b-row>
         <b-row> 
-          <b-col>
-            <b-card class="service--item mb-3" img-src="https://image.freepik.com/free-vector/online-education-landing-page-with-girl-studying-with-computer_113065-180.jpg" img-left>
+          <b-col md="6" sm="12">
+            <img src="../../assets/img/services/service-online_course.webp" alt="">
+          </b-col>
+          <b-col md="6" sm="12">
+            <b-card class="service--item mb-3">
               <b-card-text>
-                <h2 class="h3 mb-4"><span>Protect all your devices</span></h2>
+                <h2 class="h3 mb-4">{{$t('homepage.services.service_3_header')}}</h2>
                 <div>
                   <p class="mb-5 medium">
                     <span>
-                      <span>Do you use Windows at work, macOS at home, and Linux for your special projects? No problem. There’s a NordVPN application for each of these, plus apps for iOS, Android, and Android TV. Oh, and also encrypted proxy extensions for Chrome and Firefox.</span>
-                      <span>Best of all, with one NordVPN account, you can secure <strong><span>up to 6 devices</span></strong> at the same time.</span>
+                      {{$t('homepage.services.service_3_description')}}
                     </span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="See all features" role="button" tabindex="0">
-                  <span>See All Features</span>
+                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <span>
+                      {{$t('homepage.services.get_a_quote')}}
+                    </span>
                 </a>
               </b-card-text>
             </b-card>
@@ -274,18 +238,20 @@
 
     <section class="say-about-us" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
       <b-container>
-        <h2 class="text-center">Opiniões sobre ZMOT</h2>
-        <p class="text-center">Veja o que pessoas que passaram a conhecer o ZMOT estão falando sobre esse framework.</p>
+        <h2 class="text-center">
+            {{$t('homepage.what_say.header')}}
+        </h2>
+        <p class="text-center">{{$t('homepage.what_say.text')}}</p>
         <div class="testimonial-list">
           <b-row class="testimonial-item-wrapper">
             <b-col>
               <div class="testimonial-item">
                 <blockquote class="testimonial-item__quote">
-                  Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...
+                  {{$t('homepage.what_say.talking_1')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../../assets/img/Testominal/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
-                  Elvis Silva
+                  <b-img v-bind="testimonial_avatar" src="../../assets/img/Testominal/paulo-gomes.webp" fluid alt="Responsive image"></b-img>
+                  Paulo Gomes
                 </span>
               </div>
               
@@ -293,36 +259,24 @@
             <b-col>
               <div class="testimonial-item">
                 <blockquote class="testimonial-item__quote">
-                      Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​
+                  {{$t('homepage.what_say.talking_2')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../../assets/img/Testominal/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
-                  Paulo Gomes
+                  <b-img v-bind="testimonial_avatar" src="../../assets/img/Testominal/elvissilva.webp" fluid alt="Responsive image"></b-img>
+                  Elvis Silva
                 </span>
               </div>
             </b-col>
           </b-row>
           <b-row class="testimonial-item-wrapper">
-            <b-col>
+            <b-col offset-md="3" md="6">
               <div class="testimonial-item">
                 <blockquote class="testimonial-item__quote">
-                  Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...
+                  {{$t('homepage.what_say.talking_3')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../../assets/img/Testominal/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
-                  Elvis Silva
-                </span>
-              </div>
-              
-            </b-col>
-            <b-col>
-              <div class="testimonial-item">
-                <blockquote class="testimonial-item__quote">
-                      Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​
-                </blockquote>
-                <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../../assets/img/Testominal/NeilPatel.webp" fluid alt="Responsive image"></b-img>
-                  Paulo Gomes
+                  <b-img v-bind="testimonial_avatar" src="../../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" fluid alt="Responsive image"></b-img>
+                  Eduardo Maiolli
                 </span>
               </div>
             </b-col>
@@ -335,7 +289,7 @@
         <h2 class="text-center">Blog</h2>
         <div class="blog--list">
           <b-row>
-            <b-col>
+            <b-col md="4" sm="12">
               <b-card
                 img-src="https://picsum.photos/600/300/?image=25"
                 img-alt="Image"
@@ -356,7 +310,7 @@
                 <b-button variant="btn btn-orange rounded-pill">Read More</b-button>
               </b-card>
             </b-col>
-            <b-col>
+            <b-col md="4" sm="12">
               <b-card
                 img-src="https://picsum.photos/600/300/?image=25"
                 img-alt="Image"
@@ -377,7 +331,7 @@
                 <b-button variant="btn btn-orange rounded-pill">Read More</b-button>
               </b-card>
             </b-col>
-            <b-col>
+            <b-col md="4" sm="12">
               <b-card
                 img-src="https://picsum.photos/600/300/?image=25"
                 img-alt="Image"
@@ -441,6 +395,22 @@
           navButtons: false,
           dots: true,
           centerMode: true,
+          responsive: [
+              {
+                  breakpoint: 900,
+                  settings: {
+                      dots: true,
+                      slidesToShow: 3
+                  }
+              },
+              {
+                  breakpoint: 300,
+                  settings: {
+                      dots: false,
+                      slidesToShow: 1
+                  }
+              }
+            ]
         },
     }),
 }

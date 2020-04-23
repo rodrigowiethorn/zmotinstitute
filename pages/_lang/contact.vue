@@ -27,16 +27,16 @@
 
       <section class="contact-form">
           <b-container>
-            <h2 class="text-center">Contato</h2>
+            <h2 class="text-center">{{$t('contact.form.contact')}}</h2>
             <p class="text-center">Tem alguma opinião ou sugestão de conteúdo? <br>Não perca tempo e nos <strong>envie uma mensagem.</strong></p>
             <b-row>
                 <b-col offset-md="4" md="4">
                     <b-form-group>
                         <b-form-input placeholder="Email"></b-form-input>
                         <b-form-input placeholder="Name"></b-form-input>
-                        <b-form-input placeholder="Sobernome"></b-form-input>
-                        <b-form-input placeholder="Mensagem"></b-form-input>
-                        <b-button variant="orange">Enviar Email</b-button>
+                        <b-form-input placeholder="Surename"></b-form-input>
+                        <b-form-input placeholder="Message"></b-form-input>
+                        <b-button variant="orange">{{$t('contact.form.send_email')}}</b-button>
                     </b-form-group>
                 </b-col>
             </b-row>

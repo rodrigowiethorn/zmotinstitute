@@ -2,13 +2,13 @@
     <div class="app-footer">
         <b-container>
             <b-row>
-                <b-col cols="4">
+                <b-col md="4" sm="1">
                     <img v-bind="footerLogo" src="../assets/img/zmot-logo.webp" alt="Brand logo" class="footer-new-holder-right-holder__brand">
                     <p>
-                        Our mission is to make life easier for website developers and their customers. We do it by offering easy to use, fast and reliable web hosting services.
+                        {{$t('footer')}}
                     </p>
                 </b-col>
-                <b-col cols="6">
+                <b-col md="6" sm="6">
                     <b-row class="mt-3">
                         <b-col>
                             <h5>SERVICES</h5>
@@ -33,7 +33,7 @@
                         </b-col>
                     </b-row>
                 </b-col>
-                <b-col cols="2">
+                <b-col md="2" sm="6">
                     <div class="social-links mt-3">
                         <b-link><font-awesome-icon :icon="['fab', 'linkedin']" /></b-link>
                         <b-link><font-awesome-icon :icon="['fab', 'facebook-f']" /></b-link>

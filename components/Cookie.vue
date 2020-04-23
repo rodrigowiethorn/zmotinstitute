@@ -4,8 +4,8 @@
         <b-row>
             <b-col md="8">
                 <div class="cookie-warning">
-                    We use cookies to provide our services and for analytics and marketing. To find out more about our use of cookies, please see our
-                    <nuxt-link class="cookie__link" to="/privacy-policy">Privacy Policy</nuxt-link>. Click accept for the best user experience on our app.
+                    {{$t('cookie')}}
+                    <!-- <nuxt-link class="cookie__link" to="/privacy-policy">Privacy Policy</nuxt-link>. Click accept for the best user experience on our app. -->
                 </div>
             </b-col>
             <b-col md="2" offset-md="2">
