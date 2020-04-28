@@ -13,6 +13,20 @@ nav.navbar {
                     font-weight: 600;
                 }
             }
+            .dropdown-menu-right {
+                li {
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    img {
+                        margin-right: 1rem;
+                    }
+                    span {
+                        margin-left: 0.5rem;
+                        font-size: 0.6rem;
+                        color: rgb(156, 156, 156);
+                    }
+                }
+            }
         }
     }
 }

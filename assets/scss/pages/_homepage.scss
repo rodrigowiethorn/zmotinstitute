@@ -36,6 +36,11 @@
                 color: white;
             }
         }
+        .logos {
+            img {
+                width: 150px;
+            }
+        }
     }
     section.why-zmot {
         padding-top: 5rem;
@@ -45,25 +50,6 @@
                 padding: 0 0 4rem 4rem;
                 .feature__item-img {
                     padding: 0 0 4rem 4rem;
-                    img {
-                        border-radius: 5px;
-                        -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,.07), 0 5px 20px 0 rgba(0,0,0,.06), 0 8px 40px 0 rgba(0,0,0,.04);
-                        box-shadow: 0 2px 1px 0 rgba(0,0,0,.07), 0 5px 20px 0 rgba(0,0,0,.06), 0 8px 40px 0 rgba(0,0,0,.04);
-                        -webkit-transition: -webkit-transform .2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow .2s cubic-bezier(.645,.045,.355,1);
-                        transition: -webkit-transform .2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow .2s cubic-bezier(.645,.045,.355,1);
-                        transition: transform .2s cubic-bezier(.645,.045,.355,1),box-shadow .2s cubic-bezier(.645,.045,.355,1);
-                        transition: transform .2s cubic-bezier(.645,.045,.355,1),box-shadow .2s cubic-bezier(.645,.045,.355,1),-webkit-transform .2s cubic-bezier(.645,.045,.355,1),-webkit-box-shadow .2s cubic-bezier(.645,.045,.355,1);
-                        width: 100%;
-                    }
-                    &:hover {
-                        img {
-                            -webkit-transform: translateY(-2px);
-                            -ms-transform: translateY(-2px);
-                            transform: translateY(-2px);
-                            -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.07), 0 10px 40px 0 rgba(0,0,0,.06), 0 16px 80px 0 rgba(0,0,0,.04);
-                            box-shadow: 0 4px 8px 0 rgba(0,0,0,.07), 0 10px 40px 0 rgba(0,0,0,.06), 0 16px 80px 0 rgba(0,0,0,.04);
-                        }
-                    }
                 }
                 .feature__item-content-wrapper {
                     display: flex;

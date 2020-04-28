@@ -1,86 +1,22 @@
 <template>
-    <div id="blog">
+    <div id="blog" v-if="!this.isLoading">
         <b-container>
             <b-row>
                 <b-col cols="9">
                     <div class="blog-main">
                         <div class="blog-media">
-                            <b-img src="https://thezmot.com/wp-content/uploads/2019/03/Guia_de_Midia_Como_brasileiros_consomem_midia-1-1700x956.png" fluid alt="Responsive image"></b-img>
+                            <b-img :src="post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url" fluid alt="Responsive image"></b-img>
                         </div>
                         <header class="blog-header">
-                            <h1 class="blog-title ">Guia de Mídia: Como os brasileiros consomem mídia</h1>
+                            <h1 class="blog-title" v-html="post.excerpt.rendered"></h1>
                         </header>
                         <div class="blog-info ">
                             <div class="blog-date">
-                                <time datetime="2019-03-08T17:10:45-03:00">03/08/2019</time>
+                                <time datetime="2019-03-08T17:10:45-03:00">{{ moment(post.date).format('MMMM Do YYYY') }}</time>
                             </div>
                             <div class="blog-comments"> <span class="meta-sep">with</span> <span class="meta-comment">no comment</span></div>
                         </div>
-                        <div class="blog-content">
-                            <p>Um tema muito importante para quem trabalha com marketing é entender o comportamento dos consumidores em relação às mídias que consomem informação e quão confiáveis elas são. Levando em conta essa importância, analisamos os dados da <strong>Pesquisa Brasileira de Mídia de 2016</strong> que demonstram as mídias mais utilizadas, e como se dá o comportamento e índice de confiabilidade de acordo com sexo, faixa etária, escolaridade, renda familiar.<br></p>
-                            <p>Nessa pesquisa fica clara a importância da TV como o meio de comunicação mais abrangente utilizado pelos brasileiros para se informarem, além do declínio de meios tradicionais impressos e a ascensão da internet como nova forma de informação, ainda que com menor índice de confiança.</p>
-                            <h2><strong>Os hábitos de consumo de mídia da população brasileira </strong></h2>
-                            <p>Muita coisa muda em dois anos, mas os dados mais recentes sobre o consumo de mídia dos brasileiros apontados pela <a href="http://pesquisademidia.gov.br/files/E-Book_PBM_2016.pdf"><strong>Pesquisa Brasileira de Mídia</strong></a><strong> </strong>são de 2016. Para a elaboração do relatório foram realizadas 15.050 entrevistas domiciliares, no em 740 municípios de todo o Brasil. <br></p>
-                            <p>O predomínio da TV como meio de informação do brasileiro é histórico e voltou a ser confirmado nesta pesquisa, já que 89% dos brasileiros afirmaram que se informaram através desse meio. Até aqui, nenhuma surpresa, já que os hábitos dos brasileiros são intimamente ligados a esse aparelho eletrônico sempre presente nas salas de estar país afora. <br></p>
-                            <p>Talvez a grande surpresa do relatório seja o aparecimentos do meio <strong>internet </strong>&nbsp;na segunda colocação, com 49% dos entrevistados garantindo que utilizam a internet para receberem informações e notícias. Esse fato é ainda mais impactante quando cruzamos com os dados da TIC Domicílios que mostram que, em 2017, apenas 58% dos lares brasileiros estavam conectados à internet. Em outro<a href="https://g1.globo.com/tecnologia/noticia/37-cidades-concentram-50-da-banda-larga-fixa-do-brasil.ghtml"> levantamento realizado pelo G1 </a>no mesmo ano da pesquisa, &nbsp;foi identificado que apenas 37 cidades concentram 50% &nbsp;de toda banda larga do país. Poderíamos nos questionar então: Qual seria a abrangência desses números se a internet estivesse em 100% dos lares brasileiros?<br></p>
-                            <p>Outros meios tradicionais de comunicação já não são tão influentes como no passado, prova disso são os &nbsp;30% dos entrevistados que responderam se informar via rádio, 12% via jornais e apenas 1% por revistas. <br></p>
-                            <p>É fato que o aparecimento da internet no Brasil e a sua intensa profusão nos anos mais recentes modificaram muito o comportamento do brasileiro e estão transformando o mercado e os hábitos de consumo de mídia no país. Prova disso são os frequentes anúncios de revistas e jornais tradicionais sendo fechados ou adquiridas por grupos de mídia digital, as demissões em massa nesses veículos e a migração dos investimentos de publicidade offline para o online, que desde 2017 já são maiores no online.<br></p>
-                            <p>Essa profusão de brasileiros se informando através da internet é algo que mudou profundamente a relação de grandes áreas de negócios, como das gravadoras musicais, das agências de publicidade e dos grupos jornalísticos, mas, ao que parece, ainda não conseguiu abalar as estruturas da tão cultuada televisão.</p>
-                            <h3><strong>Os hábitos de consumo brasileiro relacionados à televisão</strong></h3>
-                            <p>No relatório fica evidente a preferência dos brasileiros pela TV, onde 77% das <strong>pessoas afirmam assistir à televisão diariamente, em média 3 horas e 20 minutos por dia</strong>, não havendo uma grande distinção nesse comportamento quando levamos em conta Sexo, Faixa Etária, Escolaridade e Renda Familiar.</p>
-                            <p><br></p>
-                            <p>Um ponto a ser destacado é que, por não ser uma atividade exclusiva, muitos entrevistados apontaram estar envolvidos em outros afazeres ao mesmo tempo em que consomem os conteúdos televisivos. Dentre essas atividades, três chamam à atenção: cerca de 61% dos entrevistados responderam que acessam à internet, trocam mensagens instantâneas ou mexem no celular enquanto também assistem à TV.</p>
-
-                            <p>O Estudo Global Nielsen realizado em países da América Latina sobre o estilo de vida das gerações trouxe dados que vão desde a Geração Silenciosa (65+) até a Geração Z (20-). Neste relatório, há a demonstração que enquanto 74% da Geração Silenciosa se informa majoritariamente pela TV, já na Geração Z cerca de 54%, apenas. O número é consideravelmente menor, porém <strong>a TV ainda é o meio mais usado para as pessoas se informarem.</strong><br></p>
-                            <p>Não à toa, os investimentos em publicidade na TV subiram de forma considerável, mais de 3.5 Bilhões de reais durante o ano de 2018 quando comparado com 2017, conforme dados da ferramenta <a href="http://lojaonline.kantaribopemedia.com/P0_VendaRelatorio.aspx">Monitor Evolution</a> do Kantar Ibope.<br></p>
-
-                            <p>Quando analisamos o Índice de Confiança na TV, verificamos que 54% dos respondentes afirmam “confia sempre” &nbsp;e “confia muitas vezes”, muito superior à internet, que apresenta aproximadamente 30%. Não existe uma diferença considerável na confiança de homens e mulheres.</p>
-
-                            <p>Quando analisamos a confiança na TV com base na Faixa Etária e Escolaridade percebemos níveis maiores entre população mais jovem, até 44 anos, bem como entre pessoas com maior nível de instrução.<br></p>
- 
-                            <p>Já com relação a Renda Familiar encontramos índices muito parecidos nas faixas acima de R$ 880 até R$ 17.600, com margem um pouco maior para as camadas com renda mais alta.<br></p>
-
-                            <h3><strong>Os hábitos de consumo brasileiro relacionados ao Rádio</strong></h3>
-                            <p>Na Pesquisa Brasileira de Mídia 2016, três em cada 10 entrevistados mencionaram o rádio em primeiro ou segundo lugar como meio pelos quais usam para se informar pelo país, sendo que 35% dos entrevistados costuma ouvir ao rádio todos os dias da semana – durante 3 horas e 8 minutos ao dia nos dias de semana. <br></p>
-                            <p>Podemos observar que não há muita distinção entre os sexos com relação aos dispositivos utilizados, porém quando analisamos Faixa Etária, Escolaridade e Renda Familiar percebemos o uso maior de <em>Aparelhos Convencionais</em> entre as pessoas de mais idade, com menor nível escolar e poder aquisitivo. Já nas gerações mais novas, e com maior nível escolar e poder aquisitivo o <em>Celular</em> e <em>Carro</em> ganham força.<br></p>
-
-                            <p>Assim como o consumo de conteúdo televisivo, o rádio também é identificado pelos entrevistado como um meio de consumo de informações que permite realizar outras atividades enquanto está sendo ouvido – a maior parte deles, 37%, realizam afazeres domésticos. <br></p>
-                            <p>Novamente, há um número expressivo de pessoas que ouvem à programação de rádio ao mesmo tempo em que utilizam o celular (17%), trocam mensagens instantâneas (10%) e utilizam a internet (10%), o que demonstra a presença das novas mídias em congruência com as mídias mais tradicionais. <br></p>
-                            <p>O nível de confiança nas informações veiculadas no rádio chega a 57%, não havendo uma grande distinção quando analisado por Sexo. <br></p>
-
-                            <p>Já quando o corte é feito por idade percebemos um maior confiança entre a população de 18 a 44 anos de idade.<br></p>
-                            <p>Quando avaliado em relação à Escolaridade as pessoas com ensino “Superior Incompleto” e “Superior Incompleto” são as que mais confiam.<br></p>
-                            <p>Quando analisada a confiança por Renda Familiar percebemos os maiores valores na população com rendimentos entre R$ 1.760 a R$ 17.600.<br></p>
-                            <p>O rádio também é notadamente um veículo com grande abrangência nacional e, por isso, desperta discussões sobre seu fundamental papel para informar pessoas de locais mais remotos e menor poder aquisitivo. Tais argumentos são frequentementes citados por defensores de programas de difusão governamentais – mais notadamente “A Voz do Brasil” – como de fundamental importância para difusão de informação governamental e de campanhas nacionais de conscientização, de saúde, etc.<br></p>
-                            <h3><strong>Os hábitos de consumo brasileiro relacionados ao Jornal Impresso</strong></h3>
-                            <p>É comum em ambientes acadêmicos, como faculdades de jornalismo, a frase “nada é mais antigo que o jornal de ontem”. Tal frase levanta a atenção para alguns preceitos do jornalismo, como agilidade e atualidade. Neste caso, ao passo que os acontecimentos vão se desenrolando, o jornal de ontem deixa de trazer informações novas com o passar dos dias.<br></p>
-                            <p>De fato, se pegarmos um exemplo de um assessor de imprensa que pega um jornal de uma semana atrás para realizar a clipagem e enviar ao seu cliente, ao se deparar com as notícias ali impressas, este assessor vai se deparar com notícias que já ninguém mais discute, com previsões políticas que não se concretizaram, com previsões econômicas que se demonstraram equivocadas, e por uma série de outros pontos que transformam o jornal de dias anteriores em algo que perde valor a cada dia que passa. <br></p>
-                            <p>No entanto, com a crescente difusão das informações via internet que passou a ser quase que instantânea – e não somente nos veículos de informação com mais credibilidade como as versões <em>online </em>dos jornais impressos, mas também em redes sociais que permitem a difusão ao vivo de eventos, como o <em>Twitter, Facebook, Instagram, </em>etc -, um interlocutor provacativo poderia dizer que a referida frase já é ultrapassada e que atualmente poderia-se sintetizar que “não há nada mais antigo que o jornal de hoje”. <br></p>
-                            <p>É evidente que <strong>o índice de confiabilidade no jornal impresso figura entre os mais altos – 60% – sendo que só 4% afirmam que nunca confiam no que é impresso em suas páginas.</strong> O atual declínio nas tiragens de jornais ao redor do mundo tem relação direta aos fato do imediatismo trazido pelos outros meios e que não se é possível no meio impresso. <br></p>
-                            <p>Tal provocação não é inédita deste blog, mas já foi trazida por diversas figuras, inclusive pelo ombudsman da Folha de S Paulo, Carlos Eduardo Lins da Silva, já em 2009. Desta forma, os jornais tendem a modificar um pouco seu modelo de negócios para trazer algo que os diferencia do imediatismo da internet, rádio e TV, como colunistas de opinião, crônicas, grandes reportagens, etc. <br></p>
-                            <p>De qualquer forma, 32% dos entrevistados ainda tinham o costume de consumir informações via jornais, mas, mesmo assim, cerca de 30% desses entrevistados que consomem jornais preferiam as versões online. Esse é o meio da pesquisa em que menos pessoas fazem duas coisas ao mesmo tempo – sendo que 59% das pessoas lêem jornal como atividade exclusiva. Mesmo assim, cerca de 21% dos entrevistados que lêem jornal trocam mensagens, acessam à internet ou utilizam o celular ao mesmo tempo.</p>
-                            <h3><strong>Os hábitos de consumo brasileiro relacionados às Revistas</strong></h3>
-                            <p>A PBM 2016 trouxe dados de que 23% dos brasileiros demonstravam que tinham o costume de se informar através de Revistas, sendo o meio de comunicação menos comum na preferência dos entrevistados. Destes, cerca de 67% ainda consumiam essas informações nas versões impressas e cerca de 58% não costumavam fazer outra coisa enquanto estavam lendo as informações trazidas pelas revistas. O índice de confiança está em cerca de 40%. <br></p>
-                            <p>Sendo o meio de informação menos usual dos brasileiros, é natural que o setor pudesse sofrer com esse hábito de consumo. Mesmo assim, o Grupo Abril surpreendeu o Brasil ao pedir, em agosto de 2018, recuperação judicial. <br></p>
-                            <p>Isso porque grande parte de suas revistas marcaram época em seus segmentos, sendo que a <strong>VEJA</strong> figurou &nbsp;como uma das revistas de notícia semanais mais importantes em relevância e tiragem do mundo. Era, inclusive, comum nos meios jornalísticos a frase “a VEJA derruba ministro”, uma sentença da notável força editorial que tinha a revista. Suas <strong>Páginas Amarelas </strong>também pautaram o debate semanal durante anos a fio. <br></p>
-                            <h3><strong>Os hábitos de consumo brasileiro relacionados à internet</strong></h3>
-                            <p></p>
-                            <p>Ainda com dados da PGM 2016, é notável que 49% dos entrevistados identificam a internet como primeiro ou segundo meio de comunicação pelos quais mais se informam, colocando este como o segundo meio de comunicação mais utilizado no país – mesmo com penetração ainda longe dos 100% do território nacional, como debatido anteriormente. <br></p>
-                            <p>Com um tempo média de mais de 4 horas e 30 minutos diários, nota-se que o tempo médio dedicado ao uso da internet diariamente supera o uso dos outros meios eletrônicos, sendo especialmente alto em jovens de 16 e 24 anos – cerca de 6h17min diarios. Ainda 93% desses usuários utilizam a internet em casa e com preferência por acesso pelo celular – 91% dos entrevistados afirmaram utiliza o dispositivo em primeiro ou segundo lugar como forma de acesso à internet, contra 65% do computador e 12% dos tablets. <br></p>
-                            <p>O meio detém ainda o menor índice de confiança entre os meios pesquisados pelo relatório, com apenas 20% das pessoas confiando no que recebe de informação via internet, atingindo seu pico de confiança entre os mais escolarizados – 28% das pessoas com ensino superior completo ou incompleto acreditam sempre ou quase sempre no que recebem pela internet. <br></p>
-                            <p>Tal informação é confirmada por outras <a href="https://www1.folha.uol.com.br/poder/2018/11/pesquisa-ibope-aponta-que-66-confiam-mais-em-sites-de-noticias.shtml">pesquisa Ibope divulgada em novembro de 2018</a>, na qual aponta que 90% dos entrevistados disseram que receberam algum tipo de desinformação, e que em sua maioria (66%) utilizaram portais de notícia para confirmar a veracidade das informações recebidas. Tal fato demonstra a ainda extrema relevância dos veículos tradicionais, que emprestaram às suas versões digitais a credibilidade que possuem em suas versões impressas. <br></p>
-                            <h2><strong>A divisão do mercado publicitário entre os meios de comunicação</strong></h2>
-                            <p>Contando com cerca de 84 mil marcas anunciantes, 61,8% da verba publicitária ainda é destinada para as TVs abertas segundo estudo divulgado pela CENP, sobre o primeiro semestre de 2018. Neste contexto a internet também tem crescido em participação no mercado publicitário, chegando a 14,4% do total. Neste mesmo cenário, houve queda na participação dos jornais impressos (passando de 3,5% para 2,7% dos investimentos publicitários), TV por assinatura (caindo de 8,3% para 7,5%) e rádio (4,7% para 4,2%). A mídia de cinema se manteve estável em 0,3% e a mídia exterior representando 7,6% também teve leve queda. <br></p>
-                            <h3><strong>O mercado publicitário em 2019 </strong></h3>
-                            <p>O &nbsp;mercado publicitário brasileiro já faz suas apostas para o fim da crise econômica, sendo que diversos autores têm feito suas apostas para este cenário. No relatório da Dentsu 2019, por exemplo, o mercado espera um crescimento de 12% em mídias digitais e 6% nas mídias outdoor, segmentos que devem liderar o aumento de investimentos no país. <br></p>
-                            <p>Ainda no recorte por mídia dentro do digital, a liderança é dos Ads, faturando R$6.5bi (44%), Display e mídias sociais em segundo com R$ 5bi (34%) e o vídeo R$3.2 bi (22%). <br></p>
-                            <h2><strong>Conclusão</strong></h2>
-                            <p>Ainda que o ZMOT esteja muito presente na vida das pessoas graças ao grande avanço da internet e os hábitos de consumo tem mudado para as mídias digitais. essa relação só não é maior, talvez, devida a não total penetração da internet por todo o território brasileiro e a ainda baixa qualidade da velocidade de internet fora dos grandes e médios centros. <br></p>
-                            <p>Da mesma forma, os meios de comunicação digitais não são fechados em si. Eles, quando introduzidos no dia a dia do cidadão, passam a integrar parte da rotina. Desta forma, ao mesmo tempo que a pessoa está assistindo à televisão, ela também está comentando em redes sociais, enviando mensagens para amigos, vendo a previsão do tempo, etc. <br></p>
-                            <p>Um caso emblemático são o dos realities show como <strong>masterchef</strong>, <strong>the voice</strong>, entre outros, que tem nas redes sociais intensa participação do público, sendo comum, por exemplo, que em dias desses programas o Twitter seja inundados pelos comentários de quem está assistindo a um desses programas, o que geralmente leva os termos mais comentados ao <strong>trending topics. </strong><br></p>
-                            <p>Também é emblemático essa conexão do uso digital ao mesmo tempo do televisivo, quando pegamos a estratégia de divulgação do vencedor do <strong>Masterchef</strong>, por exemplo, que em duas edições divulgou o vencedor através das redes sociais do programa, em uma ação coordenada com a <strong>TIM</strong>, que divulgava seu 4G no programa. Essa relação coordenada somente é possível devido ao convívio simultâneo dos dois meios em sua relação com o usuário, já que dele é esperado pegar o celular correndo e ver quem ganhou o programa no Twitter ou Instagram, segundos antes do mesmo ser anunciado para todos na TV. <br></p>
-                            <p>Isso não é exclusividade brasileira. Podemos lembrar do caso emblemático &nbsp;quando a apresentadora de TV americana Ellen Degeneres desafiou o mundo durante a apresentação do OSCAR 2014 a fazer a foto mais retuitada da história no Twitter. O recorde, claro, foi alcançado em poucas horas, e praticamente todos os usuários da rede tiveram algum tipo de contato com a foto, cuja promoção foi de fato impulsionada pelo evento televisivo. <br></p>
-                            <p>Desta forma, marcas que conseguem se utilizar desta interrelação tendem a ter resultados extraordinários em suas campanhas. Deixando de lado os custos da publicidade na TV, com base na Pesquisa Brasileira de Mídia de 2016 podemos entender os benefícios da TV para dialogar com consumidores. &nbsp;&nbsp;</p>
+                        <div class="blog-content" v-html="post.content.rendered">
                         </div>
                     </div>
                 </b-col>
@@ -95,13 +31,47 @@
             </b-row>
         </b-container>
     </div>
+    <div v-else id="blog-loading">
+        <loading :active.sync="isLoading" 
+            :can-cancel="false" 
+            :is-full-page="fullPage"
+            :color="color"></loading>
+    </div>
 </template>
 
 <script>
+  import axios from 'axios';
+  import moment from 'moment';
+  import Loading from 'vue-loading-overlay';
+  import 'vue-loading-overlay/dist/vue-loading.css';
+  
   export default {
     components: {
+        'Loading': Loading,
     },
     data: () => ({
+        text: '',
+        post: null,
+        isLoading: true,
+        fullPage: true,
+        color: '#ff6600',
     }),
+    mounted: function() {
+        this.$nextTick(() => {
+            this.$nuxt.$loading.start();
+            this.getPost();
+            this.$nuxt.$loading.finish();
+        })
+    },
+    methods: {
+        getPost: async function() {
+            const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?slug=${this.$route.params.slug}&_embed=1`);
+            this.post = result.data[0];
+            this.isLoading = false;
+        },
+        moment: function (date) {
+            return moment(date);
+        }
+    }
 }
 </script>

@@ -1,81 +1,110 @@
 <template>
   <div>
-<b-container>
-      <section id="blogs">
-        <nuxt-link to="/blog/blog-slug" class="blog--item" data-aos="fade-up">
+    <b-container v-if="!isLoading">
+      <section v-if="!!totalNum" id="blogs">
+        <nuxt-link v-for="post of posts" :key="post.id" :to="`/blog/` + post.slug" class="blog--item" data-aos="fade-up">
           <b-card no-body class="overflow-hidden" >
             <b-row no-gutters>
-              <b-col md="5" sm="5" xs="12">
-                <b-card-img src="../../../assets/img/blogs/file-encryption.jpg" alt="Image" class="rounded-0"></b-card-img>
+              <b-col md="4" sm="4" xs="12">
+                <b-card-img :src="post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url" alt="Image" class="rounded-0"></b-card-img>
               </b-col>
-              <b-col md="7" sm="7" xs="12">
-                <b-card-body title="Horizontal Card">
-                  <b-card-text>
-                    Nesse Guia de Mídia vamos te mostrar como o brasileiro tem consumido mídia e tendências de publicidade na TV, Internet, Rádio e outros meios.
+              <b-col md="8" sm="8" xs="12">
+                <b-card-body :title="post.title.rendered">
+                  <b-card-text v-html="post.excerpt.rendered">
                   </b-card-text>
                   <div class="card-meta">
-                    03/08/2019 by RafaelH with No Comment Sem categoria
+                    {{ moment(post.date).format('MMMM Do YYYY') }} by {{post._embedded.author[0].name}}
                   </div>
                 </b-card-body>
               </b-col>
             </b-row>
           </b-card>
         </nuxt-link>
-        <nuxt-link to="/blog/blog-slug" class="blog--item" data-aos="fade-up">
-          <b-card no-body class="overflow-hidden">
-            <b-row no-gutters>
-              <b-col md="5" sm="5" xs="12">
-                <b-card-img src="../../../assets/img/blogs/parents-guide-internet-safety-blog.jpg" alt="Image" class="rounded-0"></b-card-img>
-              </b-col>
-              <b-col md="7" sm="7" xs="12">
-                <b-card-body title="Horizontal Card">
-                  <b-card-text>
-                    Nesse Guia de Mídia vamos te mostrar como o brasileiro tem consumido mídia e tendências de publicidade na TV, Internet, Rádio e outros meios.
-                  </b-card-text>
-                  <div class="card-meta">
-                    03/08/2019 by RafaelH with No Comment Sem categoria
-                  </div>
-                </b-card-body>
-              </b-col>
-            </b-row>
-          </b-card>
-        </nuxt-link>
-        <nuxt-link to="/blog/blog-slug" class="blog--item" data-aos="fade-up">
-          <b-card no-body class="overflow-hidden">
-            <b-row no-gutters>
-              <b-col md="5" sm="5" xs="12">
-                <b-card-img src="../../../assets/img/blogs/NordVPN-app-update-macos.png" alt="Image" class="rounded-0"></b-card-img>
-              </b-col>
-              <b-col md="7" sm="7" xs="12">
-                <b-card-body title="Horizontal Card">
-                  <b-card-text>
-                    Nesse Guia de Mídia vamos te mostrar como o brasileiro tem consumido mídia e tendências de publicidade na TV, Internet, Rádio e outros meios.
-                  </b-card-text>
-                  <div class="card-meta">
-                    03/08/2019 by RafaelH with No Comment Sem categoria
-                  </div>
-                </b-card-body>
-              </b-col>
-            </b-row>
-          </b-card>
-        </nuxt-link>
-        <b-pagination-nav size="lg" number-of-pages="10" base-url="#"></b-pagination-nav>
+        <b-pagination-nav size="lg" v-model="currentPage" :link-gen="linkGen" :number-of-pages="totalNum" base-url="#" use-router></b-pagination-nav>
+      </section>
+
+      <section v-else id="blogs">
+        No blogs detected
       </section>
     </b-container>
-    <NewsLetter  />
+    <b-container id="blogs-loading" v-else>
+        <loading :active.sync="isLoading" 
+            :can-cancel="false" 
+            :is-full-page="fullPage"
+            :color="color"></loading>
+    </b-container>
+    <NewsLetter />
   </div>
     
 </template>
 
 <script>
   import NewsLetter from "@/components/NewsLetter.vue";
+  import axios from 'axios';
+  import moment from 'moment';
+  import Loading from 'vue-loading-overlay';
+  import 'vue-loading-overlay/dist/vue-loading.css';
+  
   export default {
     components: {
       'NewsLetter': NewsLetter,
+      'Loading': Loading,
     },
-    data: () => ({
+    data () {
+      return {
         rows: 100,
-        currentPage: 1
-    }),
-}
+        currentPage: 1,
+        totalNum: 0,
+        posts: [],
+        baseUrl: 'https://thezmot.com/wp-json/wp/v2/',
+        perPage: 9,
+        pages: [],
+        fullPage: true,
+        isLoading: true,
+        color: '#ff6600',
+      }
+    },
+    watch: {
+      "$route.query.page"(value) {
+        this.currentPage = value;
+      }
+    },
+    mounted: function() {
+      this.initializeBlogs();
+    },
+    methods: {
+      moment: function (date) {
+        return moment(date);
+      },
+      linkGen: function(pageNum) {
+        return pageNum === 1 ? '?page=1' : `?page=${pageNum}`
+      },
+      initializeBlogs: async function() {
+        this.isLoading = true;
+        try {
+          const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts')
+          this.totalNum = result.data.length / 10 + 1;
+        } catch(e) {
+          this.totalNum = 0;
+        } finally {
+          this.initializeBlogContents();
+        }
+      },
+      initializeBlogContents: async function() {
+        this.isLoading = true;
+        if (!this.totalNum) {
+          this.isLoading = false;
+          return;
+        }
+        try {
+          const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?per_page=10&page=${this.currentPage}&_embed=1`)
+          this.posts = result.data;
+        } catch(e) {
+          this.posts = [];
+        } finally {
+          this.isLoading = false;
+        }
+      }
+    }
+  }
 </script>

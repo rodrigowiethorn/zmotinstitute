@@ -1,9 +1,15 @@
 <template>
   <div>
     <MenuHeader />
-    <nuxt />
-    <Footer />
-    <Cookie />
+    <no-ssr>
+      <nuxt />
+    </no-ssr>
+    <no-ssr>
+      <Footer />
+    </no-ssr>
+    <no-ssr>
+      <Cookie />
+    </no-ssr>
   </div>
 </template>
 

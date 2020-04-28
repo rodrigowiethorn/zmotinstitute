@@ -19,18 +19,18 @@
             <b-img src="../../assets/img/header-zmot.jpg" fluid alt="Responsive image"></b-img>
           </b-col>
         </b-row>
-        <b-row>
+        <b-row class="logos">
           <b-col>
-            <b-img fluid src="../../assets/img/logos/buzzfeed-white.png" alt="Image 1"></b-img>
+            <b-img fluid src="../../assets/img/logos/google-white-logo.png" alt="Image 1"></b-img>
           </b-col>
           <b-col>
-            <b-img fluid src="../../assets/img/logos/huffington-post-white.png" alt="Image 1"></b-img>
+            <b-img fluid src="../../assets/img/logos/digitalks-white logo.png" alt="Image 1"></b-img>
           </b-col>
           <b-col>
-            <b-img fluid src="../../assets/img/logos/the-guardian-white.png" alt="Image 1"></b-img>
+            <b-img fluid src="../../assets/img/logos/logo-profissional-de-ecommerce.png" alt="Image 1"></b-img>
           </b-col>
           <b-col>
-            <b-img fluid src="../../assets/img/logos/wired-white.png" alt="Image 1"></b-img>
+            <b-img fluid src="../../assets/img/logos/logo-startupi-white.png" alt="Image 1"></b-img>
           </b-col>
         </b-row>
       </b-container>
@@ -189,10 +189,7 @@
         </b-row>
         <b-row> 
           <b-col md="6" sm="12">
-            <img src="../../assets/img/services/service-lecture.webp" alt="">
-          </b-col>
-          <b-col md="6" sm="12">
-            <b-card class="service--item mb-3">
+            <b-card class="service--item mb-3 text-right">
               <b-card-text>
                 <h2 class="h3 mb-4">{{$t('homepage.services.service_2_header')}}</h2>
                 <div>
@@ -207,6 +204,9 @@
                 </a>
               </b-card-text>
             </b-card>
+          </b-col>
+          <b-col md="6" sm="12">
+            <img src="../../assets/img/services/service-lecture.webp" alt="">
           </b-col>
         </b-row>
         <b-row> 
@@ -356,7 +356,9 @@
         </div>
       </b-container>
     </section>
-    <NewsLetter  />
+    <no-ssr>
+      <NewsLetter />
+    </no-ssr>
   </div>
 </template>
 
