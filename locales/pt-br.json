@@ -1,8 +1,8 @@
 {
     "navs": {
-        "home": {"title": "Home", "link": "/"}, 
-        "blog": {"title": "Blog", "link": "blog"}, 
-        "contact": {"title": "Contato", "link": "contact"}
+        "home": {"title": "HOME", "link": "/"}, 
+        "blog": {"title": "BLOG", "link": "blog"}, 
+        "contact": {"title": "CONTATO", "link": "contact"}
     },
     "homepage": {
         "banner": {
@@ -67,5 +67,21 @@
         "subscribe": "Inscrever-se na News"
     },
     "cookie": "Nós usamos informações pessoais em nosso site para melhorar significativamente sua experiência de uso. Por favor clique em ACEITAR para que possamos melhor servi-lo.Para maiores informações por favor acesse nossa página de Política de Privacidade. ",
-    "footer": "Acreditamos na importância de pessoas e empresas fazerem negócios mutuamente benéficos "
+    "footer": {
+        "text": "Acreditamos na importância de pessoas e empresas fazerem negócios mutuamente benéficos ",
+        "services": {
+            "text": "Serviços"
+        },
+        "knowledge": {
+            "text": "Conhecimento"
+        },
+        "legal": {
+            "text": "Legal"
+        },
+        "privacy_policy": {
+            "text": "Política de Privacidade"
+        },
+        "blog": "Blog",
+        "newsletter": "Boletim informativo"
+    }
 }

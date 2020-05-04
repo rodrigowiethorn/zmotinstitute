@@ -1,6 +1,7 @@
 @import 'variable';
 
 #home-page {
+    padding-top: 5rem;
     section {
         h2 {
             font-size: 42px;
@@ -28,6 +29,7 @@
                 font-weight: 600;
                 line-height: 1;
                 color: white;
+                word-break: break-word;
             }
         }
         .banner-widget-text{
@@ -37,6 +39,7 @@
             }
         }
         .logos {
+            padding: 1rem 0;
             img {
                 width: 150px;
             }

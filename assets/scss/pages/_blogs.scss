@@ -18,11 +18,13 @@
                 .card-body {
                     padding: 3rem 0;
                     .card-title {
-                        color: #383c43;
+                        color: white;
                         transition: color .25s ease-out;
+                        background-color: $mat_orange;
+                        padding: 0.2rem 0.5rem;
                     }
                     .card-text {
-                        color: #b9babd;
+                        color: black;
                     }
                     .card-meta {
                         color: #73757a;

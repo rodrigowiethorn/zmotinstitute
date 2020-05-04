@@ -2,6 +2,10 @@
 nav.navbar {
     background-color: $bg_orange;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
     .container {
         ul.navbar-nav {
             align-items: center;

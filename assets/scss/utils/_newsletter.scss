@@ -4,6 +4,12 @@ section.news-letter {
     padding: 5rem 0;
     background-color: $light_orange;
     color: $mat_purple;
+    h2 {
+        color: $mat_orange;
+    }
+    p {
+        color: #333 !important;
+    }
     .search-form {
         position: relative;
         input {
@@ -17,7 +23,7 @@ section.news-letter {
             top: 0;
             padding: 0.83rem 2rem;
             border-radius: 100px;
-            background-color: $shinny_purple;
+            background-color: $mat_orange;
             border: 0;
             outline: 0;
         }

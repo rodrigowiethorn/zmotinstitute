@@ -8,13 +8,13 @@
                             <b-img :src="post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url" fluid alt="Responsive image"></b-img>
                         </div>
                         <header class="blog-header">
-                            <h1 class="blog-title" v-html="post.excerpt.rendered"></h1>
+                            <h1 class="blog-title" v-html="post.title.rendered"></h1>
                         </header>
                         <div class="blog-info ">
                             <div class="blog-date">
-                                <time datetime="2019-03-08T17:10:45-03:00">{{ moment(post.date).format('MMMM Do YYYY') }}</time>
+                                <time datetime="2019-03-08T17:10:45-03:00">Publicado em {{ moment(post.date).format('DD/MM/YYYY') }}</time>
                             </div>
-                            <div class="blog-comments"> <span class="meta-sep">with</span> <span class="meta-comment">no comment</span></div>
+                            <!-- <div class="blog-comments"> <span class="meta-sep">with</span> <span class="meta-comment">no comment</span></div> -->
                         </div>
                         <div class="blog-content" v-html="post.content.rendered">
                         </div>
@@ -67,6 +67,7 @@
         getPost: async function() {
             const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?slug=${this.$route.params.slug}&_embed=1`);
             this.post = result.data[0];
+            console.log(result)
             this.isLoading = false;
         },
         moment: function (date) {

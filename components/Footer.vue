@@ -2,33 +2,33 @@
     <div class="app-footer">
         <b-container>
             <b-row>
-                <b-col md="4" sm="1">
+                <b-col md="4" sm="12">
                     <img v-bind="footerLogo" src="../assets/img/zmot-logo.webp" alt="Brand logo" class="footer-new-holder-right-holder__brand">
                     <p>
-                        {{$t('footer')}}
+                        {{$t('footer.text')}}
                     </p>
                 </b-col>
                 <b-col md="6" sm="6">
                     <b-row class="mt-3">
                         <b-col>
-                            <h5>SERVICES</h5>
+                            <h5>{{$t('footer.services.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="$i18n.path('')">ZMOT Audit</nuxt-link></li>
-                                <li><nuxt-link :to="$i18n.path('')">Speeches & Lectures</nuxt-link></li>
-                                <li><nuxt-link :to="$i18n.path('')">Online Course</nuxt-link></li>
+                                <li><nuxt-link :to="$i18n.path('')">{{$t('homepage.services.service_1_header')}}</nuxt-link></li>
+                                <li><nuxt-link :to="$i18n.path('')">{{$t('homepage.services.service_2_header')}}</nuxt-link></li>
+                                <li><nuxt-link :to="$i18n.path('')">{{$t('homepage.services.service_3_header')}}</nuxt-link></li>
                             </ul>
                         </b-col>
                         <b-col>
-                            <h5>KNOWLEDGE</h5>
+                            <h5>{{$t('footer.knowledge.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="$i18n.path('')">Blog</nuxt-link></li>
-                                <li><nuxt-link :to="$i18n.path('')">Newsletter</nuxt-link></li>
+                                <li><nuxt-link :to="$i18n.path('')">{{$t('footer.blog')}}</nuxt-link></li>
+                                <li><nuxt-link :to="$i18n.path('')">{{$t('footer.newsletter')}}</nuxt-link></li>
                             </ul>
                         </b-col>
                         <b-col>
-                            <h5>LEGAL</h5>
+                            <h5>{{$t('footer.legal.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="$i18n.path('')">Privacy Policy</nuxt-link></li>
+                                <li><nuxt-link :to="$i18n.path('')">{{$t('footer.privacy_policy.text')}}</nuxt-link></li>
                             </ul>
                         </b-col>
                     </b-row>

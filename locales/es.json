@@ -1,8 +1,8 @@
 {
     "navs": {
-        "home": {"title": "Home", "link": "/"}, 
-        "blog": {"title": "Blog", "link": "blog"}, 
-        "contact": {"title": "Contacto", "link": "contact"}
+        "home": {"title": "HOME", "link": "/"}, 
+        "blog": {"title": "BLOG", "link": "blog"}, 
+        "contact": {"title": "CONTACTO", "link": "contact"}
     },
     "homepage": {
         "banner": {
@@ -67,5 +67,21 @@
         "subscribe": "Suscribirse a Noticias"
     },
     "cookie": "Utilizamos cookies para ofrecer nuestros servicios y para el análisis y la comercialización. Para obtener más información sobre el uso de cookies, consulte nuestra política de privacidad. Haga clic en aceptar para la mejor experiencia de usuario en nuestra aplicación.",
-    "footer": "Creemos en la importancia de las personas y empresas de hacer negocios de beneficio mutuo"
+    "footer": {
+        "text": "Creemos en la importancia de las personas y empresas de hacer negocios de beneficio mutuo",
+        "services": {
+            "text": "Servicios"
+        },
+        "knowledge": {
+            "text": "Conocimeinto"
+        },
+        "legal": {
+            "text": "Legal"
+        },
+        "privacy_policy": {
+            "text": "Política de Privacidad"
+        },
+        "blog": "Blog",
+        "newsletter": "Boletín informativo"
+    }
 }

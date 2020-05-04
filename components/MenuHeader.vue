@@ -17,12 +17,12 @@
                     <li class="pg-nav">
                         <nuxt-link :to="$i18n.path('contact')">{{$t('navs.contact.title')}}</nuxt-link>
                     </li>
-                    <b-nav-item-dropdown text="Lang" right>
-                        <b-dropdown-item :to="$route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/en.svg" width="25"></b-img>United States<span>English</span></b-dropdown-item>
-                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/pt-br` + $route.fullPath"><b-img src="../assets/img/svg/pt.svg" width="25"></b-img>Portugal<span>Português</span></b-dropdown-item>
-                        <b-dropdown-item v-else :to="`/pt-br` + $route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/pt.svg" width="25"></b-img>Portugal<span>Português</span></b-dropdown-item>
-                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/es` + $route.fullPath"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Spain<span>Español</span></b-dropdown-item>
-                        <b-dropdown-item v-else :to="`/es` + $route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Spain<span>Español</span></b-dropdown-item>
+                    <b-nav-item-dropdown text="LANG" right>
+                        <b-dropdown-item :to="$route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/en.svg" width="25"></b-img>English</b-dropdown-item>
+                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/pt-br` + $route.fullPath"><b-img src="../assets/img/svg/br.svg" width="25"></b-img>Português</b-dropdown-item>
+                        <b-dropdown-item v-else :to="`/pt-br` + $route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/br.svg" width="25"></b-img>Português</b-dropdown-item>
+                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/es` + $route.fullPath"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Español</b-dropdown-item>
+                        <b-dropdown-item v-else :to="`/es` + $route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Español</b-dropdown-item>
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>

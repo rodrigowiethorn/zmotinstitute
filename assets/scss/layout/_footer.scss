@@ -1,15 +1,19 @@
 @import 'variable';
 .app-footer {
-    background-color: #1A1A1A;
+    background-color: $bg_orange;
     border-top: 1px solid #EAEAEA;
     padding: 25px 0;
+    ul {
+        list-style: none;
+    }
     .container {
         .row {
             h5 {
                 color: white;
+                font-weight: 600;
             }
             ul {
-                padding-left: 0.75rem;
+                padding-left: 0;
                 a {
                     color: white;
                 }

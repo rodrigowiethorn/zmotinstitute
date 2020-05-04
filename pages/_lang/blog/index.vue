@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="padding-top: 5rem;">
     <b-container v-if="!isLoading">
       <section v-if="!!totalNum" id="blogs">
         <nuxt-link v-for="post of posts" :key="post.id" :to="`/blog/` + post.slug" class="blog--item" data-aos="fade-up">
@@ -13,7 +13,8 @@
                   <b-card-text v-html="post.excerpt.rendered">
                   </b-card-text>
                   <div class="card-meta">
-                    {{ moment(post.date).format('MMMM Do YYYY') }} by {{post._embedded.author[0].name}}
+                    Mais de 2.000 profissionais de marketing já leram esse conteúdo 
+                    <!-- {{ moment(post.date).format('MMMM Do YYYY') }} by {{post._embedded.author[0].name}} -->
                   </div>
                 </b-card-body>
               </b-col>
