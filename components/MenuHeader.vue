@@ -1,7 +1,9 @@
 <template>
     <b-navbar toggleable="lg" type="dark">
         <b-container class="bv-example-row bv-example-row-flex-cols">
-            <nuxt-link :to="$i18n.path('')"><b-navbar-brand><b-img v-bind="logoProp" src="../assets/img/zmot-logo.webp" fluid></b-img></b-navbar-brand></nuxt-link>
+            <nuxt-link :to="localePath('index')">
+                <b-navbar-brand><b-img v-bind="logoProp" src="../assets/img/zmot-logo.webp" fluid></b-img></b-navbar-brand>
+            </nuxt-link>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -9,20 +11,18 @@
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="ml-auto">
                     <li class="pg-nav">
-                        <nuxt-link :to="$i18n.path('')">{{$t('navs.home.title')}}</nuxt-link>
+                        <nuxt-link :to="localePath('index')">{{$t('navs.home.title')}}</nuxt-link>
                     </li>
                     <li class="pg-nav">
-                        <nuxt-link :to="$i18n.path('blog')">{{$t('navs.blog.title')}}</nuxt-link>
+                        <nuxt-link :to="localePath('blogs')">{{$t('navs.blog.title')}}</nuxt-link>
                     </li>
                     <li class="pg-nav">
-                        <nuxt-link :to="$i18n.path('contact')">{{$t('navs.contact.title')}}</nuxt-link>
+                        <nuxt-link :to="localePath('contact')">{{$t('navs.contact.title')}}</nuxt-link>
                     </li>
                     <b-nav-item-dropdown :text="localeToLang" right>
-                        <b-dropdown-item :to="$route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/en.svg" width="25"></b-img>English</b-dropdown-item>
-                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/pt-br` + $route.fullPath"><b-img src="../assets/img/svg/br.svg" width="25"></b-img>Português</b-dropdown-item>
-                        <b-dropdown-item v-else :to="`/pt-br` + $route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/br.svg" width="25"></b-img>Português</b-dropdown-item>
-                        <b-dropdown-item v-if="$i18n.locale === 'en'" :to="`/es` + $route.fullPath"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Español</b-dropdown-item>
-                        <b-dropdown-item v-else :to="`/es` + $route.fullPath.replace(/^\/[^\/]+/, '')"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Español</b-dropdown-item>
+                        <b-dropdown-item :to="switchLocalePath('en')"><b-img src="../assets/img/svg/en.svg" width="25"></b-img>English</b-dropdown-item>
+                        <b-dropdown-item :to="switchLocalePath('pt-br')"><b-img src="../assets/img/svg/br.svg" width="25"></b-img>Português</b-dropdown-item>
+                        <b-dropdown-item :to="switchLocalePath('es')"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Español</b-dropdown-item>
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
             </b-collapse>

@@ -13,22 +13,22 @@
                         <b-col>
                             <h5>{{$t('footer.services.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="$i18n.path('')">{{$t('homepage.services.service_1_header')}}</nuxt-link></li>
-                                <li><nuxt-link :to="$i18n.path('')">{{$t('homepage.services.service_2_header')}}</nuxt-link></li>
-                                <li><nuxt-link :to="$i18n.path('')">{{$t('homepage.services.service_3_header')}}</nuxt-link></li>
+                                <li><nuxt-link :to="localePath('index')">{{$t('homepage.services.service_1_header')}}</nuxt-link></li>
+                                <li><nuxt-link :to="localePath('index')">{{$t('homepage.services.service_2_header')}}</nuxt-link></li>
+                                <li><nuxt-link :to="localePath('index')">{{$t('homepage.services.service_3_header')}}</nuxt-link></li>
                             </ul>
                         </b-col>
                         <b-col>
                             <h5>{{$t('footer.knowledge.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="$i18n.path('')">{{$t('footer.blog')}}</nuxt-link></li>
-                                <li><nuxt-link :to="$i18n.path('')">{{$t('footer.newsletter')}}</nuxt-link></li>
+                                <li><nuxt-link :to="localePath('index')">{{$t('footer.blog')}}</nuxt-link></li>
+                                <li><nuxt-link :to="localePath('index')">{{$t('footer.newsletter')}}</nuxt-link></li>
                             </ul>
                         </b-col>
                         <b-col>
                             <h5>{{$t('footer.legal.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="$i18n.path('')">{{$t('footer.privacy_policy.text')}}</nuxt-link></li>
+                                <li><nuxt-link :to="localePath('index')">{{$t('footer.privacy_policy.text')}}</nuxt-link></li>
                             </ul>
                         </b-col>
                     </b-row>

@@ -37,13 +37,9 @@ module.exports = {
     },
     { src: '@/plugins/vue-agile',
       ssr: false 
-    },
-    { src: "@/plugins/i18n", 
-      ssr: true
     }
   ],
   router: {
-    middleware: ['i18n'],
     extendRoutes (routes, resolve) {
     }
   },
@@ -59,18 +55,42 @@ module.exports = {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     'nuxt-fontawesome',
+    ['nuxt-i18n', {
+      locales: [
+        {
+          name: 'English',
+          code: 'en',
+          iso: 'en-US'
+        },
+        {
+          name: 'Português',
+          code: 'pt-br',
+          iso: 'pt-BR'
+        },
+        {
+          name: 'Español',
+          code: 'es',
+          iso: 'es-ES'
+        },
+      ],
+      defaultLocale: 'en',
+      detectBrowserLanguage: {
+        useCookie: true,
+        alwaysRedirect: true
+      },
+      vueI18n: {
+        fallbackLocale: 'en',
+        messages: { 
+          en: require('./locales/en.json'),
+          pt: require('./locales/pt-br.json'),
+          es: require('./locales/es.json')
+        }
+      }
+    }]
   ],
   /*
   ** Build configuration
   */
   build: {
-    vendor: [
-      'vue-i18n',
-    ],
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
   }
 }
