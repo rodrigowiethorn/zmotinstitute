@@ -6,19 +6,15 @@ Vue.use(VueI18n)
 export default ({ app, store }) => {
   // Set i18n instance on app
   // This way we can use it in middleware and pages asyncData/fetch
-  // app.i18n = new VueI18n({
-  //   locale: store.state.locale,
-  //   fallbackLocale: 'en',
-  //   messages: {
-  //     'en': require('~/locales/en.json'),
-  //     'pt-br': require('~/locales/pt-br.json'),
-  //     'es': require('~/locales/es.json')
-  //   },
-  //   detectBrowserLanguage: {
-  //     useCookie: true,
-  //     alwaysRedirect: true
-  //   },
-  // })
+  app.i18n = new VueI18n({
+    locale: store.state.locale,
+    fallbackLocale: 'en',
+    messages: {
+      'en': require('~/locales/en.json'),
+      'pt-br': require('~/locales/pt-br.json'),
+      'es': require('~/locales/es.json')
+    }
+  })
 
 
   app.i18n.path = (link) => {
