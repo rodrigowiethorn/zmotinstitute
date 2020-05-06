@@ -50,15 +50,10 @@
         .feature__list {
             margin-top: 5rem;
             .feature__item {
-                padding: 0 0 4rem 4rem;
-                .feature__item-img {
-                    padding: 0 0 4rem 4rem;
-                }
                 .feature__item-content-wrapper {
                     display: flex;
                     align-items: center;
                     .feature__item-content{
-                        padding: 0 0 4rem 4rem;
                         .feature__item-icon {
                             display: -webkit-inline-box;
                             display: -ms-inline-flexbox;
@@ -165,7 +160,7 @@
         }
     }
     section.specialists {
-        margin-top: 3rem;
+        padding-top: 5rem;
         margin-bottom: 3rem;
         .container {
             .specialist__items {

@@ -58,20 +58,17 @@
     }),
     mounted: function() {
         this.$nextTick(() => {
-            this.$nuxt.$loading.start();
             this.getPost();
-            this.$nuxt.$loading.finish();
         })
     },
     methods: {
         getPost: async function() {
-            const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?slug=${this.$route.params.slug}&_embed=1`);
-            this.post = result.data[0];
-            console.log(result)
-            this.isLoading = false;
+            const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?slug=${this.$route.params.slug}&_embed=1`)
+            this.post = result.data[0]
+            this.isLoading = false
         },
         moment: function (date) {
-            return moment(date);
+            return moment(date)
         }
     }
 }

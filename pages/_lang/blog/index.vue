@@ -2,7 +2,7 @@
   <div style="padding-top: 5rem;">
     <b-container v-if="!isLoading">
       <section v-if="!!totalNum" id="blogs">
-        <nuxt-link v-for="post of posts" :key="post.id" :to="`/blog/` + post.slug" class="blog--item" data-aos="fade-up">
+        <nuxt-link v-for="post of posts" :key="post.id" :to="`blog/` + post.slug" class="blog--item" data-aos="fade-up">
           <b-card no-body class="overflow-hidden" >
             <b-row no-gutters>
               <b-col md="4" sm="4" xs="12">

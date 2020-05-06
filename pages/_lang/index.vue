@@ -4,7 +4,7 @@
     <section class="banner">
       <b-container>
         <b-row class="mb-3">
-          <b-col>
+          <b-col sm="12" md="6">
             <div class="elementor-spacer">
               <div class="elementor-spacer-inner"></div>
             </div>
@@ -15,7 +15,7 @@
               <p>{{$t('homepage.banner.text')}}</p>
             </div>
           </b-col>
-          <b-col>
+          <b-col sm="12" md="6">
             <b-img src="../../assets/img/header-zmot.jpg" fluid alt="Responsive image"></b-img>
           </b-col>
         </b-row>
@@ -289,67 +289,29 @@
         <h2 class="text-center">Blog</h2>
         <div class="blog--list">
           <b-row>
-            <b-col md="4" sm="12">
+            <b-col md="4" sm="12" v-for="post of stickyPosts" :key="post.id">
               <b-card
-                img-src="https://picsum.photos/600/300/?image=25"
+                :img-src="post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url"
                 img-alt="Image"
                 img-top
                 tag="article"
                 class="mb-2 blog--card"
               >
                 <div class="card-meta">
-                  <span>
+                  <!-- <span>
                     <a class="text-small orange-text" href="/website-builders/review/">Review</a>
-                  </span>
-                  <span class="text-small mx-2">|</span>
-                  <span class="text-small">Apr 9, 2020</span>
+                  </span> -->
+                  <!-- <span class="text-small mx-2">|</span> -->
+                  <span class="text-small">{{ moment(post.date).format('MMMM Do YYYY') }}</span>
                 </div>
                 <div class="card-title">
-                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
+                  <nuxt-link :to="`blog/` + post.slug">
+                    {{post.title.rendered}}
+                  </nuxt-link>
                 </div>
-                <b-button variant="btn btn-orange rounded-pill">Read More</b-button>
-              </b-card>
-            </b-col>
-            <b-col md="4" sm="12">
-              <b-card
-                img-src="https://picsum.photos/600/300/?image=25"
-                img-alt="Image"
-                img-top
-                tag="article"
-                class="mb-2 blog--card"
-              >
-                <div class="card-meta">
-                  <span>
-                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
-                  </span>
-                  <span class="text-small mx-2">|</span>
-                  <span class="text-small">Apr 9, 2020</span>
-                </div>
-                <div class="card-title">
-                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
-                </div>
-                <b-button variant="btn btn-orange rounded-pill">Read More</b-button>
-              </b-card>
-            </b-col>
-            <b-col md="4" sm="12">
-              <b-card
-                img-src="https://picsum.photos/600/300/?image=25"
-                img-alt="Image"
-                img-top
-                tag="article"
-                class="mb-2 blog--card"
-              >
-                <div class="card-meta">
-                  <span>
-                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
-                  </span>
-                  <span class="text-small mx-2">|</span>
-                  <span class="text-small">Apr 9, 2020</span>
-                </div>
-                <div class="card-title">
-                  <a href="#">BoldGrid Review – Everything You Need to Know</a>
-                </div>
-                <b-button variant="btn btn-orange rounded-pill">Read More</b-button>
+                <nuxt-link :to="`blog/` + post.slug" class="btn btn-orange rounded-pill">
+                    Read More
+                </nuxt-link>
               </b-card>
             </b-col>
           </b-row>
@@ -364,6 +326,8 @@
 
 <script>
   import {library} from '@fortawesome/fontawesome-svg-core'
+  import axios from 'axios';
+  import moment from 'moment';
   import {
       faUsers,
       faMobile,
@@ -392,28 +356,48 @@
         testimonial_avatar: {blank: false, width: 36, height: 36, class:'m1'},
         specialist_avatar: {blank: false, width: 85, height: 85, class:'m2'},
         agileOptions: {
-          infinite: true,
-          slidesToShow: 3,
-          navButtons: false,
-          dots: true,
-          centerMode: true,
-          responsive: [
-              {
-                  breakpoint: 900,
-                  settings: {
-                      dots: true,
-                      slidesToShow: 3
-                  }
-              },
-              {
-                  breakpoint: 300,
-                  settings: {
-                      dots: false,
-                      slidesToShow: 1
-                  }
-              }
+            navButtons: false,
+            centerMode: true,
+            slidesToShow: 1,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        dots: false,
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 900,
+                    settings: {
+                        dots: true,
+                        infinite: false,
+                        infinite: true,
+                        slidesToShow: 3
+                    }
+                }
             ]
         },
+        apiUrl: 'https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584',
+        stickyPosts: []
     }),
+    mounted: function () {
+        this.getStickyBlogs();
+    },
+    methods: {
+      moment: function (date) {
+        return moment(date);
+      },
+      getStickyBlogs: async function() {
+        try {
+          const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584&_embed=1')
+          this.stickyPosts = result.data
+          console.log(result.data)
+        } catch(e) {
+          this.stickyPosts = [];
+        } finally {
+        }
+      }
+    }
 }
-</script>
+</script>490
