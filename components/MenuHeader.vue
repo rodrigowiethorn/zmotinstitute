@@ -4,6 +4,12 @@
             <nuxt-link :to="localePath('index')">
                 <b-navbar-brand><b-img v-bind="logoProp" src="../assets/img/zmot-logo.webp" fluid></b-img></b-navbar-brand>
             </nuxt-link>
+            
+            <b-nav-item-dropdown :text="localeToLang" right class="burger-langpicker">
+                <b-dropdown-item :to="switchLocalePath('en')"><b-img src="../assets/img/svg/en.svg" width="25"></b-img>English</b-dropdown-item>
+                <b-dropdown-item :to="switchLocalePath('pt-br')"><b-img src="../assets/img/svg/br.svg" width="25"></b-img>Português</b-dropdown-item>
+                <b-dropdown-item :to="switchLocalePath('es')"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Español</b-dropdown-item>
+            </b-nav-item-dropdown>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -19,7 +25,7 @@
                     <li class="pg-nav">
                         <nuxt-link :to="localePath('contact')">{{$t('navs.contact.title')}}</nuxt-link>
                     </li>
-                    <b-nav-item-dropdown :text="localeToLang" right>
+                    <b-nav-item-dropdown :text="localeToLang" right class="langpicker">
                         <b-dropdown-item :to="switchLocalePath('en')"><b-img src="../assets/img/svg/en.svg" width="25"></b-img>English</b-dropdown-item>
                         <b-dropdown-item :to="switchLocalePath('pt-br')"><b-img src="../assets/img/svg/br.svg" width="25"></b-img>Português</b-dropdown-item>
                         <b-dropdown-item :to="switchLocalePath('es')"><b-img src="../assets/img/svg/es.svg" width="25"></b-img>Español</b-dropdown-item>
