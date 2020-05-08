@@ -165,6 +165,7 @@
     </section>
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
+        <h2 class="text-center">{{$t('homepage.services.header')}}</h2>
         <b-row> 
           <b-col md="6" sm="12">
             <img src="../assets/img/services/service-zmot_audito.png" alt="">
