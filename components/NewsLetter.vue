@@ -1,7 +1,7 @@
 <template>
     <section class="news-letter">
       <b-container>
-        <b-row data-aos="zoom-in" data-aos-once="true">
+        <b-row data-aos="zoom-in" data-aos-once="true" id="newsletter">
           <b-col offset-md="2" md="8">
             <h2 class="text-center">
               {{$t('news_letter.header')}}

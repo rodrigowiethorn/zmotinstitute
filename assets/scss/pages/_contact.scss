@@ -13,6 +13,7 @@
         }
         .banner-widget-heading
         {
+            margin-bottom: 40px;
             h2 {
                 font-size: 56px;
                 font-weight: 600;
@@ -21,14 +22,26 @@
             }
         }
         .banner-widget-text{
+          margin-bottom: 60px;
             p {
                 font-size: 30px;
                 color: white;
             }
         }
-        button {
-            font-weight: 600;
-            padding: 0.375rem 2rem;
+        .banner-buttons {
+            button {
+                font-weight: 600;
+                padding: 0.375rem 2rem;
+            }
+            :nth-child(1) {
+                float: left;
+            }
+            :nth-child(2) {
+                float: right;
+            }
+        }
+        img {
+          padding-top: 2rem;
         }
     }
     section.contact-form {
@@ -67,6 +80,18 @@
             a {
                 color: #00a4bd;
             }
+        }
+    }
+}
+
+@media (max-width: 377px) {
+    .banner-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+            margin-top: 0.5rem;
         }
     }
 }

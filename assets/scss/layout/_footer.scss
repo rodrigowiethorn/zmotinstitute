@@ -7,13 +7,19 @@
         list-style: none;
     }
     .container {
+        margin: 0 20px;
+        max-width: calc(100% - 40px);
         .row {
             h5 {
                 color: white;
                 font-weight: 600;
+                text-transform: uppercase;
             }
             ul {
                 padding-left: 0;
+                li {
+                  margin-top: 5px;
+                }
                 a {
                     color: white;
                 }
@@ -37,5 +43,12 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-logo {
+        width: 90%;
+        max-width: 300px;
     }
 }

@@ -2,7 +2,7 @@
     <div id="blog" v-if="!this.isLoading">
         <b-container>
             <b-row>
-                <b-col cols="9">
+                <b-col md="9" sm="12">
                     <div class="blog-main">
                         <div class="blog-media">
                             <b-img :src="post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url" fluid alt="Responsive image"></b-img>
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                 </b-col>
-                <b-col>
+                <b-col md="3" sm="12">
                     <div class="sidebar-content">
                         <div class="search">
                             <h3 class="title">Pesquisar</h3>
@@ -32,8 +32,8 @@
         </b-container>
     </div>
     <div v-else id="blog-loading">
-        <loading :active.sync="isLoading" 
-            :can-cancel="false" 
+        <loading :active.sync="isLoading"
+            :can-cancel="false"
             :is-full-page="fullPage"
             :color="color"></loading>
     </div>
@@ -44,7 +44,7 @@
   import moment from 'moment';
   import Loading from 'vue-loading-overlay';
   import 'vue-loading-overlay/dist/vue-loading.css';
-  
+
   export default {
     components: {
         'Loading': Loading,

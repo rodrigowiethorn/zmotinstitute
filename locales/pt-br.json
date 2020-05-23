@@ -1,7 +1,7 @@
 {
     "navs": {
-        "home": {"title": "HOME", "link": "/"}, 
-        "blog": {"title": "BLOG", "link": "blog"}, 
+        "home": {"title": "HOME", "link": "/"},
+        "blog": {"title": "BLOG", "link": "blogs"},
         "contact": {"title": "CONTATO", "link": "contact"}
     },
     "homepage": {
@@ -23,8 +23,10 @@
             "header": "Os Especialistas",
             "text": "ZMOT é coisa de gente grande. Veja o que os maiores especialistas mundiais em Marketing Digital tem falado sobre o assunto.",
             "slide_1_text": "Os consumidores pesquisam as informações na internet antes de comprar.",
-            "slide_2_text": "É assim que os consumidores vivem, aprendem e tomam decisões hoje.",
-            "slide_3_text": "Marketing Digital é sobre entregar o conteúdo certo no momento certo"
+            "slide_2_text": "É assim que os consumidores vivem, aprendem e tomam decisões hoje",
+            "slide_3_text": "Marketing Digital é sobre entregar o conteúdo certo no momento certo",
+            "slide_4_text": "Na internet é sempre mais barato, rápido e eficiente fazer qualquer coisa",
+            "slide_5_text": "Nosso trabalho é entender o que o cliente deseja comprar e ajudar-los"
         },
         "services": {
             "header": "How can we help you?",
@@ -42,6 +44,9 @@
             "talking_1": "Obrigado por compartilhar esse conteúdo com a comunidade. A partir de hoje vou prestar mais atenção no que foi exposto no texto.​",
             "talking_2": "Melhor começar aplicar o aprendizado do ZMOT o quanto antes... Parabéns por compartilhar seu conhecimento e nos ajudar a melhorar...",
             "talking_3": "Muito bom conteúdo, obrigado por compartilhar conosco este excelente conteúdo."
+        },
+        "blog": {
+          "read_more": "Ler Conteúdo"
         }
     },
     "contact": {
@@ -62,13 +67,16 @@
         }
     },
     "news_letter": {
-        "header": "Acompanhar o ZMOT de perto",
-        "text": "Fique ligado em todas as novidades sobre o ZMOT, assuntos relacionados a Marketing Digitral e Comportamento do Consumidor. Increva-se na nossa newsletter mensal ",
+        "header": "Acompanhe o ZMOT de perto",
+        "text": "Fique ligado em todas as novidades sobre o ZMOT, assuntos relacionados a Marketing Digital e Comportamento do Consumidor. Increva-se na nossa newsletter mensal ",
         "subscribe": "Inscrever-se na News"
     },
-    "cookie": "Nós usamos informações pessoais em nosso site para melhorar significativamente sua experiência de uso. Por favor clique em ACEITAR para que possamos melhor servi-lo.Para maiores informações por favor acesse nossa página de Política de Privacidade. ",
+    "cookie": {
+        "text": "Nós usamos informações pessoais em nosso site para melhorar significativamente sua experiência de uso. Por favor clique em ACEITAR para que possamos melhor servi-lo.Para maiores informações por favor acesse nossa página de Política de Privacidade. ",
+        "accept": "ACEITAR"
+    },
     "footer": {
-        "text": "Acreditamos na importância de pessoas e empresas fazerem negócios mutuamente benéficos ",
+        "text": "Acreditamos na importância de entender as necessidades das pessoas e ajudar-las a alcançar seus objetivos",
         "services": {
             "text": "Serviços"
         },
@@ -82,6 +90,6 @@
             "text": "Política de Privacidade"
         },
         "blog": "Blog",
-        "newsletter": "Boletim informativo"
+        "newsletter": "Newsletter"
     }
 }

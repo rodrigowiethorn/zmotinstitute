@@ -1,7 +1,7 @@
 {
     "navs": {
-        "home": {"title": "HOME", "link": "/"}, 
-        "blog": {"title": "BLOG", "link": "blog"}, 
+        "home": {"title": "HOME", "link": "/"},
+        "blog": {"title": "BLOG", "link": "blogs"},
         "contact": {"title": "CONTACTO", "link": "contact"}
     },
     "homepage": {
@@ -23,18 +23,20 @@
             "header": "Especialistas",
             "text": "ZMOT es una cosa de grandes personas. Vea lo que los principales expertos en marketing digital ha estado hablando de ello.",
             "slide_1_text": "Los consumidores buscar la información en Internet antes de comprar.",
-            "slide_2_text": "Así es como los consumidores vivir, aprender y decisiones tomamos hoy.",
-            "slide_3_text": "El marketing digital se trata de ofrecer el contenido adecuado en el momento adecuado."
+            "slide_2_text": "Así es como los consumidores vivir, aprender y decisiones tomamos hoy",
+            "slide_3_text": "El marketing digital se trata de ofrecer el contenido adecuado en el momento adecuado",
+            "slide_4_text": "No importa lo que hagas puede hacer más barato, más rápido y más eficientemente en la web.",
+            "slide_5_text": "Nuestro trabajo és entender cómo el cliente quiere comprar y ayudarles"
         },
         "services": {
             "header": "Como podemos ayudarte?",
-            "service_1_header": "ZMOT de auditoría",
+            "service_1_header": "Auditoría ZMOT",
             "service_1_description": "Nosotros le podemos mostrar el camino, o caminar a tu lado. Podemos ayudarle a salir de la inercia, o acelerar su cohete. Al final, le toca a usted cómo implementar el ZMOT en sus acciones de marketing digital.",
             "service_2_header": "Conferencias y Eventos",
             "service_2_description": "Desea implementar el ZMOT en su negocio digital, pero no sabe dónde comenzar? enlist ayuda de uno de nuestros profesionales para romper la inercia, analizar cómo se puede implementar el ZMOT y cosechar los primeros resultados.",
-            "serice_3_header": "Los cursos en línea",
+            "service_3_header": "Cursos Online",
             "service_3_description": "Aprende todo sobre el ZMOT con el experto en la materia y que ha ayudado a sus organizaciones para lograr resultados significativos. Con nuestro material se puede conocer y poner en práctica las mejores estrategias de marketing digital",
-            "get_a_quote": "Cotación"
+            "get_a_quote": "Más Información"
         },
         "what_say": {
             "header": "Las opiniones sobre el ZMOT",
@@ -42,6 +44,9 @@
             "talking_1": "Gracias por compartir este contenido con la comunidad usted. A partir de hoy voy a prestar más atención a lo expuesto en el texto.",
             "talking_2": "Mejor empezar a aprender el ZMOT aplicar tan pronto como sea posible ... Felicidades por compartir sus conocimientos y ayuda a mejorar la calidad ...",
             "talking_3": "Contenido muy bueno, gracias por compartir este gran contenido."
+        },
+        "blog": {
+          "read_more": "Lea Más"
         }
     },
     "contact": {
@@ -62,13 +67,16 @@
         }
     },
     "news_letter": {
-        "header": "Realizar un seguimiento de cerca de ZMOT",
-        "text": "Manténgase en sintonía para todas las noticias sobre el ZMOT, cuestiones relacionadas con la comercialización Digitral y el comportamiento del consumidor. Aplicar ahora a nuestro boletín mensual",
-        "subscribe": "Suscribirse a Noticias"
+        "header": "Sigue a ZMOT de cerca",
+        "text": "Manténgase en sintonía con todas las noticias sobre ZMOT, Marketing Digital y Comportamiento del Consumidor. Registraté ahora a nuestra Newsletter mensual",
+        "subscribe": "Suscribirse a Newsletter"
     },
-    "cookie": "Utilizamos cookies para ofrecer nuestros servicios y para el análisis y la comercialización. Para obtener más información sobre el uso de cookies, consulte nuestra política de privacidad. Haga clic en aceptar para la mejor experiencia de usuario en nuestra aplicación.",
+    "cookie": {
+        "text": "Utilizamos cookies para ofrecer nuestros servicios y para el análisis y la comercialización. Para obtener más información sobre el uso de cookies, consulte nuestra política de privacidad. Haga clic en aceptar para la mejor experiencia de usuario en nuestra aplicación.",
+        "accept": "ACEPTAR"
+    },
     "footer": {
-        "text": "Creemos en la importancia de las personas y empresas de hacer negocios de beneficio mutuo",
+        "text": "Creemos en la importancia de comprender las necesidades de las personas y ayudarles a alcanzar sus objetivos",
         "services": {
             "text": "Servicios"
         },
@@ -82,6 +90,6 @@
             "text": "Política de Privacidad"
         },
         "blog": "Blog",
-        "newsletter": "Boletín informativo"
+        "newsletter": "Newsletter"
     }
 }

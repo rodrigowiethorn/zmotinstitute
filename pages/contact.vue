@@ -14,8 +14,12 @@
                         <p>{{$t('contact.banner.text')}}</p>
                     </div>
                     <div class="banner-buttons">
-                        <b-button pill variant="white">{{$t('contact.banner.button.access_live_chat')}}</b-button>
-                        <b-button pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
+                        <a href="https://m.facebook.com/messages">
+                            <b-button pill variant="white">{{$t('contact.banner.button.access_live_chat')}}</b-button>
+                        </a>
+                        <a href="#contact-form">
+                            <b-button pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
+                        </a>
                     </div>
                 </b-col>
                 <b-col>
@@ -25,7 +29,7 @@
         </b-container>
       </section>
 
-      <section class="contact-form">
+      <section class="contact-form" id="contact-form">
           <b-container>
             <h2 class="text-center">{{$t('contact.form.contact')}}</h2>
             <p class="text-center">Tem alguma opinião ou sugestão de conteúdo? <br>Não perca tempo e nos <strong>envie uma mensagem.</strong></p>

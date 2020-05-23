@@ -38,14 +38,18 @@
 
     <section class="why-zmot">
       <b-container>
-        <h2 class="text-center">{{$t('homepage.why_do_you_need_ZMOT.header')}}</h2>
+        <h1 class="text-center">{{$t('homepage.why_do_you_need_ZMOT.header')}}</h1>
         <p class="text-center">
-          {{$t('homepage.why_do_you_need_ZMOT.text')}}
+          {{$t('homepage.why_do_you_need_ZMOT.text1')}}
+          <b>{{$t('homepage.why_do_you_need_ZMOT.text2')}}</b>
+          {{$t('homepage.why_do_you_need_ZMOT.text3')}}
+          <b>{{$t('homepage.why_do_you_need_ZMOT.text4')}}</b>
+          {{$t('homepage.why_do_you_need_ZMOT.text5')}}
         </p>
         <div class="feature__list">
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-img" sm="12" md="6">
-                <b-img src="../assets/img/why-do-you-need/searching-block.webp" fluid alt="Responsive image"></b-img>
+                <b-img src="../assets/img/why-do-you-need/searching block.webp" fluid alt="Responsive image"></b-img>
             </b-col>
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
                 <div class="feature__item-content">
@@ -79,7 +83,7 @@
         </div>
       </b-container>
     </section>
-    
+
     <section class="specialists" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
       <b-container>
         <h2 class="text-center">{{$t('homepage.specialist.header')}}</h2>
@@ -95,7 +99,7 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.webp" fluid alt="Responsive image"></b-img>
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.webp" fluid alt="Responsive image"></b-img>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -117,14 +121,14 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.webp" fluid alt="Responsive image"></b-img>
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
-                            Neil Patel
+                            Jim Lecinski
                           </div>
                           <div class="job">
-                            Marketing Guru
+                            ZMOT Author
                           </div>
                         </div>
                       </div>
@@ -139,14 +143,58 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.webp" fluid alt="Responsive image"></b-img>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
-                            Marketing Guru
+                            David M.Scott
                           </div>
                           <div class="job">
-                            Marketing Guru
+                            Marketing & Sales Visionary
+                          </div>
+                        </div>
+                      </div>
+                    </b-card-body>
+                  </b-card>
+                </div>
+                <div class="slide slide--4">
+                  <b-card no-body class="overflow-hidden spec__card">
+                    <b-card-body>
+                      <b-card-text>
+                        “{{$t('homepage.specialist.slide_4_text')}}”
+                      </b-card-text>
+                      <div class="spec__card-meta">
+                        <div class="sec__card-meta-avatar">
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash kaushik.webp" fluid alt="Responsive image"></b-img>
+                        </div>
+                        <div class="spec__card-meta-details">
+                          <div class="name">
+                            Avinash Kaushik
+                          </div>
+                          <div class="job">
+                            Digital Marketing Evangelist
+                          </div>
+                        </div>
+                      </div>
+                    </b-card-body>
+                  </b-card>
+                </div>
+                <div class="slide slide--5">
+                  <b-card no-body class="overflow-hidden spec__card">
+                    <b-card-body>
+                      <b-card-text>
+                        “{{$t('homepage.specialist.slide_5_text')}}”
+                      </b-card-text>
+                      <div class="spec__card-meta">
+                        <div class="sec__card-meta-avatar">
+                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan eisenberg.webp" fluid alt="Responsive image"></b-img>
+                        </div>
+                        <div class="spec__card-meta-details">
+                          <div class="name">
+                            Bryan Eisenberg
+                          </div>
+                          <div class="job">
+                            Digital Marketing Pioneer
                           </div>
                         </div>
                       </div>
@@ -166,7 +214,7 @@
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <h2 class="text-center">{{$t('homepage.services.header')}}</h2>
-        <b-row> 
+        <b-row id="zmot-audit">
           <b-col md="6" sm="12">
             <img src="../assets/img/services/service-zmot_audito.png" alt="">
           </b-col>
@@ -188,7 +236,7 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-row> 
+        <b-row id="lectures">
           <b-col md="6" sm="12">
             <b-card class="service--item mb-3 text-right">
               <b-card-text>
@@ -210,7 +258,7 @@
             <img src="../assets/img/services/service-lecture.webp" alt="">
           </b-col>
         </b-row>
-        <b-row> 
+        <b-row id="courses">
           <b-col md="6" sm="12">
             <img src="../assets/img/services/service-online_course.webp" alt="">
           </b-col>
@@ -255,7 +303,7 @@
                   Paulo Gomes
                 </span>
               </div>
-              
+
             </b-col>
             <b-col>
               <div class="testimonial-item">
@@ -306,7 +354,7 @@
                   <span class="text-small">{{ moment(post.date).format('MMMM Do YYYY') }}</span>
                 </div>
                 <div class="card-title">
-                  
+
                   <nuxt-link
                     :to="localePath({
                       name: 'blog-slug',
@@ -357,7 +405,7 @@
       faArrowLeft,
       faArrowRight,
   );
-  
+
   import NewsLetter from "@/components/NewsLetter.vue";
 
   export default {
@@ -394,6 +442,18 @@
         apiUrl: 'https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584',
         stickyPosts: []
     }),
+    // head () {
+    //   return {
+    //     title: 'Thezmot',
+    //     meta: [
+    //       { charset: 'utf-8' },
+    //       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    //       { name: 'keywords', content: 'thezmot, blog'},
+    //       // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+    //       { hid: 'description', name: 'description', content: 'My custom description' }
+    //     ]
+    //   }
+    // },
     mounted: function () {
         this.getStickyBlogs();
     },
@@ -403,9 +463,9 @@
       },
       getStickyBlogs: async function() {
         try {
-          const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584&_embed=1')
-          this.stickyPosts = result.data
-          console.log(result.data)
+          const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584&_embed=1');
+          this.stickyPosts = result.data && result.data.reverse();
+          console.log('post data: ', result.data);
         } catch(e) {
           this.stickyPosts = [];
         } finally {

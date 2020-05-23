@@ -4,12 +4,12 @@
         <b-row>
             <b-col md="8">
                 <div class="cookie-warning">
-                    {{$t('cookie')}}
+                    {{$t('cookie.text')}}
                     <!-- <nuxt-link class="cookie__link" to="/privacy-policy">Privacy Policy</nuxt-link>. Click accept for the best user experience on our app. -->
                 </div>
             </b-col>
             <b-col md="2" offset-md="2">
-                <b-button @click="accept" variant="outline-success">{{ buttonTextAccept }}</b-button>
+                <b-button @click="accept" variant="outline-success">{{ $t('cookie.accept') }}</b-button>
                 <!-- <b-button @click="deny" variant="dark">{{ buttonTextDeny }}</b-button> -->
             </b-col>
         </b-row>
@@ -79,15 +79,15 @@ export default {
 <style lang="sass" scoped>
 .cookie
   width: 100%
-  z-index: 1000001;
+  z-index: 1000001
   position: fixed
   bottom: 0
-  background-color: #212529;
-  padding: 1rem 0;
+  background-color: #6747c7
+  padding: 1rem 0
   .row
     align-items: center
   .cookie-warning
-    color: #868e96
+    color: white
     font-size: 1rem
     font-weight: 500
   &__link
@@ -96,4 +96,7 @@ export default {
     transition: all .25s
     &:hover
       text-decoration: none
+  button
+    color: white
+    font-size: 1.3rem
 </style>

@@ -2,12 +2,12 @@
   <div style="padding-top: 5rem;">
     <b-container v-if="!isLoading">
       <section v-if="!!totalNum" id="blogs">
-        <nuxt-link 
-          v-for="post of posts" :key="post.id" 
+        <nuxt-link
+          v-for="post of posts" :key="post.id"
           :to="localePath({
               name: 'blog-slug',
               params: { slug: post.slug }
-          })" 
+          })"
           class="blog--item" data-aos="fade-up">
           <b-card no-body class="overflow-hidden" >
             <b-row no-gutters>
@@ -19,7 +19,7 @@
                   <b-card-text v-html="post.excerpt.rendered">
                   </b-card-text>
                   <div class="card-meta">
-                    Mais de 2.000 profissionais de marketing já leram esse conteúdo 
+                    Mais de 2.000 profissionais de marketing já leram esse conteúdo
                     <!-- {{ moment(post.date).format('MMMM Do YYYY') }} by {{post._embedded.author[0].name}} -->
                   </div>
                 </b-card-body>
@@ -35,14 +35,14 @@
       </section>
     </b-container>
     <b-container id="blogs-loading" v-else>
-        <loading :active.sync="isLoading" 
-            :can-cancel="false" 
+        <loading :active.sync="isLoading"
+            :can-cancel="false"
             :is-full-page="fullPage"
             :color="color"></loading>
     </b-container>
     <NewsLetter />
   </div>
-    
+
 </template>
 
 <script>
@@ -51,7 +51,7 @@
   import moment from 'moment';
   import Loading from 'vue-loading-overlay';
   import 'vue-loading-overlay/dist/vue-loading.css';
-  
+
   export default {
     components: {
       'NewsLetter': NewsLetter,
@@ -105,7 +105,20 @@
         }
         try {
           const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?per_page=10&page=${this.currentPage}&_embed=1`)
-          this.posts = result.data;
+          this.posts = result &&
+          result.data &&
+          result.data.sort((post1, post2) => {
+            const post1Date = new Date(post1.date_gmt);
+            const post2Date = new Date(post2.date_gmt);
+
+            if (post1Date - post2Date > 0) {
+              return -1;
+            } else {
+              return 1;
+            }
+          });
+          console.log('posts: ', result.data);
+          // this.posts = result.data;
         } catch(e) {
           this.posts = [];
         } finally {

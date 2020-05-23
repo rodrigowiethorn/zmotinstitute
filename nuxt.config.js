@@ -32,11 +32,11 @@ module.exports = {
       src: './plugins/GoogleAnalytics.js',
       mode: 'client'
     },
-    { src: "@/plugins/aos", 
-      ssr: false 
+    { src: "@/plugins/aos",
+      ssr: false
     },
     { src: '@/plugins/vue-agile',
-      ssr: false 
+      ssr: false
     }
   ],
   router: {
@@ -80,7 +80,7 @@ module.exports = {
       },
       vueI18n: {
         fallbackLocale: 'en',
-        messages: { 
+        messages: {
           en: require('./locales/en.json'),
           pt: require('./locales/pt-br.json'),
           es: require('./locales/es.json')

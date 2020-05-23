@@ -3,29 +3,29 @@
         <b-container>
             <b-row>
                 <b-col md="4" sm="12">
-                    <img v-bind="footerLogo" src="../assets/img/zmot-logo.webp" alt="Brand logo" class="footer-new-holder-right-holder__brand">
+                    <img v-bind="footerLogo" src="../assets/img/zmot-logo.webp" alt="Brand logo" class="footer-new-holder-right-holder__brand footer-logo">
                     <p>
                         {{$t('footer.text')}}
                     </p>
                 </b-col>
-                <b-col md="6" sm="6">
+                <b-col md="8" sm="12">
                     <b-row class="mt-3">
-                        <b-col>
+                        <b-col md="4" sm="12">
                             <h5>{{$t('footer.services.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="localePath('index')">{{$t('homepage.services.service_1_header')}}</nuxt-link></li>
-                                <li><nuxt-link :to="localePath('index')">{{$t('homepage.services.service_2_header')}}</nuxt-link></li>
-                                <li><nuxt-link :to="localePath('index')">{{$t('homepage.services.service_3_header')}}</nuxt-link></li>
+                                <li><a href="#zmot-audit">{{$t('homepage.services.service_1_header')}}</a></li>
+                                <li><a href="#lectures">{{$t('homepage.services.service_2_header')}}</a></li>
+                                <li><a href="#courses">{{$t('homepage.services.service_3_header')}}</a></li>
                             </ul>
                         </b-col>
-                        <b-col>
+                        <b-col md="4" sm="12">
                             <h5>{{$t('footer.knowledge.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="localePath('index')">{{$t('footer.blog')}}</nuxt-link></li>
-                                <li><nuxt-link :to="localePath('index')">{{$t('footer.newsletter')}}</nuxt-link></li>
+                                <li><nuxt-link :to="localePath($t('navs.blog.link'))">{{$t('footer.blog')}}</nuxt-link></li>
+                                <li><a href="#newsletter">{{$t('footer.newsletter')}}</a></li>
                             </ul>
                         </b-col>
-                        <b-col>
+                        <b-col md="4" sm="12">
                             <h5>{{$t('footer.legal.text')}}</h5>
                             <ul>
                                 <li><nuxt-link :to="localePath('index')">{{$t('footer.privacy_policy.text')}}</nuxt-link></li>
@@ -33,10 +33,10 @@
                         </b-col>
                     </b-row>
                 </b-col>
-                <b-col md="2" sm="6">
+                <b-col md="2" sm="12">
                     <div class="social-links mt-3">
-                        <b-link><font-awesome-icon :icon="['fab', 'linkedin']" /></b-link>
-                        <b-link><font-awesome-icon :icon="['fab', 'facebook-f']" /></b-link>
+                        <b-link href="https://www.linkedin.com/company/zmot-institute"><font-awesome-icon :icon="['fab', 'linkedin']" /></b-link>
+                        <b-link href="https://www.facebook.com/ZMOT-Institute-110524633996597"><font-awesome-icon :icon="['fab', 'facebook-f']" /></b-link>
                     </div>
                 </b-col>
             </b-row>
