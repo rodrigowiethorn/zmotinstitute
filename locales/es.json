@@ -11,7 +11,9 @@
         },
         "why_do_you_need_ZMOT": {
             "header": "¿Por qué necesito el ZMOT?",
-            "text": "Entender el comportamiento del consumidor y ayudar a su cliente durante el día de compra debe ser su prioridad número uno para construir un negocio exitoso. Tanto si eres un vendedor, o un empresario, su comunicación será mucho más eficiente para entender algunos conceptos básicos.",
+            "text1": "Entender el ",
+            "text2": "comportamiento del consumidor",
+            "text3": " y ayudar a su cliente durante el día de compra debe ser su prioridad número uno para construir un negocio exitoso. Tanto si eres un vendedor, o un empresario, su comunicación será mucho más eficiente para entender algunos conceptos básicos.",
             "category_1_header": "Pertinencia",
             "category_1_text": "El consumidor moderno utiliza Google como la principal herramienta para buscar información. Estar bien posicionado en los buscadores está garantizado para estar presente en el momento en que la gente está interesada.",
             "category_2_header": "Opiniones",

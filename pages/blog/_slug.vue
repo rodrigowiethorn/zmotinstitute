@@ -28,6 +28,7 @@
                         </div>
                     </div>
                 </b-col>
+                <AddComment :postId="post.id"/>
             </b-row>
         </b-container>
     </div>
@@ -43,11 +44,13 @@
   import axios from 'axios';
   import moment from 'moment';
   import Loading from 'vue-loading-overlay';
+  import AddComment from "@/components/AddComment.vue";
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
     components: {
         'Loading': Loading,
+        'AddComment': AddComment
     },
     data: () => ({
         text: '',
@@ -65,6 +68,7 @@
         getPost: async function() {
             const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?slug=${this.$route.params.slug}&_embed=1`)
             this.post = result.data[0]
+            console.log(this.post);
             this.isLoading = false
         },
         moment: function (date) {
