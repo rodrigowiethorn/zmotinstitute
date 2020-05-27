@@ -116,8 +116,20 @@
 <style>
 
   @media screen and (max-width: 467px){
+    .nuxt-link-active {
+      width: 50%;
+    }
     .navbar-brand {
-      width: 200px;
+      width: 100%;
+    }
+
+    .bv-example-row {
+      display: flex;
+      min-width: 250px;
+    }
+
+    .navbar-dark .navbar-toggler {
+      width: 10%;
     }
   }
 
@@ -133,6 +145,11 @@
 
   nav.navbar .container ul.navbar-nav li.pg-nav a:hover {
     text-decoration: underline;
+  }
+
+  .navbar-dark .navbar-toggler {
+    outline: none;
+    border: none;
   }
 
 </style>

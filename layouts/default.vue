@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <MenuHeader />
     <no-ssr>
       <nuxt />
@@ -32,6 +32,10 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+  .page {
+    min-width: 300px;
+  }
 
 </style>
 <script>

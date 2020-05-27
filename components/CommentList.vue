@@ -1,9 +1,14 @@
 <template>
   <b-container>
-    <b-row v-if="replies && replies.length > 0">
+<!--    <b-row v-if="replies && replies.length > 0">-->
+<!--      <b-col class="header" md="12" sm="12">-->
+<!--        <span v-if="replies && replies.length === 1"> 1 Response </span>-->
+<!--        <span v-if="replies && replies.length >= 2">{{replies && replies.length}} Responses</span>-->
+<!--      </b-col>-->
+<!--    </b-row>-->
+    <b-row>
       <b-col class="header" md="12" sm="12">
-        <span v-if="replies && replies.length === 1"> 1 Response </span>
-        <span v-if="replies && replies.length >= 2">{{replies && replies.length}} Responses</span>
+        <span> Responses </span>
       </b-col>
     </b-row>
     <b-row>

@@ -1,6 +1,17 @@
 <template>
   <div id="home-page">
-
+    <!--  https://developers.facebook.com/docs/javascript/quickstart -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : 'your-app-id',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v7.0'
+        });
+      };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <section class="banner">
       <b-container>
         <b-row class="mb-3">

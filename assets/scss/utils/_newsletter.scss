@@ -26,6 +26,16 @@ section.news-letter {
             background-color: $news_purple;
             border: 0;
             outline: 0;
+            font-size: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 475px){
+    .search-form {
+        button {
+            font-size: 3vw !important;
+            height: 50px;
         }
     }
 }
