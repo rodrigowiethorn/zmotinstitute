@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container v-if="visible">
     <b-row>
       <b-col md="12" sm="12">
         <span class="header">{{$t('blog.add_comment.title')}}</span>
@@ -21,14 +21,14 @@
     <b-row>
       <b-col md="5" sm="12">
           <div class="submit-input">
-            <b-form-input v-model="mail" required placeholder="E-Mail (required)"></b-form-input>
+            <b-form-input v-model="mail" type="email" required placeholder="E-Mail (required)"></b-form-input>
           </div>
       </b-col>
     </b-row>
     <b-row>
       <b-col md="5" sm="12">
           <div class="submit-input">
-            <b-form-input v-model="site" placeholder="Web site"></b-form-input>
+            <b-form-input v-model="site" placeholder="Web site" type="url"></b-form-input>
           </div>
       </b-col>
     </b-row>
@@ -68,19 +68,28 @@
 
   export default {
     name: "AddComment",
-    props: ["postId"],
+    props: ["postId", "commentId"],
     components: {},
+    created() {
+      $nuxt.$on('hide-add-comment', (data) => {
+        this.visible = !data.visible;
+      });
+    },
     data: () => ({
+      visible: true,
       author: '',
       mail: '',
       site: '',
       save_checked: false,
-      comment: ''
+      comment: '',
     }),
     methods: {
       onSubmit(evt) {
-        evt.preventDefault()
-
+        evt.preventDefault();
+        this.addComment();
+      },
+      onReset(evt) {
+        evt.preventDefault();
       },
       addComment: async function() {
         const commentData = {
@@ -91,7 +100,7 @@
           comment: this.comment,
           submit: 'Submit',
           comment_post_ID: this.postId,
-          comment_parent: 0
+          comment_parent: this.commentId
         };
 
         await axios.post(`https://thezmot.com/wp-comments-post.php`, commentData)

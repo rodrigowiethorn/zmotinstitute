@@ -1,0 +1,48 @@
+<template>
+  <b-container>
+    <b-row v-if="replies && replies.length > 0">
+      <b-col class="header" md="12" sm="12">
+        <span v-if="replies && replies.length === 1"> 1 Response </span>
+        <span v-if="replies && replies.length >= 2">{{replies && replies.length}} Responses</span>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col md="12" sm="12" v-for="item of items" :key="item.id">
+        <Comment
+          :comment="item"
+          :replies="replies"
+          :author="author"
+          :postId="postId"
+        />
+      </b-col>
+    </b-row>
+  </b-container>
+</template>
+
+<script>
+  import Comment from "@/components/Comment";
+  export default {
+    name: "CommentList",
+    props: ["author", "replies", "postId"],
+    components: {
+      'Comment': Comment
+    },
+    data: () => ({
+      items: null
+    }),
+    methods: {
+
+    },
+    mounted() {
+      this.items = this.replies && this.replies.filter(reply => reply.parent === 0);
+    }
+  };
+</script>
+
+<style lang="sass" scoped>
+  .header
+    font-size: 1.5em !important
+    font-weight: 600 !important
+    line-height: 1.8 !important
+    margin: 20px 0
+</style>

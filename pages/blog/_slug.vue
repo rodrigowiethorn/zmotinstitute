@@ -28,7 +28,12 @@
                         </div>
                     </div>
                 </b-col>
-                <AddComment :postId="post.id"/>
+                <CommentList
+                    :author="post._embedded && post._embedded.author && post._embedded.author.length > 0 && post._embedded.author[0]"
+                    :replies="post._embedded && post._embedded.replies && post._embedded.replies.length > 0 && post._embedded.replies[0]"
+                    :postId="post.id"
+                />
+                <AddComment :postId="post.id" :commentId="0" />
             </b-row>
         </b-container>
     </div>
@@ -44,13 +49,15 @@
   import axios from 'axios';
   import moment from 'moment';
   import Loading from 'vue-loading-overlay';
-  import AddComment from "@/components/AddComment.vue";
+  import AddComment from "@/components/AddComment";
+  import CommentList from "@/components/CommentList";
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
     components: {
         'Loading': Loading,
-        'AddComment': AddComment
+        'AddComment': AddComment,
+        'CommentList': CommentList
     },
     data: () => ({
         text: '',
