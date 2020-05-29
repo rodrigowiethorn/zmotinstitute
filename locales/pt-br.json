@@ -92,5 +92,13 @@
         },
         "blog": "Blog",
         "newsletter": "Newsletter"
+    },
+    "blog": {
+      "add_comment" : {
+        "title": "Add a Comment",
+        "info": "Your email address will not be published. Required fields are marked *",
+        "save": "Save my name, email, and website in this browser for the next time I comment",
+        "submit": "SUBMIT"
+      }
     }
 }
