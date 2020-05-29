@@ -3,7 +3,10 @@
     <b-container class="bv-example-row bv-example-row-flex-cols">
       <nuxt-link :to="localePath('index')">
         <b-navbar-brand>
-          <b-img v-bind="logoProp" src="../assets/img/zmot-logo.webp" fluid></b-img>
+          <picture>
+            <source srcset="../assets/img/zmot-logo.webp" type="image/webp">
+            <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt=""></b-img>
+          </picture>
         </b-navbar-brand>
       </nuxt-link>
 

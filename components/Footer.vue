@@ -3,7 +3,10 @@
         <b-container>
             <b-row>
                 <b-col md="4" sm="12">
-                    <img v-bind="footerLogo" src="../assets/img/zmot-logo.webp" alt="Brand logo" class="footer-new-holder-right-holder__brand footer-logo">
+                    <picture>
+                        <source srcset="../assets/img/zmot-logo.webp" type="image/webp">
+                        <img v-bind="footerLogo" src="../assets/img/zmot-logo.png" alt="Brand logo" class="footer-new-holder-right-holder__brand footer-logo">
+                    </picture>
                     <p>
                         {{$t('footer.text')}}
                     </p>

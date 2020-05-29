@@ -48,7 +48,10 @@
         <div class="feature__list">
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-img" sm="12" md="6">
-                <b-img src="../assets/img/why-do-you-need/searching block.webp" fluid alt="Responsive image"></b-img>
+              <picture>
+                <source srcset="../assets/img/why-do-you-need/searching_block.webp" type="image/webp">
+                <b-img src="../assets/img/why-do-you-need/searching_block.png" fluid alt=""></b-img>
+              </picture>
             </b-col>
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
                 <div class="feature__item-content">
@@ -65,7 +68,7 @@
               </div>
             </b-col>
             <b-col class="feature__item-img" sm="12" md="6">
-                <b-img src="../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Responsive image"></b-img>
+              <b-img src="../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Responsive image"></b-img>
             </b-col>
           </b-row>
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
@@ -98,7 +101,10 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.webp" fluid alt="Responsive image"></b-img>
+                          <picture>
+                            <source srcset="../assets/img/Specialist/NeilPatel.webp" type="image/webp">
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid alt="Responsive image"></b-img>
+                          </picture>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -120,7 +126,10 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.webp" fluid alt="Responsive image"></b-img>
+                          <picture>
+                            <source srcset="../assets/img/Specialist/Jim_Lecinsk.webp" type="image/webp">
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.jpeg" fluid alt="Responsive image"></b-img>
+                          </picture>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -142,7 +151,10 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.webp" fluid alt="Responsive image"></b-img>
+                          <picture>
+                            <source srcset="../assets/img/Specialist/David_Meerman_Scott.webp" type="image/webp">
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.png" fluid alt="Responsive image"></b-img>
+                          </picture>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -164,7 +176,10 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash kaushik.webp" fluid alt="Responsive image"></b-img>
+                          <picture>
+                            <source srcset="../assets/img/Specialist/avinash_kaushik.webp" type="image/webp">
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash_kaushik.png" fluid alt="Responsive image"></b-img>
+                          </picture>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
@@ -186,7 +201,10 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-                          <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan eisenberg.webp" fluid alt="Responsive image"></b-img>
+                          <picture>
+                            <source srcset="../assets/img/Specialist/bryan_eisenberg.webp" type="image/webp">
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan_eisenberg.png" fluid alt="Responsive image"></b-img>
+                          </picture>
                         </div>
                         <div class="spec__card-meta-details">
                           <div class="name">
