@@ -15,10 +15,10 @@
                     </div>
                     <div class="banner-buttons">
                         <a href="https://m.facebook.com/messages">
-                            <b-button pill variant="white">{{$t('contact.banner.button.access_live_chat')}}</b-button>
+                          <b-button pill variant="white">{{$t('contact.banner.button.access_live_chat')}}</b-button>
                         </a>
                         <a href="#contact-form">
-                            <b-button pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
+                          <b-button pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
                         </a>
                     </div>
                 </b-col>

@@ -12,8 +12,8 @@
         "why_do_you_need_ZMOT": {
             "header": "¿Por qué necesito el ZMOT?",
             "text1": "Entender el ",
-            "text2": "comportamiento del consumidor",
-            "text3": " y ayudar a su cliente durante el día de compra debe ser su prioridad número uno para construir un negocio exitoso. Tanto si eres un vendedor, o un empresario, su comunicación será mucho más eficiente para entender algunos conceptos básicos.",
+            "text2": "Comportamiento del Consumidor",
+            "text3": " y ayudar a tus usuários durante el recorrido del cliente debe ser su prioridad número uno para construir un negocio exitoso. Tanto si eres un vendedor, o un empresario, su comunicación será mucho más eficiente si entiendes algunos conceptos básicos.",
             "category_1_header": "Pertinencia",
             "category_1_text": "El consumidor moderno utiliza Google como la principal herramienta para buscar información. Estar bien posicionado en los buscadores está garantizado para estar presente en el momento en que la gente está interesada.",
             "category_2_header": "Opiniones",
@@ -32,6 +32,7 @@
         },
         "services": {
             "header": "Como podemos ayudarte?",
+            "sub_header": "Estamos aquí para ayudarle a entender y poner en práctica el ZMOT que a su día a día. No importa el tamaño de su bolsillo, o disponibilidad de tiempo, siempre tendremos una solución para ayudarlo.",
             "service_1_header": "Auditoría ZMOT",
             "service_1_description": "Nosotros le podemos mostrar el camino, o caminar a tu lado. Podemos ayudarle a salir de la inercia, o acelerar su cohete. Al final, le toca a usted cómo implementar el ZMOT en sus acciones de marketing digital.",
             "service_2_header": "Conferencias y Eventos",

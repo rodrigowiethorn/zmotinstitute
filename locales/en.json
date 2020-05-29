@@ -34,6 +34,7 @@
         },
         "services": {
             "header": "How can we help you?",
+            "sub_header": "We are here to help you to understand ZMOT and implement it to your day to day game. No matter the size of your pocket, or time availability, we will always have a solution to help you.",
             "service_1_header": "ZMOT Audit",
             "service_1_description": "We can show you the way, or walk beside you. We can help you out of inertia, or speed up your rocket. In the end, it's up to you how to deploy ZMOT in their Digital Marketing actions.",
             "service_2_header": "Lectures and Events",

@@ -1,6 +1,19 @@
 <template>
   <div class="page">
+    <!--  https://developers.facebook.com/docs/javascript/quickstart -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : 'your-app-id',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v7.0'
+        });
+      };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <MenuHeader />
+<!--    <SocialLinks/>-->
     <no-ssr>
       <nuxt />
     </no-ssr>
@@ -39,11 +52,12 @@ html {
 
 </style>
 <script>
-  import MenuHeader from "../components/MenuHeader.vue";
-  import Footer from "../components/Footer.vue";
+  import MenuHeader from "@/components/MenuHeader.vue";
+  import Footer from "@/components/Footer.vue";
   import Cookie from "@/components/Cookie.vue";
+  import SocialLinks from "@/components/SocialLinks";
 
   export default {
-    components: { MenuHeader, Footer, Cookie }
+    components: {SocialLinks, MenuHeader, Footer, Cookie }
   }
 </script>

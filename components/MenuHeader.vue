@@ -8,47 +8,44 @@
       </nuxt-link>
 
       <b-nav-item-dropdown :text="localeToLang" right class="burger-langpicker">
-        <b-dropdown-item v-on:click="switchLang('en')">
+        <b-dropdown-item :to="switchLocalePath('en')">
           <b-img src="../assets/img/svg/en.svg" width="25"></b-img>
           English
         </b-dropdown-item>
-        <!-- :to="switchLocalePath('pt-br')"-->
-        <b-dropdown-item v-on:click="switchLang('pt-br')">
+        <b-dropdown-item :to="switchLocalePath('pt-br')">
           <b-img src="../assets/img/svg/br.svg" width="25"></b-img>
           Português
         </b-dropdown-item>
-        <b-dropdown-item v-on:click="switchLang('es')">
+        <b-dropdown-item :to="switchLocalePath('es')">
           <b-img src="../assets/img/svg/es.svg" width="25"></b-img>
           Español
         </b-dropdown-item>
       </b-nav-item-dropdown>
 
-      <b-navbar-toggle target="nav-collapse">
-
-      </b-navbar-toggle>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <!-- Right aligned nav items -->
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <li class="pg-nav">
-            <b-dropdown-item :to="localePath($t('navs.home.link'))">{{$t('navs.home.title')}}</b-dropdown-item>
+            <b-dropdown-item><nuxt-link :to="localePath('index')">{{$t('navs.home.title')}}</nuxt-link></b-dropdown-item>
           </li>
           <li class="pg-nav">
-            <b-dropdown-item :to="localePath($t('navs.blog.link'))">{{$t('navs.blog.title')}}</b-dropdown-item>
+            <b-dropdown-item><nuxt-link :to="localePath('blogs')">{{$t('navs.blog.title')}}</nuxt-link></b-dropdown-item>
           </li>
           <li class="pg-nav">
-            <b-dropdown-item :to="localePath($t('navs.contact.link'))">{{$t('navs.contact.title')}}</b-dropdown-item>
+            <b-dropdown-item><nuxt-link :to="localePath('contact')">{{$t('navs.contact.title')}}</nuxt-link></b-dropdown-item>
           </li>
           <b-nav-item-dropdown :text="localeToLang" right class="langpicker">
-            <b-dropdown-item v-on:click="switchLang('en')">
+            <b-dropdown-item :to="switchLocalePath('en')">
               <b-img src="../assets/img/svg/en.svg" width="25"></b-img>
               English
             </b-dropdown-item>
-            <b-dropdown-item v-on:click="switchLang('pt-br')">
+            <b-dropdown-item :to="switchLocalePath('pt-br')">
               <b-img src="../assets/img/svg/br.svg" width="25"></b-img>
               Português
             </b-dropdown-item>
-            <b-dropdown-item v-on:click="switchLang('es')">
+            <b-dropdown-item :to="switchLocalePath('es')">
               <b-img src="../assets/img/svg/es.svg" width="25"></b-img>
               Español
             </b-dropdown-item>
@@ -57,61 +54,6 @@
       </b-collapse>
     </b-container>
   </b-navbar>
-<!--  <b-navbar toggleable="lg" type="dark">-->
-<!--    <b-container class="bv-example-row bv-example-row-flex-cols">-->
-<!--      <nuxt-link :to="localePath('index')">-->
-<!--        <b-navbar-brand>-->
-<!--          <b-img v-bind="logoProp" src="../assets/img/zmot-logo.webp" fluid></b-img>-->
-<!--        </b-navbar-brand>-->
-<!--      </nuxt-link>-->
-
-<!--      <b-nav-item-dropdown :text="localeToLang" right class="burger-langpicker">-->
-<!--        <b-dropdown-item :to="switchLocalePath('en')">-->
-<!--          <b-img src="../assets/img/svg/en.svg" width="25"></b-img>-->
-<!--          English-->
-<!--        </b-dropdown-item>-->
-<!--        <b-dropdown-item :to="switchLocalePath('pt-br')">-->
-<!--          <b-img src="../assets/img/svg/br.svg" width="25"></b-img>-->
-<!--          Português-->
-<!--        </b-dropdown-item>-->
-<!--        <b-dropdown-item :to="switchLocalePath('es')">-->
-<!--          <b-img src="../assets/img/svg/es.svg" width="25"></b-img>-->
-<!--          Español-->
-<!--        </b-dropdown-item>-->
-<!--      </b-nav-item-dropdown>-->
-
-<!--      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>-->
-
-<!--      &lt;!&ndash; Right aligned nav items &ndash;&gt;-->
-<!--      <b-collapse id="nav-collapse" is-nav>-->
-<!--        <b-navbar-nav class="ml-auto">-->
-<!--          <li class="pg-nav">-->
-<!--            <nuxt-link :to="localePath('index')">{{$t('navs.home.title')}}</nuxt-link>-->
-<!--          </li>-->
-<!--          <li class="pg-nav">-->
-<!--            <nuxt-link :to="localePath('blogs')">{{$t('navs.blog.title')}}</nuxt-link>-->
-<!--          </li>-->
-<!--          <li class="pg-nav">-->
-<!--            <nuxt-link :to="localePath('contact')">{{$t('navs.contact.title')}}</nuxt-link>-->
-<!--          </li>-->
-<!--          <b-nav-item-dropdown :text="localeToLang" right class="langpicker">-->
-<!--            <b-dropdown-item :to="switchLocalePath('en')">-->
-<!--              <b-img src="../assets/img/svg/en.svg" width="25"></b-img>-->
-<!--              English-->
-<!--            </b-dropdown-item>-->
-<!--            <b-dropdown-item :to="switchLocalePath('pt-br')">-->
-<!--              <b-img src="../assets/img/svg/br.svg" width="25"></b-img>-->
-<!--              Português-->
-<!--            </b-dropdown-item>-->
-<!--            <b-dropdown-item :to="switchLocalePath('es')">-->
-<!--              <b-img src="../assets/img/svg/es.svg" width="25"></b-img>-->
-<!--              Español-->
-<!--            </b-dropdown-item>-->
-<!--          </b-nav-item-dropdown>-->
-<!--        </b-navbar-nav>-->
-<!--      </b-collapse>-->
-<!--    </b-container>-->
-<!--  </b-navbar>-->
 </template>
 <style>
 
@@ -133,6 +75,9 @@
     }
   }
 
+  nav.navbar {
+    min-height: 80px;
+  }
 
   nav.navbar .container ul.navbar-nav li.pg-nav {
     padding: 0;

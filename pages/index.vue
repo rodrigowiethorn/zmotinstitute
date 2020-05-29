@@ -1,17 +1,5 @@
 <template>
   <div id="home-page">
-    <!--  https://developers.facebook.com/docs/javascript/quickstart -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId            : 'your-app-id',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v7.0'
-        });
-      };
-    </script>
-    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <section class="banner">
       <b-container>
         <b-row class="mb-3">
@@ -225,6 +213,9 @@
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <h2 class="text-center">{{$t('homepage.services.header')}}</h2>
+        <h3 class="text-center">
+          {{$t('homepage.services.sub_header')}}
+        </h3>
         <b-row id="zmot-audit">
           <b-col md="6" sm="12">
             <img src="../assets/img/services/service-zmot_audito.png" alt="">
