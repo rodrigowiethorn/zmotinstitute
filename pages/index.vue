@@ -39,11 +39,7 @@
       <b-container>
         <h1 class="text-center">{{$t('homepage.why_do_you_need_ZMOT.header')}}</h1>
         <p class="text-center">
-          {{$t('homepage.why_do_you_need_ZMOT.text1')}}
-          <b>{{$t('homepage.why_do_you_need_ZMOT.text2')}}</b>
-          {{$t('homepage.why_do_you_need_ZMOT.text3')}}
-          <b>{{$t('homepage.why_do_you_need_ZMOT.text4')}}</b>
-          {{$t('homepage.why_do_you_need_ZMOT.text5')}}
+          {{$t('homepage.why_do_you_need_ZMOT.text')}}
         </p>
         <div class="feature__list">
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
