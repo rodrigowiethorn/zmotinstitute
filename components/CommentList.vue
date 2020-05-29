@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container v-if="!loading">
 <!--    <b-row v-if="replies && replies.length > 0">-->
 <!--      <b-col class="header" md="12" sm="12">-->
 <!--        <span v-if="replies && replies.length === 1"> 1 Response </span>-->
@@ -33,6 +33,7 @@
       'Comment': Comment
     },
     data: () => ({
+      loading: true,
       items: null
     }),
     methods: {
@@ -40,6 +41,11 @@
     },
     mounted() {
       this.items = this.replies && this.replies.filter(reply => reply.parent === 0);
+    },
+    created() {
+      this.$nextTick(function () {
+        this.loading = false;
+      })
     }
   };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <b-container v-if="visible">
+  <b-container v-if="visible && !loading">
     <b-row>
       <b-col md="12" sm="12">
         <span class="header">{{$t('blog.add_comment.title')}}</span>
@@ -71,11 +71,15 @@
     props: ["postId", "commentId"],
     components: {},
     created() {
+      this.$nextTick(function () {
+        this.loading = false
+      });
       $nuxt.$on('hide-add-comment', (data) => {
         this.visible = !data.visible;
       });
     },
     data: () => ({
+      loading: true,
       visible: true,
       author: '',
       mail: '',
