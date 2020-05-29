@@ -4,7 +4,7 @@
       <nuxt-link :to="localePath('index')">
         <b-navbar-brand>
           <picture>
-            <source srcset="../assets/img/zmot-logo.webp" type="image/webp">
+            <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
             <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt=""></b-img>
           </picture>
         </b-navbar-brand>
@@ -106,8 +106,7 @@
   export default {
     name: "MenuHeader",
     data: () => ({
-      logoProp: {blank: false, width: 250, class: 'm2'},
-      menuVisible: true,
+      logoProp: {blank: false, width: 250, class: 'm2'}
     }),
     methods: {
       switchLang(locale) {

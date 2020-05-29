@@ -1,48 +1,49 @@
 <template>
-    <div id="blog" v-if="!this.isLoading">
-        <b-container>
-            <b-row>
-                <b-col md="9" sm="12">
-                    <div class="blog-main">
-                        <div class="blog-media">
-                            <b-img :src="post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url" fluid alt="Responsive image"></b-img>
-                        </div>
-                        <header class="blog-header">
-                            <h1 class="blog-title" v-html="post.title.rendered"></h1>
-                        </header>
-                        <div class="blog-info ">
-                            <div class="blog-date">
-                                <time datetime="2019-03-08T17:10:45-03:00">Publicado em {{ moment(post.date).format('DD/MM/YYYY') }}</time>
-                            </div>
-                            <!-- <div class="blog-comments"> <span class="meta-sep">with</span> <span class="meta-comment">no comment</span></div> -->
-                        </div>
-                        <div class="blog-content" v-html="post.content.rendered">
-                        </div>
-                    </div>
-                </b-col>
-                <b-col md="3" sm="12">
-                    <div class="sidebar-content">
-                        <div class="search">
-                            <h3 class="title">Pesquisar</h3>
-                            <b-form-input v-model="text" placeholder="Search here"></b-form-input>
-                        </div>
-                    </div>
-                </b-col>
-                <CommentList
-                    :author="post._embedded && post._embedded.author && post._embedded.author.length > 0 && post._embedded.author[0]"
-                    :replies="post._embedded && post._embedded.replies && post._embedded.replies.length > 0 && post._embedded.replies[0]"
-                    :postId="post.id"
-                />
-                <AddComment :postId="post.id" :commentId="0" />
-            </b-row>
-        </b-container>
+  <div>
+    <div id="blog" v-show="!isLoading">
+      <b-container>
+        <b-row>
+          <b-col md="9" sm="12">
+            <div class="blog-main">
+              <div class="blog-media">
+                <b-img :src="post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url" fluid alt="Responsive image"></b-img>
+              </div>
+              <header class="blog-header">
+                <h1 class="blog-title" v-html="post.title.rendered"></h1>
+              </header>
+              <div class="blog-info ">
+                <div class="blog-date">
+                  <time datetime="2019-03-08T17:10:45-03:00">Publicado em {{ moment(post.date).format('DD/MM/YYYY') }}</time>
+                </div>
+                <!-- <div class="blog-comments"> <span class="meta-sep">with</span> <span class="meta-comment">no comment</span></div> -->
+              </div>
+              <div class="blog-content" v-html="post.content.rendered"></div>
+            </div>
+          </b-col>
+          <b-col md="3" sm="12">
+            <div class="sidebar-content">
+              <div class="search">
+                <h3 class="title">Pesquisar</h3>
+                <b-form-input v-model="text" placeholder="Search here"></b-form-input>
+              </div>
+            </div>
+          </b-col>
+          <CommentList
+            :author="post._embedded && post._embedded.author && post._embedded.author.length > 0 && post._embedded.author[0]"
+            :replies="post._embedded && post._embedded.replies && post._embedded.replies.length > 0 && post._embedded.replies[0]"
+            :postId="post.id"
+          />
+          <AddComment :postId="post.id" :commentId="0" />
+        </b-row>
+      </b-container>
     </div>
-    <div v-else id="blog-loading">
-        <loading :active.sync="isLoading"
-            :can-cancel="false"
-            :is-full-page="fullPage"
-            :color="color"></loading>
+    <div v-show="isLoading" id="blog-loading">
+      <loading :active.sync="isLoading"
+               :can-cancel="false"
+               :is-full-page="fullPage"
+               :color="color"></loading>
     </div>
+  </div>
 </template>
 
 <script>

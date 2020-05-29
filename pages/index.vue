@@ -49,12 +49,12 @@
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-img" sm="12" md="6">
               <picture>
-                <source srcset="../assets/img/why-do-you-need/searching_block.webp" type="image/webp">
+                <source srcset="../assets/img/why-do-you-need/searching_block.webp" type="image/webp" />
                 <b-img src="../assets/img/why-do-you-need/searching_block.png" fluid alt=""></b-img>
               </picture>
             </b-col>
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
-                <div class="feature__item-content">
+              <div class="feature__item-content">
                   <h3>{{$t('homepage.why_do_you_need_ZMOT.category_1_header')}}</h3>
                   <p>{{$t('homepage.why_do_you_need_ZMOT.category_1_text')}}</p>
               </div>
@@ -62,7 +62,7 @@
           </b-row>
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
-                <div class="feature__item-content text-right">
+              <div class="feature__item-content text-right">
                 <h3>{{$t('homepage.why_do_you_need_ZMOT.category_2_header')}}</h3>
                 <p>{{$t('homepage.why_do_you_need_ZMOT.category_2_text')}}</p>
               </div>
@@ -102,7 +102,7 @@
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
                           <picture>
-                            <source srcset="../assets/img/Specialist/NeilPatel.webp" type="image/webp">
+                            <source srcset="../assets/img/Specialist/NeilPatel.webp" type="image/webp" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid alt="Responsive image"></b-img>
                           </picture>
                         </div>
@@ -127,7 +127,7 @@
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
                           <picture>
-                            <source srcset="../assets/img/Specialist/Jim_Lecinsk.webp" type="image/webp">
+                            <source srcset="../assets/img/Specialist/Jim_Lecinsk.webp" type="image/webp" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.jpeg" fluid alt="Responsive image"></b-img>
                           </picture>
                         </div>
@@ -152,7 +152,7 @@
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
                           <picture>
-                            <source srcset="../assets/img/Specialist/David_Meerman_Scott.webp" type="image/webp">
+                            <source srcset="../assets/img/Specialist/David_Meerman_Scott.webp" type="image/webp" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.png" fluid alt="Responsive image"></b-img>
                           </picture>
                         </div>
@@ -177,7 +177,7 @@
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
                           <picture>
-                            <source srcset="../assets/img/Specialist/avinash_kaushik.webp" type="image/webp">
+                            <source srcset="../assets/img/Specialist/avinash_kaushik.webp" type="image/webp" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash_kaushik.png" fluid alt="Responsive image"></b-img>
                           </picture>
                         </div>
@@ -202,7 +202,7 @@
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
                           <picture>
-                            <source srcset="../assets/img/Specialist/bryan_eisenberg.webp" type="image/webp">
+                            <source srcset="../assets/img/Specialist/bryan_eisenberg.webp" type="image/webp" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan_eisenberg.png" fluid alt="Responsive image"></b-img>
                           </picture>
                         </div>
@@ -236,7 +236,7 @@
         </h3>
         <b-row id="zmot-audit">
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-zmot_audito.png" alt="">
+            <img src="../assets/img/services/service-zmot_audito.png" alt="" />
           </b-col>
           <b-col md="6" sm="12">
             <b-card class="service--item mb-3">
@@ -275,12 +275,12 @@
             </b-card>
           </b-col>
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-lecture.webp" alt="">
+            <img src="../assets/img/services/service-lecture.webp" alt="" />
           </b-col>
         </b-row>
         <b-row id="courses">
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-online_course.webp" alt="">
+            <img src="../assets/img/services/service-online_course.webp" alt="" />
           </b-col>
           <b-col md="6" sm="12">
             <b-card class="service--item mb-3">

@@ -1,5 +1,5 @@
 <template>
-  <b-container v-if="visible && !loading">
+  <b-container v-show="visible && !loading">
     <b-row>
       <b-col md="12" sm="12">
         <span class="header">{{$t('blog.add_comment.title')}}</span>
