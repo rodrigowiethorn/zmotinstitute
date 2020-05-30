@@ -47,6 +47,9 @@
             "talking_3": "Very good content, thank you for sharing this great content."
         },
         "blog": {
+          "title_1": "",
+          "title_2": "",
+          "title_3": "",
           "read_more": "Read More"
         }
     },
@@ -70,7 +73,8 @@
     "news_letter": {
         "header": "Keep following ZMOT",
         "text": "Stay tuned for all the news about ZMOT, Digital Marketing and Consumer Behavior. Subscribe now to our montlhy Newsletter",
-        "subscribe": "Subscribe to News"
+        "subscribe": "Subscribe to News",
+        "subscribe_ellipse": "Subscribe"
     },
     "cookie": {
         "text": "We use cookies to provide our services and for analytics and marketing. To find out more about our use of cookies, please see our Privacy Policy. Click accept for the best user experience on our app.",

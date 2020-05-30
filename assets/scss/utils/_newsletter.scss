@@ -10,6 +10,7 @@ section.news-letter {
     p {
         color: #333 !important;
     }
+
     .search-form {
         position: relative;
         input {
@@ -28,14 +29,21 @@ section.news-letter {
             outline: 0;
             font-size: 1em;
         }
-    }
-}
 
-@media screen and (max-width: 475px){
-    .search-form {
-        button {
-            font-size: 3vw !important;
-            height: 50px;
+        button.browser-show {
+            display: block;
+
+            @media screen and (max-width: 475px){
+                display: none;
+            }
+        }
+
+        button.mobile-show {
+            display: none;
+
+            @media screen and (max-width: 475px){
+                display: block;
+            }
         }
     }
 }

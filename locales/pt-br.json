@@ -47,6 +47,9 @@
             "talking_3": "Muito bom conteúdo, obrigado por compartilhar conosco este excelente conteúdo."
         },
         "blog": {
+          "title_1": "",
+          "title_2": "",
+          "title_3": "",
           "read_more": "Ler Conteúdo"
         }
     },
@@ -70,7 +73,8 @@
     "news_letter": {
         "header": "Acompanhe o ZMOT de perto",
         "text": "Fique ligado em todas as novidades sobre o ZMOT, assuntos relacionados a Marketing Digital e Comportamento do Consumidor. Increva-se na nossa newsletter mensal ",
-        "subscribe": "Inscrever-se na News"
+        "subscribe": "Inscrever-se na News",
+        "subscribe_ellipse": "Inscrever-se"
     },
     "cookie": {
         "text": "Nós usamos informações pessoais em nosso site para melhorar significativamente sua experiência de uso. Por favor clique em ACEITAR para que possamos melhor servi-lo.Para maiores informações por favor acesse nossa página de Política de Privacidade. ",

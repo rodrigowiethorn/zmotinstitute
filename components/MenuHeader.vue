@@ -10,7 +10,12 @@
         </b-navbar-brand>
       </nuxt-link>
 
-      <b-nav-item-dropdown :text="localeToLang" right class="burger-langpicker">
+      <b-nav-item-dropdown right class="burger-langpicker">
+        <template slot="button-content">
+          <b-img v-show="flagVisible === 1" src="../assets/img/svg/en.svg" width="25"></b-img>
+          <b-img v-show="flagVisible === 2" src="../assets/img/svg/br.svg" width="25"></b-img>
+          <b-img v-show="flagVisible === 3" src="../assets/img/svg/es.svg" width="25"></b-img>
+        </template>
         <b-dropdown-item :to="switchLocalePath('en')">
           <b-img src="../assets/img/svg/en.svg" width="25"></b-img>
           English
@@ -106,37 +111,29 @@
   export default {
     name: "MenuHeader",
     data: () => ({
-      logoProp: {blank: false, width: 250, class: 'm2'}
+      logoProp: {blank: false, width: 250, class: 'm2'},
     }),
     methods: {
-      switchLang(locale) {
-        if (locale === this.$store.state.i18n.locale) {
-          return;
-        }
 
-        // update store info
-        this.$store.commit('i18n/i18nSetLocale', locale);
-
-        // fetch new locale file
-        import(`../locales/${locale}`).then(module => {
-          // update i18n's locale instance
-          this.$i18n.locale = locale;
-          // set new messages from new locale file
-          this.$i18n.setLocaleMessage(locale, module.default);
-          // update url to point to new path, without reloading the page
-          window.history.replaceState('', '', this.switchLocalePath(locale));
-        });
-      }
     },
     computed: {
       localeToLang() {
         let lang = this.$i18n.locale
         if (lang == 'en')
-          return 'English'
+          return 'English';
         else if (lang == 'pt-br')
-          return 'Português'
+          return 'Português';
         else if (lang == 'es')
-          return 'Español'
+          return 'Español';
+      },
+      flagVisible() {
+        let lang = this.$i18n.locale
+        if (lang == 'en')
+          return 1;
+        else if (lang == 'pt-br')
+          return 2;
+        else if (lang == 'es')
+          return 3;
       }
     }
   };

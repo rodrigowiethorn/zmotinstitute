@@ -227,9 +227,9 @@
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <h2 class="text-center">{{$t('homepage.services.header')}}</h2>
-        <h3 class="text-center">
+        <p class="text-center">
           {{$t('homepage.services.sub_header')}}
-        </h3>
+        </p>
         <b-row id="zmot-audit">
           <b-col md="6" sm="12">
             <img src="../assets/img/services/service-zmot_audito.png" alt="" />
@@ -387,7 +387,7 @@
                   })"
                    class="btn btn-orange rounded-pill"
                 >
-                    Read More
+                  {{$t('homepage.blog.read_more')}}
                 </nuxt-link>
               </b-card>
             </b-col>
@@ -458,18 +458,6 @@
         apiUrl: 'https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584',
         stickyPosts: []
     }),
-    // head () {
-    //   return {
-    //     title: 'Thezmot',
-    //     meta: [
-    //       { charset: 'utf-8' },
-    //       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    //       { name: 'keywords', content: 'thezmot, blog'},
-    //       // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-    //       { hid: 'description', name: 'description', content: 'My custom description' }
-    //     ]
-    //   }
-    // },
     mounted: function () {
         this.getStickyBlogs();
     },

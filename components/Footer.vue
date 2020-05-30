@@ -38,8 +38,8 @@
                 </b-col>
                 <b-col md="2" sm="12">
                     <div class="social-links mt-3">
-                        <b-link href="https://www.linkedin.com/company/zmot-institute"><font-awesome-icon :icon="['fab', 'linkedin']" /></b-link>
-                        <b-link href="https://www.facebook.com/ZMOT-Institute-110524633996597"><font-awesome-icon :icon="['fab', 'facebook-f']" /></b-link>
+                        <b-link href="https://www.linkedin.com/company/zmot-institute" target="_blank"><font-awesome-icon :icon="['fab', 'linkedin']" /></b-link>
+                        <b-link href="https://www.facebook.com/ZMOT-Institute-110524633996597" target="_blank"><font-awesome-icon :icon="['fab', 'facebook-f']" /></b-link>
                     </div>
                 </b-col>
             </b-row>

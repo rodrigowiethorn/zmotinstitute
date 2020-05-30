@@ -9,7 +9,8 @@
             <p class="text-center">{{$t('news_letter.text')}}</p>
             <div class="search-form">
               <b-form-input></b-form-input>
-              <b-button variant="danger">{{$t('news_letter.subscribe')}}</b-button>
+              <b-button variant="danger" class="browser-show">{{$t('news_letter.subscribe')}}</b-button>
+              <b-button variant="danger" class="mobile-show">{{$t('news_letter.subscribe_ellipse')}}</b-button>
             </div>
           </b-col>
         </b-row>
@@ -23,6 +24,13 @@ export default {
     components: {},
     data: () => ({
     }),
-    methods: {}
+    methods: {
+      screenWidth() {
+        return window.innerWidth;
+      }
+    },
+    computed: {
+
+    }
 };
 </script>
