@@ -1,5 +1,5 @@
 <template>
-  <b-container v-show="!loading">
+  <b-container v-if="!loading">
     <b-row>
       <b-col class="header" md="12" sm="12">
         <span> Responses </span>

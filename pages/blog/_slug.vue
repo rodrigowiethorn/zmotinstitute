@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="blog" v-show="!isLoading">
+    <div id="blog" v-if="!isLoading">
       <b-container>
         <b-row>
           <b-col md="9" sm="12">
@@ -28,6 +28,9 @@
               </div>
             </div>
           </b-col>
+          <Author
+            :author="post && post._embedded && post._embedded.author && post._embedded.author.length > 0 && post._embedded.author[0]"
+          />
           <CommentList
             :author="post && post._embedded && post._embedded.author && post._embedded.author.length > 0 && post._embedded.author[0]"
             :replies="post && post._embedded && post._embedded.replies && post._embedded.replies.length > 0 && post._embedded.replies[0]"
@@ -37,7 +40,7 @@
         </b-row>
       </b-container>
     </div>
-    <div v-show="isLoading" id="blog-loading">
+    <div v-if="isLoading" id="blog-loading">
       <loading :active.sync="isLoading"
                :can-cancel="false"
                :is-full-page="fullPage"
@@ -52,13 +55,15 @@
   import Loading from 'vue-loading-overlay';
   import AddComment from "@/components/AddComment";
   import CommentList from "@/components/CommentList";
+  import Author from "@/components/Author";
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
     components: {
         'Loading': Loading,
         'AddComment': AddComment,
-        'CommentList': CommentList
+        'CommentList': CommentList,
+        'Author': Author
     },
     data: () => ({
         text: '',
