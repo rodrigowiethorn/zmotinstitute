@@ -20,16 +20,16 @@
         </b-row>
         <b-row class="logos">
           <b-col>
-            <b-img fluid src="../assets/img/logos/google-white-logo.png" alt="Image 1"></b-img>
+            <b-img fluid src="../assets/img/logos/google-white-logo.png" alt="Google's logo white color"></b-img>
           </b-col>
           <b-col>
-            <b-img fluid src="../assets/img/logos/digitalks-white logo.png" alt="Image 1"></b-img>
+            <b-img fluid src="../assets/img/logos/digitalks-white logo.png" alt="Digitalk's logo white color"></b-img>
           </b-col>
           <b-col>
-            <b-img fluid src="../assets/img/logos/logo-profissional-de-ecommerce.png" alt="Image 1"></b-img>
+            <b-img fluid src="../assets/img/logos/logo-profissional-de-ecommerce.png" alt="Profissional de ecommerce logo white color"></b-img>
           </b-col>
           <b-col>
-            <b-img fluid src="../assets/img/logos/logo-startupi-white.png" alt="Image 1"></b-img>
+            <b-img fluid src="../assets/img/logos/logo-startupi-white.png" alt="Startupi's logo white color"></b-img>
           </b-col>
         </b-row>
       </b-container>
