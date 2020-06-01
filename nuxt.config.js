@@ -71,7 +71,7 @@ module.exports = {
           iso: 'es-ES'
         },
       ],
-      // defaultLocale: 'en',
+      defaultLocale: 'en',
       detectBrowserLanguage: {
         useCookie: true,
         alwaysRedirect: true

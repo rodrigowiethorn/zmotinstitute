@@ -6,12 +6,12 @@
       </a>
     </div>
     <div>
-      <a href="https://facebook.com">
+      <a href="https://facebook.com" target="_blank">
         <img class="social-image" src="../assets/img/social-links/facebook.svg"/>
       </a>
     </div>
     <div>
-      <a href="https://m.facebook.com/messages">
+      <a href="https://m.facebook.com/messages" target="_blank">
         <img class="social-image messenger" src="../assets/img/social-links/facebook-messenger.svg"/>
       </a>
     </div>
