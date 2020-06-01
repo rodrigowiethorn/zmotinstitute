@@ -3,6 +3,7 @@
     <div id="blog" v-if="!isLoading">
       <b-container>
         <b-row>
+          <SocialLinks/>
           <b-col md="9" sm="12">
             <div class="blog-main">
               <div class="blog-media">
@@ -56,6 +57,7 @@
   import AddComment from "@/components/AddComment";
   import CommentList from "@/components/CommentList";
   import Author from "@/components/Author";
+  import SocialLinks from "@/components/SocialLinks";
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
@@ -63,7 +65,8 @@
         'Loading': Loading,
         'AddComment': AddComment,
         'CommentList': CommentList,
-        'Author': Author
+        'Author': Author,
+        'SocialLinks': SocialLinks
     },
     data: () => ({
         text: '',

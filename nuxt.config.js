@@ -40,8 +40,6 @@ module.exports = {
     }
   ],
   router: {
-    extendRoutes (routes, resolve) {
-    }
   },
   /*
   ** Nuxt.js dev-modules
@@ -73,7 +71,7 @@ module.exports = {
           iso: 'es-ES'
         },
       ],
-      defaultLocale: 'en',
+      // defaultLocale: 'en',
       detectBrowserLanguage: {
         useCookie: true,
         alwaysRedirect: true
@@ -86,7 +84,14 @@ module.exports = {
           es: require('./locales/es.json')
         }
       }
-    }]
+    }],
+    [
+      "@nuxtjs/google-tag-manager",
+      {
+        id: "GTM-K3SW4XN",
+        pageTracking: true
+      }
+    ]
   ],
   /*
   ** Build configuration

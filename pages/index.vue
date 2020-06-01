@@ -473,7 +473,6 @@
         try {
           const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584&_embed=1');
           this.stickyPosts = result.data && result.data.reverse();
-          console.log('post data: ', result.data);
         } catch(e) {
           this.stickyPosts = [];
         } finally {

@@ -18,6 +18,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@nuxtjs/google-tag-manager": "^2.3.2",
     "aos": "^3.0.0-beta.6",
     "axios": "^0.19.2",
     "bootstrap": "^4.1.3",
