@@ -2,21 +2,21 @@
   <div class="social-link">
     <div>
       <a href="https://whatsapp.com" target="_blank">
-        <img class="social-image" src="../assets/img/social-links/whatsapp.svg"/>
+        <img class="social-image" src="../assets/img/social-links/whatsapp.svg" alt="Whatsapp Icon"/>
       </a>
     </div>
     <div>
       <a href="https://facebook.com" target="_blank">
-        <img class="social-image" src="../assets/img/social-links/facebook.svg"/>
+        <img class="social-image" src="../assets/img/social-links/facebook.svg" alt="Facebook Icon"/>
       </a>
     </div>
     <div>
       <a href="https://m.facebook.com/messages" target="_blank">
-        <img class="social-image messenger" src="../assets/img/social-links/facebook-messenger.svg"/>
+        <img class="social-image messenger" src="../assets/img/social-links/facebook-messenger.svg" alt="Facebook Messenger Icon"/>
       </a>
     </div>
     <div>
-      <img class="social-image envelope" src="../assets/img/social-links/envelope.svg"/>
+      <img class="social-image envelope" src="../assets/img/social-links/envelope.svg" alt="Mail Icon"/>
     </div>
   </div>
 </template>

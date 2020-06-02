@@ -23,7 +23,7 @@
                     </div>
                 </b-col>
                 <b-col>
-                    <b-img src="../assets/img/contact/contact_hero.webp" fluid alt="Responsive image"></b-img>
+                    <b-img src="../assets/img/contact/contact_hero.webp" fluid alt="Contact Hero Image"></b-img>
                 </b-col>
             </b-row>
         </b-container>
@@ -47,7 +47,7 @@
             <b-row>
                 <b-col>
                     <div class="hubspot-link text-center">
-                        <img src="https://js.hsforms.net/sproket.png" />
+                        <img src="https://js.hsforms.net/sproket.png" alt="Sproket Image" />
                         <span>Crie seu próprio</span>
                         <a href="https://app.hubspot.com/signup/marketing?hubs_medium=virality&amp;hubs_campaign=hubspot-forms-virality&amp;hubs_id=forms-branding-control&amp;hubs_source=thezmot.com&amp;intent=marketingFreeForms&amp;opt_sidebar=forms&amp;viralSourcePortalId=5835830" target="_blank">
                             formulário gratuito com o HubSpot

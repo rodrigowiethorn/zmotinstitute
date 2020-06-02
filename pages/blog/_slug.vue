@@ -7,7 +7,7 @@
           <b-col md="9" sm="12">
             <div class="blog-main">
               <div class="blog-media">
-                <b-img :src="post && post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url" fluid alt="Responsive image"></b-img>
+                <b-img :src="post && post._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url" fluid alt="Post Image"></b-img>
               </div>
               <header class="blog-header">
                 <h1 class="blog-title" v-html="post && post.title.rendered"></h1>

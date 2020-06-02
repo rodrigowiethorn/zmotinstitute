@@ -5,7 +5,7 @@
                 <b-col md="4" sm="12">
                     <picture>
                         <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
-                        <img v-bind="footerLogo" src="../assets/img/zmot-logo.png" alt="Brand logo" class="footer-new-holder-right-holder__brand footer-logo" />
+                        <img v-bind="footerLogo" src="../assets/img/zmot-logo.png" alt="Zmot Logo" class="footer-new-holder-right-holder__brand footer-logo" />
                     </picture>
                     <p>
                         {{$t('footer.text')}}

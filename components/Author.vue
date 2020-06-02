@@ -2,7 +2,7 @@
   <b-container v-if="!loading">
     <b-row>
       <b-col md="12" sm="12" class="comment-item">
-        <img class="avatar" alt="" v-bind:src="author && author.avatar_urls['96']"/>
+        <img class="avatar" alt="Author Photo" v-bind:src="author && author.avatar_urls['96']"/>
         <div>
           <div
             v-if="author && author.link !== ''"

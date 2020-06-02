@@ -15,7 +15,7 @@
             </div>
           </b-col>
           <b-col sm="12" md="6">
-            <b-img src="../assets/img/header-zmot.jpg" fluid alt="Responsive image"></b-img>
+            <b-img src="../assets/img/header-zmot.jpg" fluid alt="Header Zmot Image"></b-img>
           </b-col>
         </b-row>
         <b-row class="logos">
@@ -50,7 +50,7 @@
             <b-col class="feature__item-img" sm="12" md="6">
               <picture>
                 <source srcset="../assets/img/why-do-you-need/searching_block.webp" type="image/webp" />
-                <b-img src="../assets/img/why-do-you-need/searching_block.png" fluid alt=""></b-img>
+                <b-img src="../assets/img/why-do-you-need/searching_block.png" fluid alt="Why do you need Image"></b-img>
               </picture>
             </b-col>
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
@@ -68,12 +68,12 @@
               </div>
             </b-col>
             <b-col class="feature__item-img" sm="12" md="6">
-              <b-img src="../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Responsive image"></b-img>
+              <b-img src="../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Service Mobile Image"></b-img>
             </b-col>
           </b-row>
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-img" sm="12" md="6">
-                <b-img src="../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" fluid alt="Responsive image"></b-img>
+                <b-img src="../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" fluid alt="Why do you need zmot review Image"></b-img>
             </b-col>
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
                 <div class="feature__item-content">
@@ -103,7 +103,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/NeilPatel.webp" type="image/webp" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid alt="Responsive image"></b-img>
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid alt="NeilPatel Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -128,7 +128,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/Jim_Lecinsk.webp" type="image/webp" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.jpeg" fluid alt="Responsive image"></b-img>
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.jpeg" fluid alt="Jim Lecinsk Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -153,7 +153,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/David_Meerman_Scott.webp" type="image/webp" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.png" fluid alt="Responsive image"></b-img>
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.png" fluid alt="David Meerman Scott Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -178,7 +178,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/avinash_kaushik.webp" type="image/webp" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash_kaushik.png" fluid alt="Responsive image"></b-img>
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash_kaushik.png" fluid alt="Avinash Kaushik Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -203,7 +203,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/bryan_eisenberg.webp" type="image/webp" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan_eisenberg.png" fluid alt="Responsive image"></b-img>
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan_eisenberg.png" fluid alt="Bryan Eisenberg Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -236,7 +236,7 @@
         </p>
         <b-row id="zmot-audit">
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-zmot_audito.png" alt="" />
+            <img src="../assets/img/services/service-zmot_audito.png" alt="Service Zmot Audito Image" />
           </b-col>
           <b-col md="6" sm="12">
             <b-card class="service--item mb-3">
@@ -275,12 +275,12 @@
             </b-card>
           </b-col>
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-lecture.webp" alt="" />
+            <img src="../assets/img/services/service-lecture.webp" alt="Service Lecture Image" />
           </b-col>
         </b-row>
         <b-row id="courses">
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-online_course.webp" alt="" />
+            <img src="../assets/img/services/service-online_course.webp" alt="Service Online Course Image" />
           </b-col>
           <b-col md="6" sm="12">
             <b-card class="service--item mb-3">
@@ -319,7 +319,7 @@
                   {{$t('homepage.what_say.talking_1')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/paulo-gomes.webp" fluid alt="Responsive image"></b-img>
+                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/paulo-gomes.webp" fluid alt="Paulo gomes Photo"></b-img>
                   Paulo Gomes
                 </span>
               </div>
@@ -331,7 +331,7 @@
                   {{$t('homepage.what_say.talking_2')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/elvissilva.webp" fluid alt="Responsive image"></b-img>
+                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/elvissilva.webp" fluid alt="Elvissilva Photo"></b-img>
                   Elvis Silva
                 </span>
               </div>
@@ -344,7 +344,7 @@
                   {{$t('homepage.what_say.talking_3')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" fluid alt="Responsive image"></b-img>
+                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" fluid alt="Eduardo Moiolli Congresso Apdespbr"></b-img>
                   Eduardo Maiolli
                 </span>
               </div>

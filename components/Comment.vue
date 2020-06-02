@@ -2,7 +2,7 @@
   <b-container>
     <b-row>
       <b-col md="10" sm="12" class="comment-item">
-        <img class="avatar" alt="" v-bind:src="comment && comment.author_avatar_urls['96']"/>
+        <img class="avatar" alt="Commenter Photo" v-bind:src="comment && comment.author_avatar_urls['96']"/>
         <div>
           <div
             v-show="comment.author_url !== ''"
