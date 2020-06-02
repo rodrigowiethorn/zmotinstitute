@@ -15,7 +15,7 @@
             </div>
           </b-col>
           <b-col sm="12" md="6">
-            <b-img src="../assets/img/header-zmot.jpg" fluid alt="Header Zmot Image"></b-img>
+            <b-img src="../assets/img/header-zmot.jpg" fluid alt="women persona using cell phone, sitting on a side of a big cell phone with an ecommerce website. There is a nice landscape with plants"></b-img>
           </b-col>
         </b-row>
         <b-row class="logos">

@@ -5,7 +5,7 @@
         <b-navbar-brand>
           <picture>
             <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
-            <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt="Zmot Logo"></b-img>
+            <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt="zmot-institute white logo"></b-img>
           </picture>
         </b-navbar-brand>
       </nuxt-link>
@@ -17,15 +17,15 @@
           <b-img v-show="flagVisible === 3" src="../assets/img/svg/es.svg" width="25" alt="ES Flag"></b-img>
         </template>
         <b-dropdown-item :to="switchLocalePath('en')">
-          <b-img src="../assets/img/svg/en.svg" width="25" alt="EN Flag"></b-img>
+          <b-img src="../assets/img/svg/en.svg" width="25" alt="USA flag"></b-img>
           English
         </b-dropdown-item>
         <b-dropdown-item :to="switchLocalePath('pt-br')">
-          <b-img src="../assets/img/svg/br.svg" width="25" alt="BR Flag"></b-img>
+          <b-img src="../assets/img/svg/br.svg" width="25" alt="Brazillian flag"></b-img>
           Português
         </b-dropdown-item>
         <b-dropdown-item :to="switchLocalePath('es')">
-          <b-img src="../assets/img/svg/es.svg" width="25" alt="ES Flag"></b-img>
+          <b-img src="../assets/img/svg/es.svg" width="25" alt="Spanish flag"></b-img>
           Español
         </b-dropdown-item>
       </b-nav-item-dropdown>
@@ -46,15 +46,15 @@
           </li>
           <b-nav-item-dropdown :text="localeToLang" right class="langpicker">
             <b-dropdown-item :to="switchLocalePath('en')">
-              <b-img src="../assets/img/svg/en.svg" width="25"></b-img>
+              <b-img src="../assets/img/svg/en.svg" width="25" alt="USA flag"></b-img>
               English
             </b-dropdown-item>
             <b-dropdown-item :to="switchLocalePath('pt-br')">
-              <b-img src="../assets/img/svg/br.svg" width="25"></b-img>
+              <b-img src="../assets/img/svg/br.svg" width="25" alt="Brazillian flag"></b-img>
               Português
             </b-dropdown-item>
             <b-dropdown-item :to="switchLocalePath('es')">
-              <b-img src="../assets/img/svg/es.svg" width="25"></b-img>
+              <b-img src="../assets/img/svg/es.svg" width="25" alt="Spanish flag"></b-img>
               Español
             </b-dropdown-item>
           </b-nav-item-dropdown>
