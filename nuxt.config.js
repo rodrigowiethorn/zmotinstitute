@@ -11,7 +11,11 @@ module.exports = {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/zmot-institute-android-chrome-192x192.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/zmot-institute-android-chrome-192x192.png' },
+      { rel: 'canonical', href: 'http://zmotinstitute.com/' },
+      { rel: 'alternate', hreflang: 'en', href: 'http://zmotinstitute.com/' },
+      { rel: 'alternate', hreflang: 'es' ,href: 'http://zmotinstitute.com/es' },
+      { rel: 'alternate', hreflang: 'pt-br' ,href: 'http://zmotinstitute.com/pt-br' },
     ]
   },
   /*
@@ -32,10 +36,16 @@ module.exports = {
       src: './plugins/GoogleAnalytics.js',
       mode: 'client'
     },
-    { src: "@/plugins/aos",
+    {
+      src: "@/plugins/aos",
       ssr: false
     },
-    { src: '@/plugins/vue-agile',
+    {
+      src: '@/plugins/vue-agile',
+      ssr: false
+    },
+    {
+      src: '@/plugins/vue-fb-customer-chat.js',
       ssr: false
     }
   ],
@@ -53,6 +63,7 @@ module.exports = {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     'nuxt-fontawesome',
+    '@nuxtjs/robots',
     ['nuxt-i18n', {
       locales: [
         {
@@ -97,5 +108,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
+  },
+  robots: {
+    UserAgent: '*',
+    Disallow: '/'
   }
 }
