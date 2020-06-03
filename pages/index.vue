@@ -364,19 +364,15 @@
         <h2 class="text-center">Blog</h2>
         <div class="blog--list">
           <b-row>
-            <b-col md="4" sm="12" v-for="post of stickyPosts" :key="post.id">
+            <b-col md="4" sm="12" v-for="(post, index) of stickyPosts" :key="post.id">
               <b-card
-                :img-src="post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url"
+                :img-src="require('../assets/img/blogs/home-blog-' + index + '.png')"
                 img-alt="Image"
                 img-top
                 tag="article"
                 class="mb-2 blog--card"
               >
                 <div class="card-meta">
-                  <!-- <span>
-                    <a class="text-small orange-text" href="/website-builders/review/">Review</a>
-                  </span> -->
-                  <!-- <span class="text-small mx-2">|</span> -->
                   <span class="text-small">{{ moment(post.date).format('MMMM Do YYYY') }}</span>
                 </div>
                 <div class="card-title">
@@ -477,7 +473,7 @@
       },
       getStickyBlogs: async function() {
         try {
-          const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584&_embed=1');
+          const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts?include[]=490&include[]=147&include[]=584');
           this.stickyPosts = result.data && result.data.reverse();
         } catch(e) {
           this.stickyPosts = [];

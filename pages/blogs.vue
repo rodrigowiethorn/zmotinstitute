@@ -19,7 +19,6 @@
                   <b-card-text v-html="post.excerpt.rendered"></b-card-text>
                   <div class="card-meta">
                     Mais de 2.000 profissionais de marketing já leram esse conteúdo
-                    <!-- {{ moment(blog.date).format('MMMM Do YYYY') }} by {{blog._embedded.author[0].name}} -->
                   </div>
                 </b-card-body>
               </b-col>

@@ -5,12 +5,10 @@
             <b-col md="8">
                 <div class="cookie-warning">
                     {{$t('cookie.text')}}
-                    <!-- <nuxt-link class="cookie__link" to="/privacy-policy">Privacy Policy</nuxt-link>. Click accept for the best user experience on our app. -->
                 </div>
             </b-col>
             <b-col md="2" offset-md="2">
-                <b-button @click="accept" variant="outline-success">{{ $t('cookie.accept') }}</b-button>
-                <!-- <b-button @click="deny" variant="dark">{{ buttonTextDeny }}</b-button> -->
+                <b-button @click="accept($event)" variant="outline-success">{{ $t('cookie.accept') }}</b-button>
             </b-col>
         </b-row>
     </b-container>
@@ -60,7 +58,8 @@ export default {
         return localStorage.getItem("GDPR:accepted", true);
       }
     },
-    accept() {
+    accept(event) {
+      event.preventDefault();
       if (process.browser) {
         this.isOpen = false;
         localStorage.setItem("GDPR:accepted", true);

@@ -25,7 +25,7 @@
             {{moment(comment && comment.date).format('MM/DD/YYYY') + ' at ' + moment(comment && comment.date).format('hh:MM A')}}
           </div>
           <div v-html="comment && comment.content && comment.content.rendered"></div>
-          <div class="response-label" v-on:click="toggleAddComment()">
+          <div class="response-label" v-on:click="toggleAddComment($event)">
             Responder
           </div>
         </div>
@@ -85,7 +85,8 @@
 
         this.children = children;
       },
-      toggleAddComment() {
+      toggleAddComment(event) {
+        event.preventDefault();
         this.visibleAddComment = !this.visibleAddComment;
         $nuxt.$emit('hide-add-comment', {
           commentId: this.comment.id,

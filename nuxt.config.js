@@ -60,6 +60,8 @@ module.exports = {
     'bootstrap-vue/nuxt',
     'nuxt-fontawesome',
     '@nuxtjs/robots',
+    'nuxt-ssr-cache',
+    "nuxt-compress",
     ['nuxt-i18n', {
       locales: [
         {
@@ -108,5 +110,33 @@ module.exports = {
   robots: {
     UserAgent: '*',
     Disallow: '/'
+  },
+  cache: {
+    useHostPrefix: false,
+    pages: [
+      '/',
+    ],
+
+    key(route, context) {
+      // custom function to return cache key, when used previous
+      // properties (useHostPrefix, pages) are ignored. return
+      // falsy value to bypass the cache
+    },
+
+    store: {
+      type: 'memory',
+      // maximum number of pages to store in memory
+      max: 100,
+      // number of seconds to store this page in cache
+      ttl: 31536000,
+    },
+  },
+  "nuxt-compress": {
+    gzip: {
+      cache: true
+    },
+    brotli: {
+      threshold: 10240
+    }
   }
 }
