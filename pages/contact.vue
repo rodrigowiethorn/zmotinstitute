@@ -23,7 +23,11 @@
                     </div>
                 </b-col>
                 <b-col>
+                  <picture>
+                    <source srcset="../assets/img/contact/contact_hero.webp" type="image/webp" />
+                    <source srcset="../assets/img/contact/contact_hero.png" type="image/png" />
                     <b-img src="../assets/img/contact/contact_hero.webp" fluid alt="Contact Hero Image"></b-img>
+                  </picture>
                 </b-col>
             </b-row>
         </b-container>

@@ -15,21 +15,41 @@
             </div>
           </b-col>
           <b-col sm="12" md="6">
-            <b-img src="../assets/img/header-zmot.jpg" fluid alt="women persona using cell phone, sitting on a side of a big cell phone with an ecommerce website. There is a nice landscape with plants"></b-img>
+            <picture>
+              <source srcset="../assets/img/header-zmot.webp" type="image/webp" />
+              <source srcset="../assets/img/header-zmot.jpg" type="image/jpg" />
+              <b-img src="../assets/img/header-zmot.jpg" fluid alt="women persona using cell phone, sitting on a side of a big cell phone with an ecommerce website. There is a nice landscape with plants"></b-img>
+            </picture>
           </b-col>
         </b-row>
         <b-row class="logos">
           <b-col>
-            <b-img fluid src="../assets/img/logos/google-white-logo.png" alt="Google's logo white color"></b-img>
+            <picture>
+              <source srcset="../assets/img/logos/google-white-logo.webp" type="image/webp" />
+              <source srcset="../assets/img/logos/google-white-logo.png" type="image/png" />
+              <b-img fluid src="../assets/img/logos/google-white-logo.png" alt="Google's logo white color"></b-img>
+            </picture>
           </b-col>
           <b-col>
-            <b-img fluid src="../assets/img/logos/digitalks-white logo.png" alt="Digitalk's logo white color"></b-img>
+            <picture>
+              <source srcset="../assets/img/logos/digitalks-white-logo.png" type="image/png" />
+              <source srcset="../assets/img/logos/digitalks-white-logo.webp" type="image/webp" />
+              <b-img fluid src="../assets/img/logos/digitalks-white-logo.png" alt="Digitalk's logo white color"></b-img>
+            </picture>
           </b-col>
           <b-col>
-            <b-img fluid src="../assets/img/logos/logo-profissional-de-ecommerce.png" alt="Profissional de ecommerce logo white color"></b-img>
+            <picture>
+              <source srcset="../assets/img/logos/logo-profissional-de-ecommerce.webp" type="image/webp" />
+              <source srcset="../assets/img/logos/logo-profissional-de-ecommerce.png" type="image/png" />
+              <b-img fluid src="../assets/img/logos/logo-profissional-de-ecommerce.png" alt="Profissional de ecommerce logo white color"></b-img>
+            </picture>
           </b-col>
           <b-col>
-            <b-img fluid src="../assets/img/logos/logo-startupi-white.png" alt="Startupi's logo white color"></b-img>
+            <picture>
+              <source srcset="../assets/img/logos/logo-startupi-white.webp" type="image/webp" />
+              <source srcset="../assets/img/logos/logo-startupi-white.png" type="image/png" />
+              <b-img fluid src="../assets/img/logos/logo-startupi-white.png" alt="Startupi's logo white color"></b-img>
+            </picture>
           </b-col>
         </b-row>
       </b-container>
@@ -242,7 +262,11 @@
         </p>
         <b-row id="zmot-audit">
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-zmot_audito.png" alt="Service Zmot Audito Image" />
+            <picture>
+              <source srcset="../assets/img/services/service-zmot_audit.webp" type="image/webp" />
+              <source srcset="../assets/img/services/service-zmot_audit.png" type="image/png" />
+              <img src="../assets/img/services/service-zmot_audit.png" alt="Service Zmot Audito Image" />
+            </picture>
           </b-col>
           <b-col md="6" sm="12">
             <b-card class="service--item mb-3">
@@ -281,12 +305,20 @@
             </b-card>
           </b-col>
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-lecture.webp" alt="Service Lecture Image" />
+            <picture>
+              <source srcset="../assets/img/services/service-lecture.webp" type="image/webp" />
+              <source srcset="../assets/img/services/service-lecture.png" type="image/png" />
+              <img src="../assets/img/services/service-lecture.webp" alt="Service Lecture Image" />
+            </picture>
           </b-col>
         </b-row>
         <b-row id="courses">
           <b-col md="6" sm="12">
-            <img src="../assets/img/services/service-online_course.webp" alt="Service Online Course Image" />
+            <picture>
+              <source srcset="../assets/img/services/service-online_course.webp" type="image/webp" />
+              <source srcset="../assets/img/services/service-online_course.png" type="image/png" />
+              <img src="../assets/img/services/service-online_course.webp" alt="Service Online Course Image" />
+            </picture>
           </b-col>
           <b-col md="6" sm="12">
             <b-card class="service--item mb-3">
@@ -325,7 +357,11 @@
                   {{$t('homepage.what_say.talking_1')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/paulo-gomes.webp" fluid alt="Paulo gomes Photo"></b-img>
+                  <picture>
+                    <source srcset="../assets/img/Testominal/paulo-gomes.webp" type="image/webp" />
+                    <source srcset="../assets/img/Testominal/paulo-gomes.jpeg" type="image/jpg" />
+                    <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/paulo-gomes.webp" fluid alt="Paulo gomes Photo"></b-img>
+                  </picture>
                   Paulo Gomes
                 </span>
               </div>
@@ -337,7 +373,11 @@
                   {{$t('homepage.what_say.talking_2')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/elvissilva.webp" fluid alt="Elvissilva Photo"></b-img>
+                  <picture>
+                    <source srcset="../assets/img/Testominal/elvissilva.webp" type="image/webp" />
+                    <source srcset="../assets/img/Testominal/elvissilva.jpeg" type="image/jpg" />
+                    <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/elvissilva.webp" fluid alt="Elvissilva Photo"></b-img>
+                  </picture>
                   Elvis Silva
                 </span>
               </div>
@@ -350,7 +390,11 @@
                   {{$t('homepage.what_say.talking_3')}}
                 </blockquote>
                 <span class="testimonial-item__author">
-                  <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" fluid alt="Eduardo Moiolli Congresso Apdespbr"></b-img>
+                  <picture>
+                    <source srcset="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" type="image/webp" />
+                    <source srcset="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.png" type="image/png" />
+                    <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" fluid alt="Eduardo Moiolli Congresso Apdespbr"></b-img>
+                  </picture>
                   Eduardo Maiolli
                 </span>
               </div>
