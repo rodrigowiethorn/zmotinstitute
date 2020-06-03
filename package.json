@@ -33,7 +33,6 @@
     "vue-agile": "^1.0.11",
     "vue-analytics": "^5.22.1",
     "vue-animate-onscroll": "^1.0.8",
-    "vue-fb-customer-chat": "^0.2.0",
     "vue-loading-overlay": "^3.3.2"
   },
   "devDependencies": {

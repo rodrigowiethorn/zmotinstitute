@@ -5,7 +5,7 @@
         <img class="avatar" alt="Commenter Photo" v-bind:src="comment && comment.author_avatar_urls['96']"/>
         <div>
           <div
-            v-show="comment.author_url !== ''"
+            v-if="comment.author_url !== ''"
             class="author-name-link"
           >
             <b-link
@@ -15,11 +15,11 @@
             </b-link>
           </div>
           <div
-            v-show="comment.author_url === ''"
+            v-else
             class="author-name"
           >
             {{comment && comment.author_name}}
-            <span v-show="comment.author === 1" class="author-badge">Author</span>
+            <span v-if="comment.author === 1" class="author-badge">Author</span>
           </div>
           <div class="comment-date">
             {{moment(comment && comment.date).format('MM/DD/YYYY') + ' at ' + moment(comment && comment.date).format('hh:MM A')}}
@@ -30,7 +30,7 @@
           </div>
         </div>
       </b-col>
-      <b-col md="12" sm="12" v-show="visibleAddComment">
+      <b-col md="12" sm="12" v-if="visibleAddComment">
         <AddComment
           :commentId="comment.id"
           :postId="postId"

@@ -1,5 +1,5 @@
 <template>
-  <div v-show="isOpen" class="cookie" data-aos="zoom-in" data-aos-once="true">
+  <div v-if="isOpen" class="cookie" data-aos="zoom-in" data-aos-once="true">
     <b-container fluid="md">
         <b-row>
             <b-col md="8">

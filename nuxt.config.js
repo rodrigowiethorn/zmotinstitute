@@ -43,10 +43,6 @@ module.exports = {
     {
       src: '@/plugins/vue-agile',
       ssr: false
-    },
-    {
-      src: '@/plugins/vue-fb-customer-chat.js',
-      ssr: false
     }
   ],
   router: {

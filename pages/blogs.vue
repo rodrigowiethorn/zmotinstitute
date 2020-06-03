@@ -1,7 +1,7 @@
 <template>
   <div style="padding-top: 5rem;">
-    <b-container v-show="!isLoading">
-      <section v-show="!!totalNum" id="blogs">
+    <b-container v-if="!isLoading">
+      <section v-if="!!totalNum" id="blogs">
         <nuxt-link
           v-for="post of posts" :key="post.id"
           :to="localePath({
@@ -29,11 +29,11 @@
         <b-pagination-nav size="lg" v-model="currentPage" :link-gen="linkGen" :number-of-pages="totalNum" base-url="#" use-router></b-pagination-nav>
       </section>
 
-      <section v-show="!totalNum" id="blog">
+      <section v-else id="blog">
         No blogs detected
       </section>
     </b-container>
-    <b-container id="blogs-loading" v-show="isLoading">
+    <b-container id="blogs-loading" v-else>
         <loading :active.sync="isLoading"
             :can-cancel="false"
             :is-full-page="fullPage"
@@ -116,8 +116,6 @@
               return 1;
             }
           });
-          console.log('posts: ', result.data);
-          // this.posts = result.data;
         } catch(e) {
           this.posts = [];
         } finally {

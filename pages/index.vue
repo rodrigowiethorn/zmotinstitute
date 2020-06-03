@@ -50,6 +50,7 @@
             <b-col class="feature__item-img" sm="12" md="6">
               <picture>
                 <source srcset="../assets/img/why-do-you-need/searching_block.webp" type="image/webp" />
+                <source srcset="../assets/img/why-do-you-need/searching_block.png" type="image/png" />
                 <b-img src="../assets/img/why-do-you-need/searching_block.png" fluid alt="Why do you need Image"></b-img>
               </picture>
             </b-col>
@@ -103,6 +104,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/NeilPatel.webp" type="image/webp" />
+                            <source srcset="../assets/img/Specialist/NeilPatel.jpg" type="image/jpeg" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid alt="NeilPatel Photo"></b-img>
                           </picture>
                         </div>
@@ -128,6 +130,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/Jim_Lecinsk.webp" type="image/webp" />
+                            <source srcset="../assets/img/Specialist/Jim_Lecinsk.jpeg" type="image/jpeg" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.jpeg" fluid alt="Jim Lecinsk Photo"></b-img>
                           </picture>
                         </div>
@@ -153,6 +156,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/David_Meerman_Scott.webp" type="image/webp" />
+                            <source srcset="../assets/img/Specialist/David_Meerman_Scott.png" type="image/png" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.png" fluid alt="David Meerman Scott Photo"></b-img>
                           </picture>
                         </div>
@@ -178,6 +182,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/avinash_kaushik.webp" type="image/webp" />
+                            <source srcset="../assets/img/Specialist/avinash_kaushik.png" type="image/png" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash_kaushik.png" fluid alt="Avinash Kaushik Photo"></b-img>
                           </picture>
                         </div>
@@ -203,6 +208,7 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/bryan_eisenberg.webp" type="image/webp" />
+                            <source srcset="../assets/img/Specialist/bryan_eisenberg.png" type="image/png" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan_eisenberg.png" fluid alt="Bryan Eisenberg Photo"></b-img>
                           </picture>
                         </div>

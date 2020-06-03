@@ -16,7 +16,6 @@
                 <div class="blog-date">
                   <time datetime="2019-03-08T17:10:45-03:00">Publicado em {{ moment(post && post.date).format('DD/MM/YYYY') }}</time>
                 </div>
-                <!-- <div class="blog-comments"> <span class="meta-sep">with</span> <span class="meta-comment">no comment</span></div> -->
               </div>
               <div class="blog-content" v-html="post && post.content.rendered"></div>
             </div>
@@ -41,7 +40,7 @@
         </b-row>
       </b-container>
     </div>
-    <div v-if="isLoading" id="blog-loading">
+    <div v-else id="blog-loading">
       <loading :active.sync="isLoading"
                :can-cancel="false"
                :is-full-page="fullPage"
@@ -84,7 +83,6 @@
         getPost: async function() {
             const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?slug=${this.$route.params.slug}&_embed=1`)
             this.post = result.data[0]
-            console.log(this.post);
             this.isLoading = false
         },
         moment: function (date) {
