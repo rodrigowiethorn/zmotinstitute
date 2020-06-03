@@ -89,12 +89,20 @@
               </div>
             </b-col>
             <b-col class="feature__item-img" sm="12" md="6">
-              <b-img src="../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Service Mobile Image"></b-img>
+              <picture>
+                <source srcset="../assets/img/why-do-you-need/service-mobile.webp" type="image/webp" />
+                <source srcset="../assets/img/why-do-you-need/service-mobile.png" type="image/png" />
+                <b-img src="../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Service Mobile Image"></b-img>
+              </picture>
             </b-col>
           </b-row>
           <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
             <b-col class="feature__item-img" sm="12" md="6">
+              <picture>
+                <source srcset="../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" type="image/webp" />
+                <source srcset="../assets/img/why-do-you-need/why_do_you_need_zmot-review.png" type="image/png" />
                 <b-img src="../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" fluid alt="Why do you need zmot review Image"></b-img>
+              </picture>
             </b-col>
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
                 <div class="feature__item-content">
