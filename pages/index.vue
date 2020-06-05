@@ -367,7 +367,7 @@
                 <span class="testimonial-item__author">
                   <picture>
                     <source srcset="../assets/img/Testominal/paulo-gomes.webp" type="image/webp" />
-                    <source srcset="../assets/img/Testominal/paulo-gomes.jpeg" type="image/jpg" />
+                    <source srcset="../assets/img/Testominal/paulo-gomes.jpeg" type="image/jpeg" />
                     <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/paulo-gomes.webp" fluid alt="Paulo gomes Photo"></b-img>
                   </picture>
                   Paulo Gomes
@@ -383,7 +383,7 @@
                 <span class="testimonial-item__author">
                   <picture>
                     <source srcset="../assets/img/Testominal/elvissilva.webp" type="image/webp" />
-                    <source srcset="../assets/img/Testominal/elvissilva.jpeg" type="image/jpg" />
+                    <source srcset="../assets/img/Testominal/elvissilva.jpeg" type="image/jpeg" />
                     <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/elvissilva.webp" fluid alt="Elvissilva Photo"></b-img>
                   </picture>
                   Elvis Silva
