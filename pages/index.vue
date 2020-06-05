@@ -285,7 +285,7 @@
                       <span>{{$t('homepage.services.service_1_description')}}</span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                <a class="btn btn-orange rounded-pill" :href="$t('homepage.services.service_1_landing_page')" data-ga-slug="Get a Quote" role="button" tabindex="0">
                   <span>
                       {{$t('homepage.services.get_a_quote')}}
                   </span>
@@ -304,7 +304,7 @@
                       <span>{{$t('homepage.services.service_2_description')}}</span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                <a class="btn btn-orange rounded-pill" :href="$t('homepage.services.service_2_landing_page')" data-ga-slug="Get a Quote" role="button" tabindex="0">
                   <span>
                       {{$t('homepage.services.get_a_quote')}}
                   </span>
@@ -339,7 +339,7 @@
                     </span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                <a class="btn btn-orange rounded-pill" :href="$t('homepage.services.service_3_landing_page')" data-ga-slug="Get a Quote" role="button" tabindex="0">
                   <span>
                       {{$t('homepage.services.get_a_quote')}}
                     </span>
