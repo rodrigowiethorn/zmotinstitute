@@ -115,7 +115,7 @@
       </b-container>
     </section>
 
-    <section class="specialists" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
+    <section class="experts" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
       <b-container>
         <h2 class="text-center">{{$t('homepage.specialist.header')}}</h2>
         <p class="text-center">{{$t('homepage.specialist.text')}}</p>
@@ -262,7 +262,8 @@
         </div>
       </b-container>
     </section>
-    <section class="services" data-aos="fade-zoom" data-aos-once="true">
+    
+    <section class="how-can-help" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <h2 class="text-center">{{$t('homepage.services.header')}}</h2>
         <p class="text-center">
@@ -285,7 +286,7 @@
                       <span>{{$t('homepage.services.service_1_description')}}</span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                <a class="btn btn-orange rounded-pill" href="http://zmotinstitute.rds.land/784a86fc1474a6d021aa" data-ga-slug="Get a Quote" role="button" tabindex="0">
                   <span>
                       {{$t('homepage.services.get_a_quote')}}
                   </span>
@@ -304,7 +305,7 @@
                       <span>{{$t('homepage.services.service_2_description')}}</span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                <a class="btn btn-orange rounded-pill" href="http://zmotinstitute.rds.land/palestras-e-eventos" data-ga-slug="Get a Quote" role="button" tabindex="0">
                   <span>
                       {{$t('homepage.services.get_a_quote')}}
                   </span>
@@ -339,7 +340,7 @@
                     </span>
                   </p>
                 </div>
-                <a class="btn btn-orange rounded-pill" href="https://nordvpn.com/features/" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                <a class="btn btn-orange rounded-pill" href="http://zmotinstitute.rds.land/cursos-online" data-ga-slug="Get a Quote" role="button" tabindex="0">
                   <span>
                       {{$t('homepage.services.get_a_quote')}}
                     </span>
@@ -411,6 +412,7 @@
         </div>
       </b-container>
     </section>
+    
     <section class="blogs mt-5 mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
       <b-container>
         <h2 class="text-center">Blog</h2>
