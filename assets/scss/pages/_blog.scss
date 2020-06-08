@@ -47,6 +47,10 @@
                     color: $bg_orange;
                 }
             }
+
+            img {
+              max-width: 100%;
+            }
         }
     }
     .sidebar-content {
