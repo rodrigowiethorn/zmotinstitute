@@ -8,7 +8,7 @@
               <div class="elementor-spacer-inner"></div>
             </div>
             <div class="banner-widget-heading pa-2">
-              <h2>{{$t('homepage.banner.header')}}</h2>
+              <h1>{{$t('homepage.banner.header')}}</h1>
             </div>
             <div class="banner-widget-text pa-2">
               <p>{{$t('homepage.banner.text')}}</p>
@@ -57,7 +57,7 @@
 
     <section class="why-zmot">
       <b-container>
-        <h1 class="text-center">{{$t('homepage.why_do_you_need_ZMOT.header')}}</h1>
+        <h2 class="text-center">{{$t('homepage.why_do_you_need_ZMOT.header')}}</h2>
         <p class="text-center">
           {{$t('homepage.why_do_you_need_ZMOT.text1')}}
           <b>{{$t('homepage.why_do_you_need_ZMOT.text2')}}</b>
@@ -265,10 +265,10 @@
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <h2 class="text-center">{{$t('homepage.services.header')}}</h2>
-        <p class="text-center">
+        <p class="text-center"  id="zmot-audit">
           {{$t('homepage.services.sub_header')}}
         </p>
-        <b-row id="zmot-audit">
+        <b-row >
           <b-col md="6" sm="12">
             <picture>
               <source srcset="../assets/img/services/service-zmot_audit.webp" type="image/webp" />
@@ -294,7 +294,7 @@
             </b-card>
           </b-col>
         </b-row>
-        <b-row id="lectures">
+        <b-row >
           <b-col md="6" sm="12">
             <b-card class="service--item mb-3 text-right">
               <b-card-text>
@@ -313,16 +313,16 @@
             </b-card>
           </b-col>
           <b-col md="6" sm="12">
-            <picture>
+            <picture id="lectures">
               <source srcset="../assets/img/services/service-lecture.webp" type="image/webp" />
               <source srcset="../assets/img/services/service-lecture.png" type="image/png" />
               <img src="../assets/img/services/service-lecture.webp" alt="Service Lecture Image" />
             </picture>
           </b-col>
         </b-row>
-        <b-row id="courses">
+        <b-row >
           <b-col md="6" sm="12">
-            <picture>
+            <picture id="courses">
               <source srcset="../assets/img/services/service-online_course.webp" type="image/webp" />
               <source srcset="../assets/img/services/service-online_course.png" type="image/png" />
               <img src="../assets/img/services/service-online_course.webp" alt="Service Online Course Image" />

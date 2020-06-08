@@ -78,7 +78,8 @@
         "header": "Sigue a ZMOT de cerca",
         "text": "Manténgase en sintonía con todas las noticias sobre ZMOT, Marketing Digital y Comportamiento del Consumidor. Registraté ahora a nuestra Newsletter mensual",
         "subscribe": "Suscribirse a Newsletter",
-        "subscribe_ellipse": "Suscribirse"
+        "subscribe_ellipse": "Suscribirse",
+        "placeholder": "Añadir tu email"
     },
     "cookie": {
         "text": "Utilizamos cookies para ofrecer nuestros servicios y para el análisis y la comercialización. Para obtener más información sobre el uso de cookies, consulte nuestra política de privacidad. Haga clic en aceptar para la mejor experiencia de usuario en nuestra aplicación.",

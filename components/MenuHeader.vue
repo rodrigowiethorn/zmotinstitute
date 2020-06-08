@@ -90,6 +90,7 @@
 
   nav.navbar .container ul.navbar-nav li.pg-nav {
     padding: 0;
+    margin: 1.5rem 0 1.5rem 0;
   }
 
   nav.navbar .container ul.navbar-nav li.pg-nav a {
