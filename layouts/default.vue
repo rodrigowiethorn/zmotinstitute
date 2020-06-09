@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <MenuHeader />
+    <MenuHeader/>
     <no-ssr>
       <nuxt />
     </no-ssr>
@@ -42,9 +42,11 @@ html {
   import MenuHeader from "@/components/MenuHeader.vue";
   import Footer from "@/components/Footer.vue";
   import Cookie from "@/components/Cookie.vue";
-  import SocialLinks from "@/components/SocialLinks";
 
   export default {
-    components: {SocialLinks, MenuHeader, Footer, Cookie }
+    components: { MenuHeader, Footer, Cookie },
+    data: () => ({
+
+    }),
   }
 </script>

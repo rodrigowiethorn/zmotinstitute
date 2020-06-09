@@ -111,5 +111,11 @@
             "save": "Save my name, email, and website in this browser for the next time I comment",
             "submit": "SUBMIT"
         }
+    },
+    "zmot-audit": {
+      "header": "Digital Marketing in High Level",
+      "text_1": "Wants to speed up the results of your business, but do not know how or where to start?",
+      "text_2": "Using the ZMOT framework we can show you the ropes, or even walk with you. We help create and implement actions that the best companies in the world are using to scale their business on the Internet",
+      "submit": "I want it Receiving Contact"
     }
 }

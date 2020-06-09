@@ -42,7 +42,7 @@
                     <b-form-group>
                         <b-form-input placeholder="Email"></b-form-input>
                         <b-form-input placeholder="Name"></b-form-input>
-                        <b-form-input placeholder="Surename"></b-form-input>
+                        <b-form-input placeholder="Surname"></b-form-input>
                         <b-form-input placeholder="Message"></b-form-input>
                         <b-button variant="orange">{{$t('contact.form.send_email')}}</b-button>
                     </b-form-group>

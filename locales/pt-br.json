@@ -108,5 +108,11 @@
         "save": "Save my name, email, and website in this browser for the next time I comment",
         "submit": "SUBMIT"
       }
+    },
+    "zmot-audit": {
+      "header": "Marketing Digital em Alto Nível",
+      "text_1": "Quer acelerar os resultados do seu negócio, mas não sabe como fazer, nem por onde começar? ",
+      "text_2": "Utilizando o framework do ZMOT podemos te mostrar o caminho das pedras, ou mesmo caminhar com você. Ajudamos a criar e implementar ações que as melhores empresas do mundo estão usando para escalar seus negócios na internet",
+      "submit": "Quero Receber Contato"
     }
 }
