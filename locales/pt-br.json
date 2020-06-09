@@ -109,10 +109,22 @@
         "submit": "SUBMIT"
       }
     },
-    "zmot-audit": {
+    "zmot_audit": {
       "header": "Marketing Digital em Alto Nível",
       "text_1": "Quer acelerar os resultados do seu negócio, mas não sabe como fazer, nem por onde começar? ",
       "text_2": "Utilizando o framework do ZMOT podemos te mostrar o caminho das pedras, ou mesmo caminhar com você. Ajudamos a criar e implementar ações que as melhores empresas do mundo estão usando para escalar seus negócios na internet",
+      "submit": "Quero Receber Contato"
+    },
+    "lectures_events": {
+      "header": "Encante Sua Platéia",
+      "text_1": "Se você está organizando um evento e precisa de um tema super atual e relevante, com um storytelling envolvedor, nossas Palestras sobre ZMOT e Comportamento do Consumidor são o que você precisa. ",
+      "text_2": "Seja em um evento presencial ou online, os participantes do seu evento vão te agradecer por ajudá-los a entender como o ZMOT pode melhorar os resultados de forma exponencial.",
+      "submit": "Quero Receber Contato"
+    },
+    "online_courses" : {
+      "header": "Mergulhe Fundo no ZMOT",
+      "text_1": "Sabemos que aprender sobre um tema novo, e colocá-lo em prática, pode ser trabalhoso e frustrante. ",
+      "text_2": "Por isso, preparamos um curso detalhado sobre o ZMOT, que te ajudará aprender os conceitos, como implantar, quais ferramentas usar e alguns cases de empresas que estão utilizando o ZMOT e obtendo muitos resultados em seu Marketing Digital.",
       "submit": "Quero Receber Contato"
     }
 }

@@ -1,12 +1,12 @@
 <template>
-  <div id="zmot-audit-page">
+  <div id="online-courses-page">
     <section>
       <b-container>
-        <b-row class="zmot-audit-wrapper">
+        <b-row class="online-courses-wrapper">
           <b-col md="5" sm="12">
-            <h1 class="text-center">{{$t('zmot_audit.header')}}</h1>
-            <p class="text-center">{{$t('zmot_audit.text_1')}}</p>
-            <p class="text-center">{{$t('zmot_audit.text_2')}}</p>
+            <h1 class="text-center">{{$t('online_courses.header')}}</h1>
+            <p class="text-center">{{$t('online_courses.text_1')}}</p>
+            <p class="text-center">{{$t('online_courses.text_2')}}</p>
           </b-col>
 
           <b-col md="5" sm="12">
@@ -16,7 +16,7 @@
                 <b-form-input :type="'text'" required placeholder="Name"></b-form-input>
                 <b-form-input :type="'text'" required placeholder="Surname"></b-form-input>
                 <vue-tel-input v-bind="bindProps"></vue-tel-input>
-                <b-button type="submit">{{$t('zmot_audit.submit')}}</b-button>
+                <b-button type="submit">{{$t('online_courses.submit')}}</b-button>
               </b-form-group>
             </b-form>
           </b-col>
@@ -30,9 +30,9 @@
   export default {
     nuxtI18n: {
       paths: {
-        en: '/zmot-audit',
-        es: '/auditoria-zmot',
-        'pt-br':  '/auditoria-zmot'
+        en: '/online-courses',
+        es: '/cursos-online',
+        'pt-br':  '/cursos-online'
       }
     },
     components: {
