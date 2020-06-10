@@ -1,6 +1,17 @@
 <template>
   <div id="online-courses-page">
     <section>
+      <b-container class="navbar">
+        <b-navbar-brand>
+          <picture>
+            <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
+            <source srcset="../assets/img/zmot-logo.png" type="image/png" />
+            <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt="zmot-institute white logo"></b-img>
+          </picture>
+        </b-navbar-brand>
+      </b-container>
+    </section>
+    <section>
       <b-container>
         <b-row class="online-courses-wrapper">
           <b-col md="5" sm="12">
@@ -25,12 +36,21 @@
         </b-row>
       </b-container>
     </section>
+    <loading
+      :active.sync="submitting"
+      :can-cancel="false"
+      :is-full-page="true"
+      color="#ff6600"
+    >
+    </loading>
   </div>
 </template>
 
 <script>
   import axios from "axios";
-  import {hubspotAPIKey} from "@/config";
+  import {hubSpotPortalId, hubSpotFormGuid} from "@/config";
+  import Loading from 'vue-loading-overlay';
+  import {telInputOption} from "@/config";
 
   export default {
     nuxtI18n: {
@@ -41,66 +61,67 @@
       }
     },
     components: {
+      'Loading': Loading
     },
     data: () => ({
+      logoProp: {blank: false, width: 250, class: 'm2'},
       email: "",
       name: "",
       surname: "",
       phone: "",
-      bindProps: {
-        mode: "international",
-        // defaultCountry: "FR",
-        disabledFetchingCountry: false,
-        disabled: false,
-        disabledFormatting: false,
-        placeholder: "Enter a phone number",
-        required: true,
-        validCharactersOnly: true,
-        enabledCountryCode: false,
-        enabledFlags: true,
-        // preferredCountries: ["AU", "BR"],
-        onlyCountries: [],
-        ignoredCountries: [],
-        autocomplete: "off",
-        name: "phone",
-        maxLen: 25,
-        wrapperClasses: "",
-        inputClasses: "",
-        dropdownOptions: {
-          disabledDialCode: false
-        },
-        inputOptions: {
-          showDialCode: true
-        }
-      }
+      submitting: false,
+      bindProps: telInputOption
     }),
     methods: {
       async onSubmit(evt) {
         try {
           evt.preventDefault();
-          const token = await this.$recaptcha.execute('login');
-          console.log('ReCaptcha token:', token);
+          // const token = await this.$recaptcha.execute('login');
+          // console.log('ReCaptcha token:', token);
+          this.submitting = true;
           const data = {
-            email: this.email,
-            name: this.name,
-            surname: this.surname,
-            phone: this.phone
+            fields: [
+              {
+                name: "email",
+                value: this.email
+              },
+              {
+                name: "firstname",
+                value: this.name
+              },
+              {
+                name: "lastname",
+                value: this.surname
+              },
+              {
+                name: "phone",
+                value: this.phone
+              }
+            ]
           };
-          await axios.post(`https://api.hubapi.com/contacts/v1/contact/?hapikey=${hubspotAPIKey}`, data)
+
+          await axios.post(
+            `https://api.hsforms.com/submissions/v3/integration/submit/${hubSpotPortalId}/${hubSpotFormGuid}`,
+            data
+          )
             .then(res => {
-              console.log('hubspot res', res);
+              this.submitting = false;
+              console.log('success', res);
             })
             .catch((err) => {
-              console.log('hubspot err', err);
+              this.submitting = false;
+              console.log('fail', err);
             });
         } catch (error) {
-          console.log('Login error:', error);
+          console.log('error:', error);
         }
       }
     },
     async mounted() {
       console.log(this.$recaptcha.siteKey);
-      await this.$recaptcha.init();
+      // await this.$recaptcha.init();
+
+      $nuxt.$emit('hide-header-footer');
     }
   }
 </script>

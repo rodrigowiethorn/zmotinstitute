@@ -1,8 +1,13 @@
 @import 'variable';
 #online-courses-page {
   background-color: $bg_orange;
-  padding-top: 7rem;
   padding-bottom: 3rem;
+  min-height: 100vh;
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
 
   .online-courses-wrapper {
     display: flex;

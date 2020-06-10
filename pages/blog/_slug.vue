@@ -77,7 +77,8 @@
     mounted: function() {
         this.$nextTick(() => {
             this.getPost();
-        })
+        });
+        $nuxt.$emit('show-header-footer');
     },
     methods: {
         getPost: async function() {
@@ -86,7 +87,7 @@
             this.isLoading = false
         },
         moment: function (date) {
-            return moment(date)
+            return moment(date);
         }
     }
 }

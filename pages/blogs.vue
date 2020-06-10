@@ -76,6 +76,7 @@
     },
     mounted: function() {
       this.initializeBlogs();
+      $nuxt.$emit('show-header-footer');
     },
     methods: {
       moment: function (date) {

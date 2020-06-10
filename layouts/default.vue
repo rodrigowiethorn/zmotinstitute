@@ -1,11 +1,11 @@
 <template>
   <div class="page">
-    <MenuHeader/>
+    <MenuHeader v-if="visibleHeaderFooter"/>
     <no-ssr>
       <nuxt />
     </no-ssr>
     <no-ssr>
-      <Footer />
+      <Footer v-if="visibleHeaderFooter"/>
     </no-ssr>
     <no-ssr>
       <Cookie />
@@ -46,7 +46,16 @@ html {
   export default {
     components: { MenuHeader, Footer, Cookie },
     data: () => ({
-
+      visibleHeaderFooter: true
     }),
+    mounted() {
+      $nuxt.$on('hide-header-footer', () => {
+        this.visibleHeaderFooter = false;
+      });
+
+      $nuxt.$on('show-header-footer', () => {
+        this.visibleHeaderFooter = true;
+      });
+    }
   }
 </script>

@@ -70,5 +70,8 @@
     },
     data: () => ({
     }),
+    mounted: function() {
+      $nuxt.$emit('show-header-footer');
+    }
 }
 </script>

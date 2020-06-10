@@ -1,6 +1,17 @@
 <template>
   <div id="zmot-audit-page">
     <section>
+      <b-container class="navbar">
+        <b-navbar-brand>
+          <picture>
+            <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
+            <source srcset="../assets/img/zmot-logo.png" type="image/png" />
+            <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt="zmot-institute white logo"></b-img>
+          </picture>
+        </b-navbar-brand>
+      </b-container>
+    </section>
+    <section>
       <b-container>
         <b-row class="zmot-audit-wrapper">
           <b-col md="5" sm="12">
@@ -27,6 +38,8 @@
 </template>
 
 <script>
+  import {telInputOption} from "@/config";
+
   export default {
     nuxtI18n: {
       paths: {
@@ -38,45 +51,23 @@
     components: {
     },
     data: () => ({
-      bindProps: {
-        mode: "international",
-        // defaultCountry: "FR",
-        disabledFetchingCountry: false,
-        disabled: false,
-        disabledFormatting: false,
-        placeholder: "Enter a phone number",
-        required: true,
-        validCharactersOnly: true,
-        enabledCountryCode: false,
-        enabledFlags: true,
-        // preferredCountries: ["AU", "BR"],
-        onlyCountries: [],
-        ignoredCountries: [],
-        autocomplete: "off",
-        name: "telephone",
-        maxLen: 25,
-        wrapperClasses: "",
-        inputClasses: "",
-        dropdownOptions: {
-          disabledDialCode: false
-        },
-        inputOptions: {
-          showDialCode: true
-        }
-      }
+      logoProp: {blank: false, width: 250, class: 'm2'},
+      bindProps: telInputOption
     }),
     methods: {
       async onSubmit() {
         try {
-          const token = await this.$recaptcha.execute('login')
-          console.log('ReCaptcha token:', token)
+          // const token = await this.$recaptcha.execute('login');
+          // console.log('ReCaptcha token:', token);
         } catch (error) {
-          console.log('Login error:', error)
+          // console.log('Login error:', error);
         }
       }
     },
     async mounted() {
-      await this.$recaptcha.init()
+      // await this.$recaptcha.init()
+
+      $nuxt.$emit('hide-header-footer');
     }
   }
 </script>

@@ -524,6 +524,7 @@
     }),
     mounted: function () {
         this.getStickyBlogs();
+      $nuxt.$emit('show-header-footer');
     },
     methods: {
       moment: function (date) {
