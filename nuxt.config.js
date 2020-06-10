@@ -109,10 +109,9 @@ module.exports = {
     [
       '@nuxtjs/recaptcha', {
         /* reCAPTCHA options */
-        hideBadge: true, // Hide badge element (v3 & v2 via size=invisible)
-        // language: "en",   // Recaptcha language (v2)
-        siteKey: "site key",    // Site key for requests
-        version: 3,     // Version
+        hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+        siteKey: "6LdXyQEVAAAAAD5ECL2PFXuM39YFgpUpUY05_loV",
+        version: 2,     // Version
         size: "normal"        // Size: 'compact', 'normal', 'invisible' (v2)
       }
     ],

@@ -12,11 +12,13 @@
           <b-col md="5" sm="12">
             <b-form @submit="onSubmit">
               <b-form-group>
-                <b-form-input :type="'email'" required placeholder="Email"></b-form-input>
-                <b-form-input :type="'text'" required placeholder="Name"></b-form-input>
-                <b-form-input :type="'text'" required placeholder="Surname"></b-form-input>
-                <vue-tel-input v-bind="bindProps"></vue-tel-input>
-                <b-button type="submit">{{$t('online_courses.submit')}}</b-button>
+                <b-form-input :type="'email'" v-model="email" required placeholder="Email"></b-form-input>
+                <b-form-input :type="'text'" v-model="name" required placeholder="Name"></b-form-input>
+                <b-form-input :type="'text'" v-model="surname" required placeholder="Surname"></b-form-input>
+                <vue-tel-input v-model="phone" v-bind="bindProps"></vue-tel-input>
+                <b-button type='submit'>
+                  {{$t('online_courses.submit')}}
+                </b-button>
               </b-form-group>
             </b-form>
           </b-col>
@@ -27,6 +29,9 @@
 </template>
 
 <script>
+  import axios from "axios";
+  import {hubspotAPIKey} from "@/config";
+
   export default {
     nuxtI18n: {
       paths: {
@@ -38,6 +43,10 @@
     components: {
     },
     data: () => ({
+      email: "",
+      name: "",
+      surname: "",
+      phone: "",
       bindProps: {
         mode: "international",
         // defaultCountry: "FR",
@@ -53,7 +62,7 @@
         onlyCountries: [],
         ignoredCountries: [],
         autocomplete: "off",
-        name: "telephone",
+        name: "phone",
         maxLen: 25,
         wrapperClasses: "",
         inputClasses: "",
@@ -66,17 +75,32 @@
       }
     }),
     methods: {
-      async onSubmit() {
+      async onSubmit(evt) {
         try {
-          const token = await this.$recaptcha.execute('login')
-          console.log('ReCaptcha token:', token)
+          evt.preventDefault();
+          const token = await this.$recaptcha.execute('login');
+          console.log('ReCaptcha token:', token);
+          const data = {
+            email: this.email,
+            name: this.name,
+            surname: this.surname,
+            phone: this.phone
+          };
+          await axios.post(`https://api.hubapi.com/contacts/v1/contact/?hapikey=${hubspotAPIKey}`, data)
+            .then(res => {
+              console.log('hubspot res', res);
+            })
+            .catch((err) => {
+              console.log('hubspot err', err);
+            });
         } catch (error) {
-          console.log('Login error:', error)
+          console.log('Login error:', error);
         }
       }
     },
     async mounted() {
-      await this.$recaptcha.init()
+      console.log(this.$recaptcha.siteKey);
+      await this.$recaptcha.init();
     }
   }
 </script>
