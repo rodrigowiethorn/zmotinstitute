@@ -112,5 +112,23 @@
             "save": "Save my name, email, and website in this browser for the next time I comment",
             "submit": "SUBMIT"
         }
+    },
+    "zmot_audit": {
+      "header": "Digital Marketing in High Level",
+      "text_1": "Wants to speed up the results of your business, but do not know how or where to start?",
+      "text_2": "Using the ZMOT framework we can show you the ropes, or even walk with you. We help create and implement actions that the best companies in the world are using to scale their business on the Internet",
+      "submit": "I want it Receiving Contact"
+    },
+    "lectures_events": {
+      "header": "Entrance Your Audience",
+      "text_1": "If you are organizing an event and need a super current and relevant theme, with a envolvedor storytelling, our Lectures on ZMOT and Consumer Behavior is what you need.",
+      "text_2": "Whether in a classroom or online event, participants of your event will thank you for helping them to understand how ZMOT can improve the results exponentially.",
+      "submit": "I want it Receiving Contact"
+    },
+    "online_courses" : {
+      "header": "Soak Fund at ZMOT",
+      "text_1": "We know that learning about a new subject, and put it into practice, can be laborious and frustrating.",
+      "text_2": "Therefore, we have prepared a detailed course on ZMOT, that will help you learn the concepts, how to deploy, which tools to use and some cases of companies that are using the ZMOT and getting many results in your Digital Marketing.",
+      "submit": "I want it Receiving Contact"
     }
 }

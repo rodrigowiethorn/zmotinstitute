@@ -1,0 +1,74 @@
+@import 'variable';
+#lectures-events-page {
+  background-color: $bg_orange;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lectures-events-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      //font-size: 42px;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: white;
+    }
+    p {
+      font-size: 20px;
+      color: white;
+    }
+
+    form {
+      padding-top: 2rem;
+    }
+
+    input {
+      border-radius: 0;
+      border: 0;
+      border-bottom: 2px solid #cad5e2;
+      margin: 2rem 0;
+      transition: all ease 0.3s;
+      &:focus {
+        outline: 0;
+        border: 0;
+        border-bottom: 2px solid $mat_orange;
+        box-shadow: none;
+      }
+    }
+
+    .vue-tel-input {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .vti__dropdown {
+      background-color: white;
+      outline: none;
+      height: 38px;
+      border: 0;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #cad5e2;
+    }
+
+    .vti__input {
+      height: 38px;
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 0 0 2rem 0;
+      line-height: 1.5;
+      color: #495057;
+    }
+
+    button {
+      background-color: $mat_purple;
+    }
+  }
+}

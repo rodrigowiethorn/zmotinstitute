@@ -14,12 +14,20 @@
                         <p>{{$t('contact.banner.text')}}</p>
                     </div>
                     <div class="banner-buttons">
-                        <a href="https://m.facebook.com/messages">
-                          <b-button pill variant="white">{{$t('contact.banner.button.access_live_chat')}}</b-button>
-                        </a>
-                        <a href="#contact-form">
-                          <b-button pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
-                        </a>
+                      <b-row>
+                        <b-col md="6" sm="12" class="button-wrapper">
+                          <a href="https://wa.me/5548999831686" target="_blank">
+                            <b-button pill variant="white">
+                              {{$t('contact.banner.button.access_live_chat')}}
+                            </b-button>
+                          </a>
+                        </b-col>
+                        <b-col md="6" sm="12" class="button-wrapper">
+                          <a href="#contact-form">
+                            <b-button pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
+                          </a>
+                        </b-col>
+                      </b-row>
                     </div>
                 </b-col>
                 <b-col>
@@ -38,15 +46,33 @@
             <h2 class="text-center">{{$t('contact.form.contact')}}</h2>
             <p class="text-center">Tem alguma opinião ou sugestão de conteúdo? <br>Não perca tempo e nos <strong>envie uma mensagem.</strong></p>
             <b-row>
-                <b-col offset-md="4" md="4">
-                    <b-form-group>
-                        <b-form-input placeholder="Email"></b-form-input>
-                        <b-form-input placeholder="Name"></b-form-input>
-                        <b-form-input placeholder="Surename"></b-form-input>
-                        <b-form-input placeholder="Message"></b-form-input>
-                        <b-button variant="orange">{{$t('contact.form.send_email')}}</b-button>
-                    </b-form-group>
+              <b-form @submit.prevent="onSubmit">
+                <b-col offset-md="1" md="9" sm="12">
+                  <b-form-group>
+                    <b-row>
+                      <b-col md="4" sm="12">
+                        <b-form-input type="text" required placeholder="Name"></b-form-input>
+                      </b-col>
+                      <b-col md="4" sm="12">
+                        <b-form-input type="text" required placeholder="Surname"></b-form-input>
+                      </b-col>
+                      <b-col md="4" sm="12">
+                        <b-form-input type="email" required placeholder="Email"></b-form-input>
+                      </b-col>
+                    </b-row>
+                    <b-row>
+                      <b-col md="12">
+                        <b-form-textarea rows="5" required placeholder="Message"></b-form-textarea>
+                      </b-col>
+                    </b-row>
+                    <b-row>
+                      <b-col md="12">
+                        <b-button type="submit" variant="orange">{{$t('contact.form.send_email')}}</b-button>
+                      </b-col>
+                    </b-row>
+                  </b-form-group>
                 </b-col>
+              </b-form>
             </b-row>
             <b-row>
                 <b-col>
@@ -70,5 +96,13 @@
     },
     data: () => ({
     }),
+    mounted: function() {
+      $nuxt.$emit('show-header-footer');
+    },
+    methods: {
+      onSubmit() {
+
+      }
+    }
 }
 </script>

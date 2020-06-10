@@ -109,5 +109,23 @@
         "save": "Save my name, email, and website in this browser for the next time I comment",
         "submit": "SUBMIT"
       }
-    }
+    },
+    "zmot_audit": {
+      "header": "Marketing Digital en High Level",
+      "text_1": "Quiere acelerar los resultados de su negocio, pero no saben cómo o por dónde empezar?",
+      "text_2": "Utilizando el marco ZMOT que le puede mostrar las cuerdas, o incluso caminar con usted. Ayudamos a crear e implementar acciones que las mejores empresas del mundo están utilizando para escalar su negocio en Internet",
+      "submit": "Quiero Recibir Contacto"
+    },
+  "lectures_events": {
+    "header": "La entrada a su público",
+    "text_1": "Si está organizando un evento y necesita una corriente super y el tema relevante, con una narración envolvedor, nuestras Conferencias sobre el ZMOT y el comportamiento del consumidor es lo que necesita.",
+    "text_2": "Ya sea en un aula o evento en línea, los participantes de su evento gracias por ayudar a comprender cómo el ZMOT puede mejorar los resultados de forma exponencial.",
+    "submit": "Quiero Recibir Contacto"
+  },
+  "online_courses" : {
+    "header": "Remojar Fondo en el ZMOT",
+    "text_1": "Sabemos que el aprendizaje de un nuevo sujeto, y lo ponemos en práctica, puede ser laborioso y frustrante.",
+    "text_2": "Por lo tanto, hemos preparado un detallado del curso en el ZMOT, que le ayudará a aprender los conceptos, cómo implementar, qué herramientas utilizar y algunos casos de empresas que utilizan el ZMOT y conseguir muchos resultados en su marketing digital.",
+    "submit": "Quiero Recibir Contacto"
+  }
 }

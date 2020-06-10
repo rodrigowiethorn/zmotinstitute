@@ -43,6 +43,10 @@ module.exports = {
     {
       src: '@/plugins/vue-agile',
       ssr: false
+    },
+    {
+      src: '@/plugins/vue-tel-input',
+      mode: 'client'
     }
   ],
   router: {
@@ -63,6 +67,7 @@ module.exports = {
     'nuxt-ssr-cache',
     "nuxt-compress",
     ['nuxt-i18n', {
+      strategy: 'prefix_except_default',
       locales: [
         {
           name: 'English',
@@ -100,7 +105,16 @@ module.exports = {
         id: "GTM-K3SW4XN",
         pageTracking: true
       }
-    ]
+    ],
+    [
+      '@nuxtjs/recaptcha', {
+        /* reCAPTCHA options */
+        hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+        siteKey: "6LdXyQEVAAAAAD5ECL2PFXuM39YFgpUpUY05_loV",
+        version: 2,     // Version
+        size: "normal"        // Size: 'compact', 'normal', 'invisible' (v2)
+      }
+    ],
   ],
   /*
   ** Build configuration

@@ -46,6 +46,11 @@
             <nuxt-link :to="localePath('contact')">{{$t('navs.contact.title')}}</nuxt-link>
           </li>
           <b-nav-item-dropdown :text="localeToLang" right class="langpicker">
+            <template slot="button-content">
+              <b-img v-if="flagVisible === 1" src="../assets/img/svg/en.svg" width="25" alt="EN Flag"></b-img>
+              <b-img v-if="flagVisible === 2" src="../assets/img/svg/br.svg" width="25" alt="BR Flag"></b-img>
+              <b-img v-if="flagVisible === 3" src="../assets/img/svg/es.svg" width="25" alt="ES Flag"></b-img>
+            </template>
             <b-dropdown-item :to="switchLocalePath('en')">
               <b-img src="../assets/img/svg/en.svg" width="25" alt="USA flag"></b-img>
               English
