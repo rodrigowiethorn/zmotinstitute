@@ -21,12 +21,26 @@
           </b-col>
 
           <b-col md="5" sm="12">
-            <b-form @submit="onSubmit">
+            <b-form @submit.prevent="onSubmit">
               <b-form-group>
                 <b-form-input :type="'email'" v-model="email" required placeholder="Email"></b-form-input>
                 <b-form-input :type="'text'" v-model="name" required placeholder="Name"></b-form-input>
                 <b-form-input :type="'text'" v-model="surname" required placeholder="Surname"></b-form-input>
                 <vue-tel-input v-model="phone" v-bind="bindProps"></vue-tel-input>
+                <recaptcha
+                  @error="onError"
+                  @success="onSuccess"
+                  @expired="onExpired"
+                />
+                <b-toast
+                  id="error-toast"
+                  static
+                  auto-hide-delay="3000"
+                  no-close-button
+                  variant="danger"
+                >
+                  Please verify the captcha
+                </b-toast>
                 <b-button type='submit'>
                   {{$t('online_courses.submit')}}
                 </b-button>
@@ -36,13 +50,15 @@
         </b-row>
       </b-container>
     </section>
-    <loading
-      :active.sync="submitting"
-      :can-cancel="false"
-      :is-full-page="true"
-      color="#ff6600"
-    >
-    </loading>
+    <div id="page-submitting" v-if="submitting">
+      <loading
+        :active.sync="submitting"
+        :can-cancel="false"
+        :is-full-page="true"
+        color="white"
+      >
+      </loading>
+    </div>
   </div>
 </template>
 
@@ -73,11 +89,11 @@
       bindProps: telInputOption
     }),
     methods: {
-      async onSubmit(evt) {
+      async onSubmit() {
         try {
-          evt.preventDefault();
-          // const token = await this.$recaptcha.execute('login');
-          // console.log('ReCaptcha token:', token);
+          const token = await this.$recaptcha.getResponse();
+          console.log('ReCaptcha token:', token);
+
           this.submitting = true;
           const data = {
             fields: [
@@ -112,15 +128,24 @@
               this.submitting = false;
               console.log('fail', err);
             });
+
+          await this.$recaptcha.reset();
         } catch (error) {
           console.log('error:', error);
         }
+      },
+      onError (error) {
+        console.log('Error happened:', error);
+        this.$bvToast.show('error-toast');
+      },
+      onSuccess (token) {
+        console.log('Succeeded:', token);
+      },
+      onExpired () {
+        console.log('Expired');
       }
     },
     async mounted() {
-      console.log(this.$recaptcha.siteKey);
-      // await this.$recaptcha.init();
-
       $nuxt.$emit('hide-header-footer');
     }
   }
