@@ -125,10 +125,18 @@
       "text_2": "Whether in a classroom or online event, participants of your event will thank you for helping them to understand how ZMOT can improve the results exponentially.",
       "submit": "I want it Receiving Contact"
     },
-    "online_courses" : {
+    "online_courses": {
       "header": "Soak Fund at ZMOT",
       "text_1": "We know that learning about a new subject, and put it into practice, can be laborious and frustrating.",
       "text_2": "Therefore, we have prepared a detailed course on ZMOT, that will help you learn the concepts, how to deploy, which tools to use and some cases of companies that are using the ZMOT and getting many results in your Digital Marketing.",
-      "submit": "I want it Receiving Contact"
+      "submit": "I want it Receiving Contact",
+      "success": "Thanks for message",
+      "failed": "Submit Error"
+    },
+    "placeholder": {
+      "email": "Email",
+      "name": "Name",
+      "surname": "Surname",
+      "phone": "Phone Number"
     }
 }

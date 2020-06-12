@@ -14,36 +14,35 @@
     <section>
       <b-container>
         <b-row class="online-courses-wrapper">
-          <b-col md="5" sm="12">
-            <h1 class="text-center">{{$t('online_courses.header')}}</h1>
-            <p class="text-center">{{$t('online_courses.text_1')}}</p>
-            <p class="text-center">{{$t('online_courses.text_2')}}</p>
+          <b-col md="6" sm="12">
+            <h1>{{$t('online_courses.header')}}</h1>
+            <p>{{$t('online_courses.text_1')}}</p>
+            <p>{{$t('online_courses.text_2')}}</p>
           </b-col>
 
           <b-col md="5" sm="12">
             <b-form @submit.prevent="onSubmit">
               <b-form-group>
-                <b-form-input :type="'email'" v-model="email" required placeholder="Email"></b-form-input>
-                <b-form-input :type="'text'" v-model="name" required placeholder="Name"></b-form-input>
-                <b-form-input :type="'text'" v-model="surname" required placeholder="Surname"></b-form-input>
-                <vue-tel-input v-model="phone" v-bind="bindProps"></vue-tel-input>
+                <b-form-input :type="'email'" v-model="email" required v-bind:placeholder="$t('placeholder.email')"></b-form-input>
+                <b-form-input :type="'text'" v-model="name" required v-bind:placeholder="$t('placeholder.name')"></b-form-input>
+                <b-form-input :type="'text'" v-model="surname" required v-bind:placeholder="$t('placeholder.surname')"></b-form-input>
+                <vue-tel-input
+                  v-model="phone"
+                  v-bind="bindProps"
+                  v-on:country-changed="countryChanged"
+                  required
+                  v-bind:placeholder="$t('placeholder.phone')"
+                ></vue-tel-input>
                 <recaptcha
                   @error="onError"
                   @success="onSuccess"
                   @expired="onExpired"
                 />
-                <b-toast
-                  id="error-toast"
-                  static
-                  auto-hide-delay="3000"
-                  no-close-button
-                  variant="danger"
-                >
-                  Please verify the captcha
-                </b-toast>
-                <b-button type='submit'>
-                  {{$t('online_courses.submit')}}
-                </b-button>
+                <div class="button-wrapper">
+                  <b-button type='submit'>
+                    {{$t('online_courses.submit')}}
+                  </b-button>
+                </div>
               </b-form-group>
             </b-form>
           </b-col>
@@ -85,15 +84,20 @@
       name: "",
       surname: "",
       phone: "",
+      country: "",
       submitting: false,
       bindProps: telInputOption
     }),
     methods: {
+      countryChanged(country) {
+        this.country = country.dialCode;
+        this.phone = "+" + country.dialCode + " ";
+      },
       async onSubmit() {
         try {
           const token = await this.$recaptcha.getResponse();
           console.log('ReCaptcha token:', token);
-
+          const url = window.location.href;
           this.submitting = true;
           const data = {
             fields: [
@@ -112,31 +116,73 @@
               {
                 name: "phone",
                 value: this.phone
+              },
+              {
+                name: "service_interest",
+                value: "online-courses"
+              },
+              {
+                name: "form_url",
+                value: url
               }
             ]
           };
-
           await axios.post(
             `https://api.hsforms.com/submissions/v3/integration/submit/${hubSpotPortalId}/${hubSpotFormGuid}`,
             data
           )
             .then(res => {
               this.submitting = false;
-              console.log('success', res);
+              this.showSuccessToast();
             })
             .catch((err) => {
               this.submitting = false;
-              console.log('fail', err);
+              if (err.response.data.errors[0].message.indexOf('phone') !== -1) {
+                this.showPhoneNumberErrorToast();
+              } else {
+                this.showErrorToast();
+              }
             });
-
           await this.$recaptcha.reset();
         } catch (error) {
           console.log('error:', error);
         }
       },
+      showSuccessToast() {
+        this.$bvToast.toast(this.$t('online_courses.success'), {
+          title: ``,
+          toaster: 'b-toaster-top-right',
+          variant: 'success',
+          solid: true,
+          appendToast: false,
+          autoHideDelay: 3000,
+          noCloseButton: true
+        })
+      },
+      showErrorToast() {
+        this.$bvToast.toast(this.$t('online_courses.failed'), {
+          title: ``,
+          toaster: 'b-toaster-top-right',
+          variant: 'danger',
+          solid: true,
+          appendToast: false,
+          autoHideDelay: 3000,
+          noCloseButton: true
+        })
+      },
+      showPhoneNumberErrorToast() {
+        this.$bvToast.toast('Enter valid phone number', {
+          title: ``,
+          toaster: 'b-toaster-top-right',
+          variant: 'danger',
+          solid: true,
+          appendToast: false,
+          autoHideDelay: 3000,
+          noCloseButton: true
+        })
+      },
       onError (error) {
         console.log('Error happened:', error);
-        this.$bvToast.show('error-toast');
       },
       onSuccess (token) {
         console.log('Succeeded:', token);

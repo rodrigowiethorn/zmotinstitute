@@ -7,7 +7,6 @@ export const telInputOption = {
   disabledFetchingCountry: false,
   disabled: false,
   disabledFormatting: false,
-  placeholder: "Enter a phone number",
   required: true,
   validCharactersOnly: true,
   enabledCountryCode: false,
@@ -24,6 +23,6 @@ export const telInputOption = {
     disabledDialCode: false
   },
   inputOptions: {
-    showDialCode: true
+    showDialCode: false
   }
 };
