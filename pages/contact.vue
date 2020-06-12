@@ -128,8 +128,8 @@
     methods: {
       async onSubmit() {
         try {
-          // const token = await this.$recaptcha.getResponse();
-          // console.log('ReCaptcha token:', token);
+          const token = await this.$recaptcha.getResponse();
+          console.log('ReCaptcha token:', token);
           this.submitting = true;
           const data = {
             fields: [
@@ -165,7 +165,7 @@
               this.showErrorToast();
             });
 
-          // await this.$recaptcha.reset();
+          await this.$recaptcha.reset();
         } catch(err) {
           console.log(err);
         }
