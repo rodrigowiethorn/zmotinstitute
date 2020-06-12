@@ -2,6 +2,21 @@
 #contact-page {
     padding-top: 5rem;
     padding-bottom: 3rem;
+
+    #page-submitting {
+      min-height: 200vh;
+      width: 100%;
+      z-index: 10000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      padding-top: 45vh;
+    }
+
     section.banner {
         padding-bottom: 3rem;
         background-color: $bg_orange;
@@ -76,6 +91,9 @@
                 border-bottom: 2px solid $mat_orange;
                 box-shadow: none;
             }
+        }
+        button {
+          margin-top: 1rem;
         }
         .hubspot-link {
             margin-top: 2rem;

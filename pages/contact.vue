@@ -51,22 +51,29 @@
                   <b-form-group>
                     <b-row>
                       <b-col md="4" sm="12">
-                        <b-form-input type="text" required placeholder="Name"></b-form-input>
+                        <b-form-input type="text" v-model="name" required placeholder="Name"></b-form-input>
                       </b-col>
                       <b-col md="4" sm="12">
-                        <b-form-input type="text" required placeholder="Surname"></b-form-input>
+                        <b-form-input type="text" v-model="surname" required placeholder="Surname"></b-form-input>
                       </b-col>
                       <b-col md="4" sm="12">
-                        <b-form-input type="email" required placeholder="Email"></b-form-input>
+                        <b-form-input type="email" v-model="email" required placeholder="Email"></b-form-input>
                       </b-col>
                     </b-row>
                     <b-row>
                       <b-col md="12">
-                        <b-form-textarea rows="5" required placeholder="Message"></b-form-textarea>
+                        <b-form-textarea v-model="message" rows="5" required placeholder="Message"></b-form-textarea>
                       </b-col>
                     </b-row>
                     <b-row>
-                      <b-col md="12">
+                      <b-col md="6">
+                        <recaptcha
+                          @error="onError"
+                          @success="onSuccess"
+                          @expired="onExpired"
+                        />
+                      </b-col>
+                      <b-col md="6">
                         <b-button type="submit" variant="orange">{{$t('contact.form.send_email')}}</b-button>
                       </b-col>
                     </b-row>
@@ -87,22 +94,113 @@
             </b-row>
           </b-container>
       </section>
+    <div id="page-submitting" v-if="submitting">
+      <loading
+        :active.sync="submitting"
+        :can-cancel="false"
+        :is-full-page="true"
+        color="orange"
+      >
+      </loading>
+    </div>
   </div>
 </template>
 
 <script>
+  import axios from "axios";
+  import Loading from 'vue-loading-overlay';
+  import {hubSpotPortalId, contactFormGuid} from "@/config";
+
   export default {
     components: {
+      'Loading': Loading
     },
     data: () => ({
+      name: "",
+      surname: "",
+      email: "",
+      message: "",
+      submitting: false
     }),
     mounted: function() {
       $nuxt.$emit('show-header-footer');
     },
     methods: {
-      onSubmit() {
+      async onSubmit() {
+        try {
+          // const token = await this.$recaptcha.getResponse();
+          // console.log('ReCaptcha token:', token);
+          this.submitting = true;
+          const data = {
+            fields: [
+              {
+                name: "email",
+                value: this.email
+              },
+              {
+                name: "firstname",
+                value: this.name
+              },
+              {
+                name: "lastname",
+                value: this.surname
+              },
+              {
+                name: "message",
+                value: this.message
+              }
+            ]
+          };
 
-      }
+          await axios.post(
+            `https://api.hsforms.com/submissions/v3/integration/submit/${hubSpotPortalId}/${contactFormGuid}`,
+            data
+          )
+            .then(res => {
+              this.submitting = false;
+              this.showSuccessToast();
+            })
+            .catch((err) => {
+              this.submitting = false;
+              this.showErrorToast();
+            });
+
+          // await this.$recaptcha.reset();
+        } catch(err) {
+          console.log(err);
+        }
+      },
+      onError (error) {
+        console.log('Error happened:', error);
+      },
+      onSuccess (token) {
+        console.log('Succeeded:', token);
+      },
+      onExpired () {
+        console.log('Expired');
+      },
+      showSuccessToast() {
+        this.$bvToast.toast(this.$t('online_courses.success'), {
+          title: ``,
+          toaster: 'b-toaster-top-right',
+          variant: 'success',
+          solid: true,
+          appendToast: false,
+          autoHideDelay: 3000,
+          noCloseButton: true
+        })
+      },
+      showErrorToast() {
+        this.$bvToast.toast(this.$t('online_courses.failed'), {
+          title: ``,
+          toaster: 'b-toaster-top-right',
+          variant: 'danger',
+          solid: true,
+          appendToast: false,
+          autoHideDelay: 3000,
+          noCloseButton: true
+        })
+      },
     }
 }
 </script>
