@@ -159,5 +159,9 @@ module.exports = {
     brotli: {
       threshold: 10240
     }
+  },
+  server: {
+    port: 8000, // default: 3000
+    host: '192.168.1.3' // default: localhost
   }
 }
