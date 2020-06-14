@@ -126,7 +126,9 @@
       "header": "Mergulhe Fundo no ZMOT",
       "text_1": "Sabemos que aprender sobre um tema novo, e colocá-lo em prática, pode ser trabalhoso e frustrante. ",
       "text_2": "Por isso, preparamos um curso detalhado sobre o ZMOT, que te ajudará aprender os conceitos, como implantar, quais ferramentas usar e alguns cases de empresas que estão utilizando o ZMOT e obtendo muitos resultados em seu Marketing Digital.",
-      "submit": "Quero Receber Contato"
+      "submit": "Quero Receber Contato",
+      "thank_you_title": "Obrigado pelo contato!",
+      "thank_you_message": "Ficamos contentes com seu interesse pelo ZMOT Institute. Entraremos em contato em breve!"
     },
     "placeholder": {
       "email": "Email",

@@ -180,27 +180,21 @@
         console.log('Expired');
       },
       showSuccessToast() {
-        this.$bvToast.toast(this.$t('online_courses.success'), {
-          title: ``,
-          toaster: 'b-toaster-top-right',
-          variant: 'success',
-          solid: true,
-          appendToast: false,
-          autoHideDelay: 3000,
-          noCloseButton: true
-        })
+        this.$swal({
+          title: this.$t('online_courses.thank_you_title'),
+          text: this.$t('online_courses.thank_you_message'),
+          icon: "success",
+          button: "OK",
+        });
       },
       showErrorToast() {
-        this.$bvToast.toast(this.$t('online_courses.failed'), {
-          title: ``,
-          toaster: 'b-toaster-top-right',
-          variant: 'danger',
-          solid: true,
-          appendToast: false,
-          autoHideDelay: 3000,
-          noCloseButton: true
-        })
-      },
+        this.$swal({
+          title: "Submit Failed",
+          text: "Something went wrong with your submission.",
+          icon: "error",
+          button: "OK",
+        });
+      }
     }
 }
 </script>

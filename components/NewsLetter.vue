@@ -24,6 +24,7 @@ export default {
     name: "NewsLetter",
     components: {},
     data: () => ({
+      email: ""
     }),
     methods: {
       screenWidth() {

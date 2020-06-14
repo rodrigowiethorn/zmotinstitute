@@ -66,6 +66,13 @@ module.exports = {
     '@nuxtjs/robots',
     'nuxt-ssr-cache',
     "nuxt-compress",
+    [
+      'vue-sweetalert2/nuxt',
+      {
+        confirmButtonColor: '#41b882',
+        cancelButtonColor: '#ff7674'
+      }
+    ],
     ['nuxt-i18n', {
       strategy: 'prefix_except_default',
       locales: [
