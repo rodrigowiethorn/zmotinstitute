@@ -18,7 +18,7 @@
     }
 
     section.banner {
-        padding-bottom: 3rem;
+        padding-bottom: 8.5rem;
         background-color: $bg_orange;
         .elementor-spacer {
           margin-bottom: 20px;
@@ -37,7 +37,7 @@
             }
         }
         .banner-widget-text{
-          margin-bottom: 60px;
+          margin-bottom: 6rem;
             p {
                 font-size: 30px;
                 color: white;
@@ -60,7 +60,7 @@
             }
         }
         img {
-          padding-top: 2rem;
+          padding-top: 5rem;
         }
     }
     section.contact-form {
@@ -94,6 +94,7 @@
         }
         button {
           margin-top: 1rem;
+          font-size: 1.5rem;
         }
         .hubspot-link {
             margin-top: 2rem;
@@ -108,15 +109,3 @@
         }
     }
 }
-
-//@media (max-width: 377px) {
-//    .banner-buttons {
-//        display: flex;
-//        flex-direction: column;
-//        align-items: center;
-//        justify-content: center;
-//        button {
-//            margin-top: 0.5rem;
-//        }
-//    }
-//}

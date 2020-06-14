@@ -69,6 +69,7 @@
         "form": {
             "send_email": "Enviar Email",
             "contact": "Contacto",
+            "text": "Tem alguma opinião, dúvida ou mesmo sugestão de conteúdo? \nNão perca tempo e nos envie uma mensagem.",
             "Email": "Email",
             "Name": "Nome",
             "Surename": "Sobrenome"

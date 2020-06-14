@@ -71,3 +71,9 @@ nav.navbar {
         }
     }
 }
+
+@media (max-width: 410px) {
+  .banner-widget-heading {
+    margin-left: -8px;
+  }
+}

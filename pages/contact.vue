@@ -3,7 +3,7 @@
       <section class="banner">
         <b-container>
             <b-row>
-                <b-col>
+                <b-col md="6" sm="12">
                     <div class="elementor-spacer">
                         <div class="elementor-spacer-inner"></div>
                     </div>
@@ -22,15 +22,18 @@
                             </b-button>
                           </a>
                         </b-col>
+                        <b-col class="d-md-none d-lg-none d-sm-block mt-5">
+
+                        </b-col>
                         <b-col md="6" sm="12" class="button-wrapper">
-                          <a href="#contact-form">
-                            <b-button pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
+                          <a href="#send-email">
+                            <b-button id="send-email" pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
                           </a>
                         </b-col>
                       </b-row>
                     </div>
                 </b-col>
-                <b-col>
+                <b-col md="6" class="d-none d-md-block d-sm-none">
                   <picture>
                     <source srcset="../assets/img/contact/contact_hero.webp" type="image/webp" />
                     <source srcset="../assets/img/contact/contact_hero.png" type="image/png" />
@@ -44,7 +47,7 @@
       <section class="contact-form" id="contact-form">
           <b-container>
             <h2 class="text-center">{{$t('contact.form.contact')}}</h2>
-            <p class="text-center">Tem alguma opinião ou sugestão de conteúdo? <br>Não perca tempo e nos <strong>envie uma mensagem.</strong></p>
+            <p class="text-center">{{$t('contact.form.text')}}</p>
             <b-row>
               <b-form @submit.prevent="onSubmit">
                 <b-col offset-md="1" md="9" sm="12">
@@ -74,23 +77,12 @@
                         />
                       </b-col>
                       <b-col md="6">
-                        <b-button type="submit" variant="orange">{{$t('contact.form.send_email')}}</b-button>
+                        <b-button type="submit"  class="rounded-pill" variant="orange">{{$t('contact.form.send_email')}}</b-button>
                       </b-col>
                     </b-row>
                   </b-form-group>
                 </b-col>
               </b-form>
-            </b-row>
-            <b-row>
-                <b-col>
-                    <div class="hubspot-link text-center">
-                        <img src="https://js.hsforms.net/sproket.png" alt="Sproket Image" />
-                        <span>Crie seu próprio</span>
-                        <a href="https://app.hubspot.com/signup/marketing?hubs_medium=virality&amp;hubs_campaign=hubspot-forms-virality&amp;hubs_id=forms-branding-control&amp;hubs_source=thezmot.com&amp;intent=marketingFreeForms&amp;opt_sidebar=forms&amp;viralSourcePortalId=5835830" target="_blank">
-                            formulário gratuito com o HubSpot
-                        </a>
-                    </div>
-                </b-col>
             </b-row>
           </b-container>
       </section>

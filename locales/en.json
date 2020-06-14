@@ -72,6 +72,7 @@
         "form": {
             "send_email": "Send E-mail",
             "contact": "Contact",
+            "text": "If you have any question or want to suggest something, please let us know. Do not wait and send us a message. ",
             "Email": "Email",
             "Name": "Name",
             "Surename": "Surename"
