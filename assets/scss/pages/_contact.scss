@@ -92,6 +92,17 @@
                 box-shadow: none;
             }
         }
+
+        .g-recaptcha {
+          display: inline-block;
+        }
+
+        .col-sm-12.text-center.text-md-left.d-md-none.d-lg-none.d-sm-block {
+          button {
+            background-color: $mat_purple;
+          }
+        }
+
         button {
           margin-top: 1rem;
           font-size: 1.5rem;
