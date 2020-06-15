@@ -36,13 +36,13 @@
       <!-- Right aligned nav items -->
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <li class="pg-nav">
+          <li class="pg-nav" v-b-toggle.nav-collapse>
             <nuxt-link :to="localePath('index')">{{$t('navs.home.title')}}</nuxt-link>
           </li>
-          <li class="pg-nav">
+          <li class="pg-nav" v-b-toggle.nav-collapse>
             <nuxt-link :to="localePath('blogs')">{{$t('navs.blog.title')}}</nuxt-link>
           </li>
-          <li class="pg-nav">
+          <li class="pg-nav" v-b-toggle.nav-collapse>
             <nuxt-link :to="localePath('contact')">{{$t('navs.contact.title')}}</nuxt-link>
           </li>
           <b-nav-item-dropdown :text="localeToLang" right class="langpicker">
