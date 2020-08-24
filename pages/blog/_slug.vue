@@ -3,7 +3,7 @@
     <div id="blog" v-if="!isLoading">
       <b-container>
         <b-row>
-          <SocialLinks/>
+          <!-- <SocialLinks/> -->
           <b-col md="9" sm="12">
             <div class="blog-main">
               <div class="blog-media">

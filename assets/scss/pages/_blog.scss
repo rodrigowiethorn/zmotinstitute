@@ -15,15 +15,18 @@
                 font-size: 1.75rem;
                 color: #3D3D3D;
             }
+        h2 {
+            margin: 2rem 0;
+            }
         }
         .blog-info {
             color: #888;
             font-size: .88em;
             display: flex;
             margin-bottom: 1.6rem;
-            .blog-date {
+            // .blog-date {
 
-            }
+            // }
             .blog-comments {
                 &:before {
                     content: ""!important;
@@ -36,16 +39,37 @@
                     margin: 0 10px;
                     vertical-align: middle;
                     background-color: #BBB;
+                    text-align: justify;
                 }
             }
         }
         .blog-content {
             a {
-                color: $mat_orange;
-                text-decoration: none;
+                color: blue;
+                
+                text-decoration: underline;
                 &:hover{
-                    color: $bg_orange;
+                    color: white;
+                    background-color: $mat_orange;
+                    text-decoration: none;
                 }
+            }
+            h2 {
+                padding: 1rem 0;
+            }
+
+            h3 {
+                padding: 1rem 0;
+            }
+
+            p{
+                line-height: 1.7rem;
+                text-align: justify;
+            }
+            li{
+                line-height: 1.7rem;
+                text-align: justify;
+                padding-bottom: 1rem;
             }
 
             img {

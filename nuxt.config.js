@@ -101,7 +101,7 @@ module.exports = {
         fallbackLocale: 'en',
         messages: {
           en: require('./locales/en.json'),
-          pt: require('./locales/pt-br.json'),
+          'pt-br': require('./locales/pt-br.json'),
           es: require('./locales/es.json')
         }
       }
@@ -161,7 +161,7 @@ module.exports = {
     }
   },
   server: {
-    port: 8000, // default: 3000
-    host: '192.168.1.3' // default: localhost
+    port: 3000, // default: 3000
+    host: '127.0.0.1' // default: localhost
   }
 }

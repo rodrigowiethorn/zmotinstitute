@@ -4,11 +4,13 @@
         <b-row>
             <b-col md="8">
                 <div class="cookie-warning">
-                    {{$t('cookie.text')}}
+                    {{$t('cookie.text_1')}} 
+                    <nuxt-link :to="localePath($t('cookie.link'))">{{$t('cookie.text_2')}}</nuxt-link>
+                    {{$t('cookie.text_3')}} 
                 </div>
             </b-col>
             <b-col md="2" offset-md="2">
-                <b-button @click="accept($event)" variant="outline-success">{{ $t('cookie.accept') }}</b-button>
+                <b-button @click="accept($event)" class="button-cookie">{{ $t('cookie.accept') }}</b-button>
             </b-col>
         </b-row>
     </b-container>
@@ -83,12 +85,22 @@ export default {
   bottom: 0
   background-color: #6747c7
   padding: 1rem 0
+  a
+    color: white
+    text-decoration: underline 
   .row
     align-items: center
   .cookie-warning
     color: white
     font-size: 1rem
     font-weight: 500
+    margin-bottom: 2rem
+  .button-cookie
+    background-color: #28a745
+    border-color: #28a745
+    width: inherit
+    padding: 1rem
+    text-transform: uppercase 
   &__link
     color: #ffffff
     text-decoration: underline

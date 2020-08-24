@@ -17,9 +17,9 @@
               <b-col md="8" sm="8" xs="12">
                 <b-card-body :title="post.title.rendered">
                   <b-card-text v-html="post.excerpt.rendered"></b-card-text>
-                  <div class="card-meta">
+                  <!-- <div class="card-meta">
                     Mais de 2.000 profissionais de marketing já leram esse conteúdo
-                  </div>
+                  </div> -->
                 </b-card-body>
               </b-col>
             </b-row>

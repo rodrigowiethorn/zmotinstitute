@@ -18,6 +18,7 @@
             <h1>{{$t('online_courses.header')}}</h1>
             <p>{{$t('online_courses.text_1')}}</p>
             <p>{{$t('online_courses.text_2')}}</p>
+            <p>{{$t('online_courses.text_3')}}</p>
           </b-col>
 
           <b-col md="5" sm="12">

@@ -60,9 +60,9 @@
         <h2 class="text-center">{{$t('homepage.why_do_you_need_ZMOT.header')}}</h2>
         <p class="text-center">
           {{$t('homepage.why_do_you_need_ZMOT.text1')}}
-          <b>{{$t('homepage.why_do_you_need_ZMOT.text2')}}</b>
+          <strong>{{$t('homepage.why_do_you_need_ZMOT.text2')}}</strong>
           {{$t('homepage.why_do_you_need_ZMOT.text3')}}
-          <b>{{$t('homepage.why_do_you_need_ZMOT.text4')}}</b>
+          <strong>{{$t('homepage.why_do_you_need_ZMOT.text4')}}</strong>
           {{$t('homepage.why_do_you_need_ZMOT.text5')}}
         </p>
         <div class="feature__list">
@@ -76,7 +76,7 @@
             </b-col>
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
               <div class="feature__item-content">
-                  <h3>{{$t('homepage.why_do_you_need_ZMOT.category_1_header')}}</h3>
+                  <h3> {{$t('homepage.why_do_you_need_ZMOT.category_1_header')}}</h3>
                   <p>{{$t('homepage.why_do_you_need_ZMOT.category_1_text')}}</p>
               </div>
             </b-col>
@@ -262,6 +262,7 @@
         </div>
       </b-container>
     </section>
+   
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <h2 class="text-center">{{$t('homepage.services.header')}}</h2>
@@ -269,7 +270,7 @@
           {{$t('homepage.services.sub_header')}}
         </p>
         <b-row >
-          <b-col md="6" sm="12">
+          <b-col md="6" sm="12" align-self="center">
             <picture>
               <source srcset="../assets/img/services/service-zmot_audit.webp" type="image/webp" />
               <source srcset="../assets/img/services/service-zmot_audit.png" type="image/png" />
@@ -281,12 +282,12 @@
               <b-card-text>
                 <h2 class="h3 mb-4">{{$t('homepage.services.service_1_header')}}</h2>
                 <div>
-                  <p class="mb-5 medium">
-                      <span>{{$t('homepage.services.service_1_description')}}</span>
+                  <p class="mb-5 medium text-justify">
+                      <span >{{$t('homepage.services.service_1_description')}}</span>
                   </p>
                 </div>
                 <nuxt-link :to="localePath('zmot-audit')">
-                  <a class="btn btn-orange rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
                     <span>
                         {{$t('homepage.services.get_a_quote')}}
                     </span>
@@ -302,12 +303,12 @@
               <b-card-text>
                 <h2 class="h3 mb-4">{{$t('homepage.services.service_2_header')}}</h2>
                 <div>
-                  <p class="mb-5 medium">
+                  <p class="mb-5 medium text-justify">
                       <span>{{$t('homepage.services.service_2_description')}}</span>
                   </p>
                 </div>
                 <nuxt-link :to="localePath('lectures-events')">
-                  <a class="btn btn-orange rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
                     <span>
                         {{$t('homepage.services.get_a_quote')}}
                     </span>
@@ -316,7 +317,7 @@
               </b-card-text>
             </b-card>
           </b-col>
-          <b-col md="6" sm="12">
+          <b-col md="6" sm="12" align-self="center">
             <picture id="lectures">
               <source srcset="../assets/img/services/service-lecture.webp" type="image/webp" />
               <source srcset="../assets/img/services/service-lecture.png" type="image/png" />
@@ -325,7 +326,7 @@
           </b-col>
         </b-row>
         <b-row >
-          <b-col md="6" sm="12">
+          <b-col md="6" sm="12" align-self="center">
             <picture id="courses">
               <source srcset="../assets/img/services/service-online_course.webp" type="image/webp" />
               <source srcset="../assets/img/services/service-online_course.png" type="image/png" />
@@ -337,14 +338,14 @@
               <b-card-text>
                 <h2 class="h3 mb-4">{{$t('homepage.services.service_3_header')}}</h2>
                 <div>
-                  <p class="mb-5 medium">
+                  <p class="mb-5 medium text-justify">
                     <span>
                       {{$t('homepage.services.service_3_description')}}
                     </span>
                   </p>
                 </div>
                 <nuxt-link :to="localePath('online-courses')">
-                  <a class="btn btn-orange rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
                     <span>
                         {{$t('homepage.services.get_a_quote')}}
                     </span>
@@ -357,6 +358,7 @@
       </b-container>
     </section>
 
+    
     <section class="say-about-us" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
       <b-container>
         <h2 class="text-center">
@@ -417,9 +419,11 @@
         </div>
       </b-container>
     </section>
+    
     <section class="blogs mt-5 mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
       <b-container>
         <h2 class="text-center">Blog</h2>
+        <p class="text-center">{{$t('homepage.blog.text')}}</p>
         <div class="blog--list">
           <b-row>
             <b-col md="4" sm="12" v-for="(post, index) of stickyPosts" :key="post.id">
@@ -449,7 +453,7 @@
                     name: 'blog-slug',
                     params: { slug: post.slug }
                   })"
-                   class="btn btn-orange rounded-pill"
+                   class="btn btn-purple rounded-pill"
                 >
                   {{$t('homepage.blog.read_more')}}
                 </nuxt-link>
@@ -541,4 +545,4 @@
       }
     }
 }
-</script>490
+</script>

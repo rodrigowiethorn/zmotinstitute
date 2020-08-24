@@ -18,6 +18,7 @@
             <h1>{{$t('lectures_events.header')}}</h1>
             <p>{{$t('lectures_events.text_1')}}</p>
             <p>{{$t('lectures_events.text_2')}}</p>
+            <p>{{$t('lectures_events.text_3')}}</p>
           </b-col>
 
           <b-col md="5" sm="12">

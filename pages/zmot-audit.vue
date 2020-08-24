@@ -18,6 +18,7 @@
             <h1>{{$t('zmot_audit.header')}}</h1>
             <p>{{$t('zmot_audit.text_1')}}</p>
             <p>{{$t('zmot_audit.text_2')}}</p>
+            <p>{{$t('zmot_audit.text_3')}}</p>
           </b-col>
 
           <b-col md="5" sm="12">

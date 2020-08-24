@@ -16,7 +16,7 @@
                     <div class="banner-buttons">
                       <b-row>
                         <b-col md="6" sm="12" class="button-wrapper">
-                          <a href="https://wa.me/5548999831686" target="_blank">
+                          <a href="https://wa.me/5548988087120" target="_blank">
                             <b-button pill variant="white">
                               {{$t('contact.banner.button.access_live_chat')}}
                             </b-button>
@@ -84,10 +84,11 @@
                         />
                       </b-col>
                       <b-col md="6" class="d-none d-lg-block d-md-block d-sm-none">
-                        <b-button type="submit"  class="rounded-pill" variant="orange">{{$t('contact.form.send_email')}}</b-button>
+                        <!-- <b-button type="submit"  class="rounded-pill" variant="orange">{{$t('contact.form.send_email')}}</b-button> -->
+                        <b-button type="submit"  class="btn-purple rounded-pill">{{$t('contact.form.send_email')}}</b-button>
                       </b-col>
                       <b-col sm="12" class="text-center text-md-left d-md-none d-lg-none d-sm-block">
-                        <b-button type="submit"  class="rounded-pill">{{$t('contact.form.send_email')}}</b-button>
+                        <b-button type="submit"  class="btn-purple">{{$t('contact.form.send_email')}}</b-button>
                       </b-col>
                     </b-row>
                   </b-form-group>

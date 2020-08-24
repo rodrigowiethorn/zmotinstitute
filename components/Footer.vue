@@ -17,22 +17,22 @@
                         <b-col md="4" sm="12">
                             <h5>{{$t('footer.services.text')}}</h5>
                             <ul>
-                                <li><a href="#zmot-audit">{{$t('homepage.services.service_1_header')}}</a></li>
-                                <li><a href="#lectures">{{$t('homepage.services.service_2_header')}}</a></li>
-                                <li><a href="#courses">{{$t('homepage.services.service_3_header')}}</a></li>
+                                <li><a href="/#zmot-audit">{{$t('homepage.services.service_1_header')}}</a></li>
+                                <li><a href="/#lectures">{{$t('homepage.services.service_2_header')}}</a></li>
+                                <li><a href="/#courses">{{$t('homepage.services.service_3_header')}}</a></li>
                             </ul>
                         </b-col>
                         <b-col md="4" sm="12">
                             <h5>{{$t('footer.knowledge.text')}}</h5>
                             <ul>
                                 <li><nuxt-link :to="localePath($t('navs.blog.link'))">{{$t('footer.blog')}}</nuxt-link></li>
-                                <li><a href="#newsletter">{{$t('footer.newsletter')}}</a></li>
+                                <li><a href="/#newsletter">{{$t('footer.newsletter')}}</a></li>
                             </ul>
                         </b-col>
                         <b-col md="4" sm="12">
                             <h5>{{$t('footer.legal.text')}}</h5>
                             <ul>
-                                <li><nuxt-link :to="localePath('index')">{{$t('footer.privacy_policy.text')}}</nuxt-link></li>
+                                <li><nuxt-link :to="localePath($t('navs.privacy.link'))">{{$t('footer.privacy_policy.text')}}</nuxt-link></li>
                             </ul>
                         </b-col>
                     </b-row>

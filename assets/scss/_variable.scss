@@ -31,6 +31,14 @@ $theme-colors: map-merge(
         color: white;
     }
 }
+.btn-purple {
+    background-color: $shinny_purple;
+    color: white;
+    &:hover {
+        background-color: $mat_purple;
+        color: white;
+    }
+}
 .btn-white {
     background-color: white;
     color: $shinny_orange;
