@@ -70,6 +70,20 @@
   import {telInputOption} from "@/config";
 
   export default {
+    head () {
+      return {
+        // title: {{$t('homepage.blog.text')}},
+        title: 'Missing blog page i18n configuration',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Missing blog page i18n configuration'
+          }
+          
+        ]
+      }
+    },
     nuxtI18n: {
       paths: {
         en: '/lectures-events',

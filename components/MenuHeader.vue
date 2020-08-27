@@ -40,7 +40,7 @@
             <nuxt-link :to="localePath('index')">{{$t('navs.home.title')}}</nuxt-link>
           </li>
           <li class="pg-nav" v-b-toggle.nav-collapse>
-            <nuxt-link :to="localePath('blogs')">{{$t('navs.blog.title')}}</nuxt-link>
+            <nuxt-link :to="localePath('blog')">{{$t('navs.blog.title')}}</nuxt-link>
           </li>
           <li class="pg-nav" v-b-toggle.nav-collapse>
             <nuxt-link :to="localePath('contact')">{{$t('navs.contact.title')}}</nuxt-link>

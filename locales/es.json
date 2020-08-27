@@ -1,11 +1,15 @@
 {
     "navs": {
         "home": {"title": "HOME", "link": "/"},
-        "blog": {"title": "BLOG", "link": "blogs"},
+        "blog": {"title": "BLOG", "link": "blog"},
         "contact": {"title": "CONTACTO", "link": "contact"},
         "privacy": {"title": "POLITICA DE PRIVACIDAD", "link": "privacidad"}
     },
     "homepage": {
+        "seo": {
+            "title": "Aprenda ZMOT para Hackear el Comportamiento de Consumidor",
+            "description": "Si desea comprender cómo influir en el comportamiento del consumidor y disparar sus resultados de marketing digital, debe aprender ahora ZMOT."
+        },
         "banner": {
             "header": "ZMOT: la clave para Transformación Digital",
             "text": "Un Framework para Hackear el Comportamiento del Consumidor con Marketing Digital"
@@ -60,6 +64,10 @@
         }
     },
     "contact": {
+        "seo": {
+            "title": "Need to write title for contact page",
+            "description": "Need to write meta description for contact page"
+        },
         "banner": {
             "header": "Contacta Con Los Expertos De ZMOT",
             "text": "E-mail o Chat En Vivo, se elige la mejor opción",
@@ -109,7 +117,11 @@
         "newsletter": "Newsletter"
     },
     "blog": {
-      "add_comment" : {
+        "seo": {
+            "title": "Need to write title for contact page",
+            "description": "Need to write meta description for contact page"
+        },
+        "add_comment" : {
         "title": "Add a Comment",
         "info": "Your email address will not be published. Required fields are marked *",
         "save": "Save my name, email, and website in this browser for the next time I comment",
@@ -117,27 +129,39 @@
       }
     },
     "zmot_audit": {
-      "header": "Marketing Digital en High Level",
-      "text_1": "ZMOT es un framework diseñado por Google para describir cómo se comportan las personas durante el proceso de compra.",
-      "text_2": "Los negocios exitosos comprenden las necesidades de sus clientes y resuelven sus problemas. Sabiendo cómo su consumidor busca información, hace comparaciones, regatea y toma la decisión de compra, puedes enviar el mensaje correcto, en el momento correcto.",
-      "text_3": "Los expertos de ZMOT INSTITUTE lo ayudarán a rastrear las huellas digitales de sus consumidores y crear un plan maestro con las estrategias de marketing digital más eficientes utilizadas por las empresas de más rápido crecimiento en el mundo.",
-      "submit": "Quiero Recibir un Contacto"
+        "seo": {
+            "title": "Need to write title for zmot_audit page",
+            "description": "Need to write meta description for zmot_audit page"
+        },
+        "header": "Marketing Digital en High Level",
+        "text_1": "ZMOT es un framework diseñado por Google para describir cómo se comportan las personas durante el proceso de compra.",
+        "text_2": "Los negocios exitosos comprenden las necesidades de sus clientes y resuelven sus problemas. Sabiendo cómo su consumidor busca información, hace comparaciones, regatea y toma la decisión de compra, puedes enviar el mensaje correcto, en el momento correcto.",
+        "text_3": "Los expertos de ZMOT INSTITUTE lo ayudarán a rastrear las huellas digitales de sus consumidores y crear un plan maestro con las estrategias de marketing digital más eficientes utilizadas por las empresas de más rápido crecimiento en el mundo.",
+        "submit": "Quiero Recibir un Contacto"
     },
     "lectures_events": {
-      "header": "Deleite Su Audiencia Con ZMOT",
-      "text_1": "¿Está promocionando un evento sobre temas relacionados a Negocios o Marketing Digital? ¿Necesita un contenido de alta calidad para deleitar a su audiencia?",
-      "text_2": "Sea en una sala de clases, en un escenario o en un evento online, podemos ayudar a las personas a aprender e implementar el ZMOT en su pila de marketing y en su juego diario. Sumando nuestros +15 años de experiencia hablando en eventos con la importancia del ZMOT, su audiencia lo agradecerá por toda vida.",
-      "text_3": "No importa el tamaño de su evento, tenemos una solución para usted. ¡Prediquemos el ZMOT juntos!",
-      "submit": "Quiero ZMOT En Mi Evento"
+        "seo": {
+            "title": "Need to write title for lectures_events page",
+            "description": "Need to write meta description for lectures_events page"
+        },
+        "header": "Deleite Su Audiencia Con ZMOT",
+        "text_1": "¿Está promocionando un evento sobre temas relacionados a Negocios o Marketing Digital? ¿Necesita un contenido de alta calidad para deleitar a su audiencia?",
+        "text_2": "Sea en una sala de clases, en un escenario o en un evento online, podemos ayudar a las personas a aprender e implementar el ZMOT en su pila de marketing y en su juego diario. Sumando nuestros +15 años de experiencia hablando en eventos con la importancia del ZMOT, su audiencia lo agradecerá por toda vida.",
+        "text_3": "No importa el tamaño de su evento, tenemos una solución para usted. ¡Prediquemos el ZMOT juntos!",
+        "submit": "Quiero ZMOT En Mi Evento"
     },
     "online_courses" : {
-      "header": "Aprenda ZMOT A Su Propio Ritmo",
-      "text_1": "Cursos Online son la solución perfecta si desea aprender contenido en profundidad, pero es una persona ocupada con una agenda apiñada.",
-      "text_2": "Hemos preparado un curso práctico e detallado sobre ZMOT, que no solo lo ayudará a aprender los conceptos, sino también a cómo implementar cosas, qué herramientas usar y las mejores prácticas que han estado usando las empresas de más rápido crecimiento en el mundo.",
-      "text_3": "También tendrá acceso completo a nuestro contenido exclusivo, además de una llamada virtual de tutoría de 1 hora con un experto del ZMOT INSTITUTE. Desarrola la mentalidad de crescimiento ahora.",
-      "submit": "Empezar Aprender ZMOT",
-      "thank_you_title": "Gracias por contactarnos!",
-      "thank_you_message": "Agradecemos su interés en ZMOT Institute. ¡Uno de nuestros colegas se pondrá en contacto contigo pronto!"
+        "seo": {
+            "title": "Need to write title for online_courses page",
+            "description": "Need to write meta description for online_courses page"
+        },
+        "header": "Aprenda ZMOT A Su Propio Ritmo",
+        "text_1": "Cursos Online son la solución perfecta si desea aprender contenido en profundidad, pero es una persona ocupada con una agenda apiñada.",
+        "text_2": "Hemos preparado un curso práctico e detallado sobre ZMOT, que no solo lo ayudará a aprender los conceptos, sino también a cómo implementar cosas, qué herramientas usar y las mejores prácticas que han estado usando las empresas de más rápido crecimiento en el mundo.",
+        "text_3": "También tendrá acceso completo a nuestro contenido exclusivo, además de una llamada virtual de tutoría de 1 hora con un experto del ZMOT INSTITUTE. Desarrola la mentalidad de crescimiento ahora.",
+        "submit": "Empezar Aprender ZMOT",
+        "thank_you_title": "Gracias por contactarnos!",
+        "thank_you_message": "Agradecemos su interés en ZMOT Institute. ¡Uno de nuestros colegas se pondrá en contacto contigo pronto!"
     },
     "placeholder": {
       "email": "Email",
@@ -146,6 +170,10 @@
       "phone": "Teléfono"
     },
     "privacy":{
+        "seo": {
+            "title": "Need to write title for privacy page",
+            "description": "Need to write meta description for privacy page"
+        },
         "intro":{
             "title": "Política de Privacidad de zmotinstitute.com",
             "text_1": "En zmotinstitute.com, accesible desde zmotinstitute.com, una de nuestras principales prioridades es la privacidad de nuestros usuarios. Este documento de Política de privacidad contiene tipos de información recopilada y registrada por zmotinstitute.com y cómo la usamos.",

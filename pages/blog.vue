@@ -51,6 +51,20 @@
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
+    head () {
+      return {
+        // title: {{$t('homepage.blog.text')}},
+        title: 'Missing blog page i18n configuration',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Missing blog page i18n configuration'
+          }
+          
+        ]
+      }
+    },
     components: {
       'NewsLetter': NewsLetter,
       'Loading': Loading,

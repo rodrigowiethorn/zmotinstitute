@@ -115,6 +115,19 @@
   import {hubSpotPortalId, contactFormGuid} from "@/config";
 
   export default {
+    head () {
+      return {
+        title: 'Ask for ZMOT INSTITUTE Experts Help and Start to Learn',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Get in touch with ZMOT INSTITUTE experts to learn more about ZMOT Framework. No matter the size of your pocket, we have a solution to you.'
+          }
+          
+        ]
+      }
+    },
     components: {
       'Loading': Loading
     },

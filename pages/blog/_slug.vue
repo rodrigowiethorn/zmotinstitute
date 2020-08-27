@@ -56,7 +56,7 @@
   import AddComment from "@/components/AddComment";
   import CommentList from "@/components/CommentList";
   import Author from "@/components/Author";
-  import SocialLinks from "@/components/SocialLinks";
+  // import SocialLinks from "@/components/SocialLinks";
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {

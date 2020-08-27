@@ -7,8 +7,14 @@ module.exports = {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { 
+        name: 'viewport', 
+        content: 'width=device-width, initial-scale=1' 
+      },
+      { hid: 'description', 
+        name: 'description', 
+        content: process.env.npm_package_description || '' 
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/zmot-institute-android-chrome-192x192.png' },
@@ -74,6 +80,8 @@ module.exports = {
       }
     ],
     ['nuxt-i18n', {
+      baseUrl: 'http://zmotinstitute.com', //need to change it when HTTPS
+      seo: false,
       strategy: 'prefix_except_default',
       locales: [
         {
@@ -122,7 +130,18 @@ module.exports = {
         size: "normal"        // Size: 'compact', 'normal', 'invisible' (v2)
       }
     ],
+    '@nuxtjs/sitemap'
   ],
+  sitemap: {
+    hostname: 'http://zmotinstitute.com',
+    // gzip: false,
+    // i18n:true
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en', 'es', 'pt-br'],
+      routesNameSeparator: '___'
+    }
+  },
   /*
   ** Build configuration
   */
@@ -130,7 +149,7 @@ module.exports = {
   },
   robots: {
     UserAgent: '*',
-    Disallow: '/'
+    Disallow: ''
   },
   cache: {
     useHostPrefix: false,

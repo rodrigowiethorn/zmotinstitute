@@ -428,7 +428,7 @@
           <b-row>
             <b-col md="4" sm="12" v-for="(post, index) of stickyPosts" :key="post.id">
               <b-card
-                :img-src="require('../assets/img/blogs/home-blog-' + index + '.png')"
+                :img-src="require('../assets/img/blog/home-blog-' + index + '.png')"
                 img-alt="Image"
                 img-top
                 tag="article"
@@ -493,6 +493,19 @@
   import NewsLetter from "@/components/NewsLetter.vue";
 
   export default {
+    head () {
+      return {
+        title: 'Learn ZMOT and Hack Consumer Behavior with Digital Marketing',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'If you want to understand how to Influence Consumer Behavior and skyrocket your Digital Marketing results you must Learn ZMOT Framework.'
+          }
+          
+        ]
+      }
+    },
     components: {
       'font-awesome-icon': FontAwesomeIcon,
       'NewsLetter': NewsLetter,
