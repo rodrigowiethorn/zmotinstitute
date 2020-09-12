@@ -72,15 +72,14 @@
   export default {
     head () {
       return {
-        // title: {{$t('homepage.blog.text')}},
-        title: 'Missing blog page i18n configuration',
+        title: this.$t('lectures_events.seo.title'),
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: 'Missing blog page i18n configuration'
+            content: this.$t('lectures_events.seo.description')
           }
-          
+
         ]
       }
     },

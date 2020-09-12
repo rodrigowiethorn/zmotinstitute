@@ -5,7 +5,7 @@
         <nuxt-link
           v-for="post of posts" :key="post.id"
           :to="localePath({
-              name: 'blog-slug',
+              name: 'blog_detail-slug',
               params: { slug: post.slug }
           })"
           class="blog--item" data-aos="fade-up">
@@ -53,15 +53,14 @@
   export default {
     head () {
       return {
-        // title: {{$t('homepage.blog.text')}},
-        title: 'Missing blog page i18n configuration',
+        title: this.$t('blog.seo.title'),
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: 'Missing blog page i18n configuration'
+            content: this.$t('blog.seo.description')
           }
-          
+
         ]
       }
     },

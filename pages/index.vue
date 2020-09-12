@@ -262,7 +262,7 @@
         </div>
       </b-container>
     </section>
-   
+
     <section class="services" data-aos="fade-zoom" data-aos-once="true">
       <b-container>
         <h2 class="text-center">{{$t('homepage.services.header')}}</h2>
@@ -358,7 +358,7 @@
       </b-container>
     </section>
 
-    
+
     <section class="say-about-us" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true">
       <b-container>
         <h2 class="text-center">
@@ -419,7 +419,7 @@
         </div>
       </b-container>
     </section>
-    
+
     <section class="blogs mt-5 mb-5" data-aos="fade-down" data-aos-easing="linear" data-aos-once="true" data-aos-duration="500">
       <b-container>
         <h2 class="text-center">Blog</h2>
@@ -495,14 +495,14 @@
   export default {
     head () {
       return {
-        title: 'Learn ZMOT and Hack Consumer Behavior with Digital Marketing',
+        title: this.$t('zmot_audit.seo.title'),
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: 'If you want to understand how to Influence Consumer Behavior and skyrocket your Digital Marketing results you must Learn ZMOT Framework.'
+            content: this.$t('zmot_audit.seo.title')
           }
-          
+
         ]
       }
     },

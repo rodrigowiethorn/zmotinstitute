@@ -65,15 +65,14 @@
   export default {
     head () {
       return {
-        // title: {{$t('homepage.blog.text')}},
-        title: 'Missing blog page i18n configuration',
+        title: this.$t('zmot_audit.seo.title'),
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: 'Missing blog page i18n configuration'
+            content: this.$t('zmot_audit.seo.description')
           }
-          
+
         ]
       }
     },
