@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 module.exports = {
   mode: 'universal',
   /*
@@ -7,13 +9,13 @@ module.exports = {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { 
-        name: 'viewport', 
-        content: 'width=device-width, initial-scale=1' 
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
       },
-      { hid: 'description', 
-        name: 'description', 
-        content: process.env.npm_package_description || '' 
+      { hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
       }
     ],
     link: [
@@ -117,7 +119,7 @@ module.exports = {
     [
       "@nuxtjs/google-tag-manager",
       {
-        id: "GTM-K3SW4XN",
+        id: "GTM-MFQ99J",
         pageTracking: true
       }
     ],
@@ -140,6 +142,11 @@ module.exports = {
       defaultLocale: 'en',
       locales: ['en', 'es', 'pt-br'],
       routesNameSeparator: '___'
+    },
+
+    routes: async () => {
+      const { data } = await axios.get('https://thezmot.com/wp-json/wp/v2/posts')
+      return data.map((blog) => `/blog/${blog.slug}`)
     }
   },
   /*

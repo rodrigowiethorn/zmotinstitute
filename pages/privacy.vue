@@ -83,10 +83,10 @@
           <h2>{{$t('privacy.children.title')}}</h2>
           <p> {{$t('privacy.children.text_1')}}</p>
           <p> {{$t('privacy.children.text_2')}}</p>
-        </b-container>             
-    </section>   
+        </b-container>
+    </section>
   </div>
-  
+
 </template>
 
 <script>
@@ -97,15 +97,14 @@ import Loading from 'vue-loading-overlay';
 export default {
     head () {
       return {
-        // title: {{$t('homepage.blog.text')}},
-        title: 'Missing blog page i18n configuration',
+        title: this.$t('privacy.seo.title'),
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: 'Missing blog page i18n configuration'
+            content: this.$t('privacy.seo.description')
           }
-          
+
         ]
       }
     },
