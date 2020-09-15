@@ -60,6 +60,34 @@
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
+    head () {
+      return {
+        title: 'Blog detail',
+        meta: [
+          {
+            hid: `twitter-card`,
+            name: 'twitter:card',
+            content: 'summary'
+          },
+          {
+            hid: `og-title`,
+            property: 'og:title',
+            content: 'Blog detail'
+          },
+          {
+            hid: `og-image`,
+            property: 'og:image',
+            content: this.post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url
+          },
+          {
+            hid: `og-url`,
+            property: 'og:url',
+            content: this.$route.path
+          }
+
+        ]
+      }
+    },
     components: {
         'Loading': Loading,
         'AddComment': AddComment,
