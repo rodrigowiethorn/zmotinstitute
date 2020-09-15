@@ -71,6 +71,31 @@
             hid: 'description',
             name: 'description',
             content: this.$t('zmot_audit.seo.description')
+          },
+          {
+            hid: 'twitter-card',
+            name: 'twitter:card',
+            content: 'summary'
+          },
+          {
+            hid: 'og-title',
+            property: 'og:title',
+            content: this.$t('zmot_audit.seo.title'),
+          },
+          {
+            hid: 'og-description',
+            property: 'og:description',
+            content: this.$t('zmot_audit.seo.description')
+          },
+          {
+            hid: 'og-image',
+            property: 'og:image',
+            content: '../assets/img/zmot-logo.webp'
+          },
+          {
+            hid: 'og-url',
+            property: 'og:url',
+            content: this.$route.path
           }
 
         ]
