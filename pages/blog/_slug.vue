@@ -56,21 +56,25 @@
   import AddComment from "@/components/AddComment";
   import CommentList from "@/components/CommentList";
   import Author from "@/components/Author";
-  // import SocialLinks from "@/components/SocialLinks";
+  import SocialLinks from "@/components/SocialLinks";
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
+    async asyncData({ params }) {
+      const { data } = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed=1`)
+      return { post: data[0] }
+    },
     head () {
       return {
         title: this.post.title.rendered,
         meta: [
           {
-            hid: `twitter-card`,
+            hid: 'twitter-card',
             name: 'twitter:card',
             content: 'summary'
           },
           {
-            hid: `og-title`,
+            hid: 'og-title',
             property: 'og:title',
             content: this.post.title.rendered
           },
@@ -80,12 +84,12 @@
             content: this.post.content.rendered
           },
           {
-            hid: `og-image`,
+            hid: 'og-image',
             property: 'og:image',
             content: this.post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url
           },
           {
-            hid: `og-url`,
+            hid: 'og-url',
             property: 'og:url',
             content: this.$route.path
           }
