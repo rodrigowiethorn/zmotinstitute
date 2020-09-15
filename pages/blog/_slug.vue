@@ -62,7 +62,7 @@
   export default {
     head () {
       return {
-        title: 'Blog detail',
+        title: this.post.title.rendered,
         meta: [
           {
             hid: `twitter-card`,
@@ -72,7 +72,12 @@
           {
             hid: `og-title`,
             property: 'og:title',
-            content: 'Blog detail'
+            content: this.post.title.rendered
+          },
+          {
+            hid: 'og-description',
+            property: 'og:description',
+            content: this.post.content.rendered
           },
           {
             hid: `og-image`,
@@ -84,7 +89,6 @@
             property: 'og:url',
             content: this.$route.path
           }
-
         ]
       }
     },

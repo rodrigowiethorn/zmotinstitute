@@ -5,7 +5,7 @@
         <nuxt-link
           v-for="post of posts" :key="post.id"
           :to="localePath({
-              name: 'blog_detail-slug',
+              name: 'blog-slug',
               params: { slug: post.slug }
           })"
           class="blog--item" data-aos="fade-up">
@@ -44,7 +44,7 @@
 </template>
 
 <script>
-  import NewsLetter from "@/components/NewsLetter.vue";
+  import NewsLetter from "~/components/NewsLetter.vue";
   import axios from 'axios';
   import moment from 'moment';
   import Loading from 'vue-loading-overlay';
