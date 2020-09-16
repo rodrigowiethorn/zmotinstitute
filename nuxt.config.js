@@ -119,7 +119,7 @@ module.exports = {
     [
       "@nuxtjs/google-tag-manager",
       {
-        id: "GTM-MFQ99J",
+        id: "GTM-K3SW4XN",
         pageTracking: true
       }
     ],
