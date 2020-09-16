@@ -141,6 +141,7 @@
         }
         try {
           const result = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?per_page=10&page=${this.currentPage}&_embed=1`)
+          console.log(result.data)
           this.posts = result &&
           result.data &&
           result.data.sort((post1, post2) => {
