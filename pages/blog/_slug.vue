@@ -62,6 +62,7 @@
   export default {
     async asyncData({ params }) {
       const { data } = await axios.get(`https://thezmot.com/wp-json/wp/v2/posts?slug=${params.slug}&_embed=1`)
+      console.log(data[0])
       return { post: data[0] }
     },
     head () {

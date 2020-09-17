@@ -20,10 +20,10 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/zmot-institute-android-chrome-192x192.png' },
-      { rel: 'canonical', href: 'http://zmotinstitute.com/' },
-      { rel: 'alternate', hreflang: 'en', href: 'http://zmotinstitute.com/' },
-      { rel: 'alternate', hreflang: 'es' ,href: 'http://zmotinstitute.com/es' },
-      { rel: 'alternate', hreflang: 'pt-br' ,href: 'http://zmotinstitute.com/pt-br' },
+      { rel: 'canonical', href: 'https://zmotinstitute.com/' },
+      { rel: 'alternate', hreflang: 'en', href: 'https://zmotinstitute.com/' },
+      { rel: 'alternate', hreflang: 'es' ,href: 'https://zmotinstitute.com/es' },
+      { rel: 'alternate', hreflang: 'pt-br' ,href: 'https://zmotinstitute.com/pt-br' },
     ]
   },
   /*
@@ -82,7 +82,7 @@ module.exports = {
       }
     ],
     ['nuxt-i18n', {
-      baseUrl: 'http://zmotinstitute.com', //need to change it when HTTPS
+      baseUrl: 'https://zmotinstitute.com', //need to change it when HTTPS
       seo: false,
       strategy: 'prefix_except_default',
       locales: [
@@ -135,7 +135,7 @@ module.exports = {
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    hostname: 'http://zmotinstitute.com',
+    hostname: 'https://zmotinstitute.com',
     // gzip: false,
     // i18n:true
     i18n: {
@@ -146,7 +146,14 @@ module.exports = {
 
     routes: async () => {
       const { data } = await axios.get('https://thezmot.com/wp-json/wp/v2/posts')
-      return data.map((blog) => `/blog/${blog.slug}`)
+      return data.map((blog) => ({
+        url:`/blog/${blog.slug}`,
+        links: [
+          { lang: 'en', url: blog.slug },
+          { lang: 'es', url: `es/${blog.slug}` },
+          { lang: 'pt-br', url: `pt-br/${blog.slug}` }
+        ]
+      }))
     }
   },
   /*
