@@ -65,8 +65,8 @@
     },
     "contact": {
         "seo": {
-            "title": "Need to write title for contact page",
-            "description": "Need to write meta description for contact page"
+            "title": "Contacta Ahora con los Mejores Expertos de ZMOT Institute",
+            "description": "¡Ponte en contacto ahora! Háganos saber sus dudas y le ayudaremos a implementar ZMOT Framework. No importa el tamaño de su bolsillo, siempre hay una solución."
         },
         "banner": {
             "header": "Contacta Con Los Expertos De ZMOT",
@@ -118,8 +118,8 @@
     },
     "blog": {
         "seo": {
-            "title": "Need to write title for contact page",
-            "description": "Need to write meta description for contact page"
+            "title": "Blog del ZMOT Institute: Aprenda con los Mejores",
+            "description": "El mejor sitio para aprender todo sobre el ZMOT Framework y temas relacionados con el Comportamiento del Consumidor. ¡Empieza ahora!"
         },
         "add_comment" : {
         "title": "Add a Comment",
@@ -130,8 +130,8 @@
     },
     "zmot_audit": {
         "seo": {
-            "title": "Need to write title for zmot_audit page",
-            "description": "Need to write meta description for zmot_audit page"
+            "title": "Hackea el Comportamiento del Consumidor con ZMOT",
+            "description": "Comprenda las necesidades de sus clientes y transmita el mensaje correcto en el momento adecuado con ZMOT. Mejora los resultados de tu negocio."
         },
         "header": "Marketing Digital en High Level",
         "text_1": "ZMOT es un framework diseñado por Google para describir cómo se comportan las personas durante el proceso de compra.",
@@ -141,8 +141,8 @@
     },
     "lectures_events": {
         "seo": {
-            "title": "Need to write title for lectures_events page",
-            "description": "Need to write meta description for lectures_events page"
+            "title": "Encante las personas de su evento com una palestra de ZMOT",
+            "description": "Lleva el ZMOT a tu evento y deleita a tu audiencia. Nuestros +15 años de experiencia en eventos harán que la gente aplauda de pie. Gratis para estudiantes"
         },
         "header": "Deleite Su Audiencia Con ZMOT",
         "text_1": "¿Está promocionando un evento sobre temas relacionados a Negocios o Marketing Digital? ¿Necesita un contenido de alta calidad para deleitar a su audiencia?",
@@ -152,8 +152,8 @@
     },
     "online_courses" : {
         "seo": {
-            "title": "Need to write title for online_courses page",
-            "description": "Need to write meta description for online_courses page"
+            "title": "Curso Online de ZMOT. Aprenda a su propio ritmo",
+            "description": "Aprenda online con ZMOT Institute. Inscríbete en nuestro curso de ZMOT y obtén 1 hora de tutoría gratis. Usted en control de tu tiempo e conocimiento"
         },
         "header": "Aprenda ZMOT A Su Propio Ritmo",
         "text_1": "Cursos Online son la solución perfecta si desea aprender contenido en profundidad, pero es una persona ocupada con una agenda apiñada.",
@@ -171,8 +171,8 @@
     },
     "privacy":{
         "seo": {
-            "title": "Need to write title for privacy page",
-            "description": "Need to write meta description for privacy page"
+            "title": "Política de Privacidad de ZMOT Institute. Respectamos usted",
+            "description": "ZMOT Institute cumple con las mejores políticas de privacidad de la industria. Obtenga más información sobre cómo tratamos los datos y respetamos su privacidad."
         },
         "intro":{
             "title": "Política de Privacidad de zmotinstitute.com",

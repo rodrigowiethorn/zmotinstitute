@@ -65,8 +65,8 @@
     },
     "contact": {
         "seo": {
-            "title": "Need to write title for contact page",
-            "description": "Need to write meta description for contact page"
+            "title": "Entre em contato com os especialistas do ZMOT Institute",
+            "description": "Entre em contato Agora! Envie suas dúvidas e te ajudaremos a implementar o ZMOT. Não importa o tamanho do seu bolso, sempre teremos uma solução."
         },
         "banner": {
             "header": "Converse Agora com Especialistas Em ZMOT",
@@ -86,10 +86,6 @@
         }
     },
     "news_letter": {
-        "seo": {
-            "title": "Need to write title for news_letter page",
-            "description": "Need to write meta description for news_letter page"
-        },
         "header": "Acompanhe o ZMOT INSTITUTE",
         "text": "Fique ligado em todas as novidades sobre o ZMOT, Comportamento do Consumidor e Marketing Digital. Increva-se na nossa newsletter mensal.",
         "subscribe": "Inscrever-se na News",
@@ -122,8 +118,8 @@
     },
     "blog": {
         "seo": {
-            "title": "Need to write title for blog page",
-            "description": "Need to write meta description for blog page"
+            "title": "Acesse o Blog do ZMOT Institute e Aprenda com os Melhores",
+            "description": "O melhor lugar para você aprender tudo sobre o ZMOT Framework e temas relacionados a Comportamento do Consumidor. Acesse Agora!"
         },
         "add_comment" : {
         "title": "Add a Comment",
@@ -134,8 +130,8 @@
     },
     "zmot_audit": {
         "seo": {
-            "title": "Need to write title for zmot_audit page",
-            "description": "Need to write meta description for zmot_audit page"
+            "title": "Use ZMOT para Hackear o Comportamento do Consumidor",
+            "description": "Entenda a necessidade dos seus clientes e entregue a mensagem correta no momento correto. Aprenda a hackear o Comportamento do Consumidor com ZMOT"
         },
         "header": "Acelere Resultados com ZMOT",
         "text_1": "ZMOT é um Framework criado pelo Google para descrever como as pessoas se comportam durante a Jornada de Compra.",
@@ -145,8 +141,8 @@
     },
     "lectures_events": {
         "seo": {
-            "title": "Need to write title for lectures_events page",
-            "description": "Need to write meta description for lectures_events page"
+            "title": "Encante a Platéia do seu Evento com uma Palestra de ZMOT",
+            "description": "Leve o ZMOT para o seu evento e encante sua audiência. Nossos +15 anos de experiência palestrando farão as pessoas aplaudirem de pé. Grátis para Estudantes."
         },
         "header": "Encante Sua Platéia com ZMOT",
         "text_1": "Se você está organizando um evento e precisa de um tema super atual e relevante, com um storytelling envolvedor, nossas Palestras sobre ZMOT e Comportamento do Consumidor são o que você precisa. ",
@@ -156,8 +152,8 @@
     },
     "online_courses" : {
         "seo": {
-            "title": "Need to write title for online_courses page",
-            "description": "Need to write meta description for online_courses page"
+            "title": "Curso Online de ZMOT. Aprenda no seu próprio ritmo",
+            "description": "Aprenda ZMOT online e seja um profissional de alto nível. Inscreva-se agora e ganhe 1 hora de mentoria gratuita. Você no controle do seu tempo e conhecimento."
         },
         "header": "Mergulhe Fundo no ZMOT",
         "text_1": "Cursos Online são a solução perfeita se você quer aprender um conteúdo a fundo, mas tem pouco disponibilidade de agenda.",
@@ -175,8 +171,8 @@
     },
     "privacy":{
         "seo": {
-            "title": "Need to write title for privacy page",
-            "description": "Need to write meta description for privacy page"
+            "title": "Política de Privacidade do ZMOT Institute. Respeitamos você",
+            "description": "ZMOT Institute segue os melhores padrões mundiais em privacidade de dados. Entenda mais como tratamos e respeitamos suas privacidade"
         },
         "intro":{
             "title": "Política de Privacidade de zmotinstitute.com",

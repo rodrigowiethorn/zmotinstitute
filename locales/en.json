@@ -68,8 +68,8 @@
     },
     "contact": {
         "seo": {
-            "title": "Need to write title for contact page",
-            "description": "Need to write meta description for contact page"
+            "title": "Get in touch with ZMOT Institute best in class experts",
+            "description": "Get in touch now! Let us know your thoughts and help you to implement ZMOT Framework. No matter the size of your pocket, there is always a solution."
         },
         "banner": {
             "header": "Get in Touch With ZMOT Experts",
@@ -121,8 +121,8 @@
     },
     "blog": {
         "seo": {
-            "title": "Need to write title for blog page",
-            "description": "Need to write meta description for blog page"
+            "title": "ZMOT Institute's Blog: Learn with Best in Class Experts",
+            "description": "This is the right place to learn all about ZMOT Framework and related topics regarding Consumer Behavior. Learn Now and Start to Boost your Business Results!"
         },
         "add_comment" : {
             "title": "Add a Comment",
@@ -133,8 +133,8 @@
     },
     "zmot_audit": {
         "seo": {
-            "title": "Need to write title for zmot_audit page",
-            "description": "Need to write meta description for zmot_audit page"
+            "title": "Hack Consumer Behavior with ZMOT. Designed by Google",
+            "description": "Understand your customer needs and deliver the right message at the right time. Hack people's behaviour with ZMOT and boost your business results."
         },
         "header": "Boost Your Resuts with ZMOT",
         "text_1": "ZMOT is a Framework designed by Google to describe how people behave during the Buying Journey.",
@@ -144,8 +144,8 @@
     },
     "lectures_events": {
         "seo": {
-            "title": "Need to write title for lectures_events page",
-            "description": "Need to write meta description for lectures_events page"
+            "title": "Make your Event Outstand with a ZMOT Lecture",
+            "description": "Bring ZMOT to your event and delight your audience. Our +15 years of experience in event speaking will make people clap stand. Free for students."
         },
         "header": "Delight Your Audience with ZMOT",
         "text_1": "Are you promoting an event about Business or Digital Marketing related themes? Need a high quality content to delight your audience?",
@@ -156,12 +156,12 @@
     },
     "online_courses": {
         "seo": {
-            "title": "Need to write title for online_courses page",
-            "description": "Need to write meta description for online_courses page"
+            "title": "ZMOT Online Course. Learn ZMOT in depth at your own pace",
+            "description": "Learn ZMOT online and be a Pro Marketer. Enroll our ZMOT Course and Get 1 hour of Mentoring for Free. You are under control of your time and knowledge"
         },
         "header": "Learn ZMOT At Your Own Pace",
         "text_1": "Online Courses are the perfect solution if you want to learn in depth content, but is a busy person with a tight agenda.",
-        "text_2": "We hsve prepared a detailed hands on course about ZMOT, that will not only help you to learn the concepts, but also how to implement things, which tools to use and best practices the fastest growing companies in the world have been using.",
+        "text_2": "We have prepared a detailed hands on course about ZMOT, that will not only help you to learn the concepts, but also how to implement things, which tools to use and best practices the fastest growing companies in the world have been using.",
         "text_3": "You will also have full access to our exclusive content, plus 1 hour mentoring virtual call with a ZMOT INSTITUTE expert. Push yourself towards the growth mindset.",
         "submit": "Start To Learn ZMOT",
         "thank_you_title": "Thank you for getting in touch! ",
@@ -177,8 +177,8 @@
 
     "privacy":{
         "seo": {
-            "title": "Need to write title for privacy page",
-            "description": "Need to write meta description for privacy page"
+            "title": "ZMOT Institute Privacy Policy. We respect people's privacy",
+            "description": "ZMOT Institute complies with all the industry best in class privacy policies. Learn more about how we treat data and respect your privacy"
         },
         "intro":{
             "title": "Privacy Policy for zmotinstitute.com",
