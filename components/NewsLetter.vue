@@ -8,7 +8,7 @@
             </h2>
             <p class="text-center">{{$t('news_letter.text')}}</p>
             <div class="search-form">
-              <b-form-input :type="'email'" v-model="email" v-bind:placeholder="$t('news_letter.placeholder')" > </b-form-input>
+              <b-form-input type="email" v-model="email" v-bind:placeholder="$t('news_letter.placeholder')" > </b-form-input>
               <!-- <b-form-input v-model="email" :placeholder="$t('news_letter.placeholder')" > </b-form-input> -->
               <b-button variant="danger" class="browser-show">{{$t('news_letter.subscribe')}}</b-button>
               <b-button variant="danger" class="mobile-show">{{$t('news_letter.subscribe_ellipse')}}</b-button>
