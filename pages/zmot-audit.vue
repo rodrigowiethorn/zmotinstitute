@@ -2,13 +2,15 @@
   <div id="zmot-audit-page">
     <section>
       <b-container class="navbar">
-        <b-navbar-brand>
-          <picture>
-            <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
-            <source srcset="../assets/img/zmot-logo.png" type="image/png" />
-            <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt="zmot-institute white logo"></b-img>
-          </picture>
-        </b-navbar-brand>
+          <nuxt-link :to="localePath('index')">
+              <b-navbar-brand>
+                <picture>
+                  <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
+                  <source srcset="../assets/img/zmot-logo.png" type="image/png" />
+                  <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt="zmot-institute white logo"></b-img>
+                </picture>
+              </b-navbar-brand>
+          </nuxt-link>
       </b-container>
     </section>
     <section>
