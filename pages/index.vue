@@ -133,7 +133,7 @@
                           <picture>
                             <source srcset="../assets/img/Specialist/NeilPatel.webp" type="image/webp" />
                             <source srcset="../assets/img/Specialist/NeilPatel.jpg" type="image/jpeg" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid alt="NeilPatel Photo"></b-img>
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid alt="Neil Patel Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -538,24 +538,24 @@
         testimonial_avatar: {blank: false, width: 36, height: 36, class:'m1'},
         specialist_avatar: {blank: false, width: 85, height: 85, class:'m2'},
         agileOptions: {
+            autoplay: true,
+            mobileFirst: true,
             navButtons: false,
             centerMode: true,
+            infinite: true,
             slidesToShow: 1,
+            dots: true,
             responsive: [
                 {
                     breakpoint: 600,
                     settings: {
-                        dots: false,
-                        slidesToShow: 1
+                         slidesToShow: 2
                     }
                 },
                 {
                     breakpoint: 900,
                     settings: {
-                        dots: true,
-                        infinite: false,
-                        infinite: true,
-                        slidesToShow: 3
+                         slidesToShow: 3
                     }
                 }
             ]
