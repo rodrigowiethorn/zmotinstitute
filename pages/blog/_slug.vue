@@ -52,11 +52,11 @@
 <script>
   import axios from 'axios';
   import moment from 'moment';
-  import Loading from 'vue-loading-overlay';
-  import AddComment from "@/components/AddComment";
-  import CommentList from "@/components/CommentList";
-  import Author from "@/components/Author";
-  import SocialLinks from "@/components/SocialLinks";
+  // import Loading from 'vue-loading-overlay';
+  // import AddComment from "@/components/AddComment";
+  // import CommentList from "@/components/CommentList";
+  // import Author from "@/components/Author";
+  // import SocialLinks from "@/components/SocialLinks";
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
@@ -98,11 +98,11 @@
       }
     },
     components: {
-        'Loading': Loading,
-        'AddComment': AddComment,
-        'CommentList': CommentList,
-        'Author': Author,
-        'SocialLinks': SocialLinks
+        'Loading': () => import('vue-loading-overlay'),
+        'AddComment': () => import('@/components/AddComment'),
+        'CommentList': () => import('@/components/CommentList'),
+        'Author': () => import('@/components/Author'),
+        'SocialLinks': () => import('@/components/SocialLinks'),
     },
     data: () => ({
         text: '',

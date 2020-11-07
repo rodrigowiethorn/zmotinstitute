@@ -5,8 +5,8 @@
                 <b-col md="4" sm="12">
                     <picture>
                       <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
-                      <source srcset="../assets/img/zmot-logo.png" type="image/png" />
-                      <img v-bind="footerLogo" src="../assets/img/zmot-logo.png" alt="Zmot Logo" class="footer-new-holder-right-holder__brand footer-logo" />
+                      <!-- <source srcset="../assets/img/zmot-logo.png" type="image/png" /> -->
+                      <img v-bind="footerLogo" src="../assets/img/zmot-logo.webp" alt="Zmot Logo" class="footer-new-holder-right-holder__brand footer-logo" />
                     </picture>
                     <p>
                         {{$t('footer.text')}}
@@ -51,13 +51,13 @@
 
     import {library} from '@fortawesome/fontawesome-svg-core'
     import {faFacebookF, faLinkedin, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-    import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+    // import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
     library.add(faFacebookF, faLinkedin, faInstagram, faTwitter);
     export default {
         name: "Footer",
         components: {
-        'font-awesome-icon': FontAwesomeIcon,
+        'font-awesome-icon': () => import('@fortawesome/vue-fontawesome'),
         },
         data: () => ({footerLogo: {blank: false, width: 300, class:'m2'}}),
         methods: {}

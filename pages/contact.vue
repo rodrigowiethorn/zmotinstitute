@@ -36,7 +36,7 @@
                 <b-col md="6" class="d-none d-md-block d-sm-none">
                   <picture>
                     <source srcset="../assets/img/contact/contact_hero.webp" type="image/webp" />
-                    <source srcset="../assets/img/contact/contact_hero.png" type="image/png" />
+                    <!-- <source srcset="../assets/img/contact/contact_hero.png" type="image/png" /> -->
                     <b-img src="../assets/img/contact/contact_hero.webp" fluid alt="Contact Hero Image"></b-img>
                   </picture>
                 </b-col>
@@ -111,7 +111,7 @@
 
 <script>
   import axios from "axios";
-  import Loading from 'vue-loading-overlay';
+  // import Loading from 'vue-loading-overlay';
   import {hubSpotPortalId, contactFormGuid} from "@/config";
 
   export default {
@@ -153,7 +153,7 @@
       }
     },
     components: {
-      'Loading': Loading
+      'Loading': () => import('vue-loading-overlay'),
     },
     data: () => ({
       name: "",

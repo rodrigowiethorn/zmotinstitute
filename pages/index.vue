@@ -17,8 +17,8 @@
           <b-col sm="12" md="6">
             <picture>
               <source srcset="../assets/img/header-zmot.webp" type="image/webp" />
-              <source srcset="../assets/img/header-zmot.jpg" type="image/jpg" />
-              <b-img src="../assets/img/header-zmot.jpg" fluid alt="women persona using cell phone, sitting on a side of a big cell phone with an ecommerce website. There is a nice landscape with plants"></b-img>
+              <!-- <source srcset="../assets/img/header-zmot.jpg" type="image/jpg" /> -->
+              <b-img src="../assets/img/header-zmot.webp" fluid alt="women persona using cell phone, sitting on a side of a big cell phone with an ecommerce website. There is a nice landscape with plants"></b-img>
             </picture>
           </b-col>
         </b-row>
@@ -26,29 +26,29 @@
           <b-col>
             <picture>
               <source srcset="../assets/img/logos/google-white-logo.webp" type="image/webp" />
-              <source srcset="../assets/img/logos/google-white-logo.png" type="image/png" />
-              <b-img fluid src="../assets/img/logos/google-white-logo.png" alt="Google's logo white color"></b-img>
+              <!-- <source srcset="../assets/img/logos/google-white-logo.png" type="image/png" /> -->
+              <b-img fluid src="../assets/img/logos/google-white-logo.webp" alt="Google's logo white color"></b-img>
             </picture>
           </b-col>
           <b-col>
             <picture>
-              <source srcset="../assets/img/logos/digitalks-white-logo.png" type="image/png" />
+              <!-- <source srcset="../assets/img/logos/digitalks-white-logo.png" type="image/png" /> -->
               <source srcset="../assets/img/logos/digitalks-white-logo.webp" type="image/webp" />
-              <b-img fluid src="../assets/img/logos/digitalks-white-logo.png" alt="Digitalk's logo white color"></b-img>
+              <b-img fluid src="../assets/img/logos/digitalks-white-logo.webp" alt="Digitalk's logo white color"></b-img>
             </picture>
           </b-col>
           <b-col>
             <picture>
               <source srcset="../assets/img/logos/logo-profissional-de-ecommerce.webp" type="image/webp" />
-              <source srcset="../assets/img/logos/logo-profissional-de-ecommerce.png" type="image/png" />
-              <b-img fluid src="../assets/img/logos/logo-profissional-de-ecommerce.png" alt="Profissional de ecommerce logo white color"></b-img>
+              <!-- <source srcset="../assets/img/logos/logo-profissional-de-ecommerce.png" type="image/png" /> -->
+              <b-img fluid src="../assets/img/logos/logo-profissional-de-ecommerce.webp" alt="Profissional de ecommerce logo white color"></b-img>
             </picture>
           </b-col>
           <b-col>
             <picture>
               <source srcset="../assets/img/logos/logo-startupi-white.webp" type="image/webp" />
-              <source srcset="../assets/img/logos/logo-startupi-white.png" type="image/png" />
-              <b-img fluid src="../assets/img/logos/logo-startupi-white.png" alt="Startupi's logo white color"></b-img>
+              <!-- <source srcset="../assets/img/logos/logo-startupi-white.png" type="image/png" /> -->
+              <b-img fluid src="../assets/img/logos/logo-startupi-white.webp" alt="Startupi's logo white color"></b-img>
             </picture>
           </b-col>
         </b-row>
@@ -70,8 +70,8 @@
             <b-col class="feature__item-img" sm="12" md="6">
               <picture>
                 <source srcset="../assets/img/why-do-you-need/searching_block.webp" type="image/webp" />
-                <source srcset="../assets/img/why-do-you-need/searching_block.png" type="image/png" />
-                <b-img src="../assets/img/why-do-you-need/searching_block.png" fluid alt="Why do you need Image"></b-img>
+                <!-- <source srcset="../assets/img/why-do-you-need/searching_block.png" type="image/png" /> -->
+                <b-img src="../assets/img/why-do-you-need/searching_block.webp" fluid alt="Why do you need Image"></b-img>
               </picture>
             </b-col>
             <b-col class="feature__item-content-wrapper" sm="12" md="6">
@@ -91,7 +91,7 @@
             <b-col class="feature__item-img" sm="12" md="6">
               <picture>
                 <source srcset="../assets/img/why-do-you-need/service-mobile.webp" type="image/webp" />
-                <source srcset="../assets/img/why-do-you-need/service-mobile.png" type="image/png" />
+                <!-- <source srcset="../assets/img/why-do-you-need/service-mobile.png" type="image/png" /> -->
                 <b-img src="../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Service Mobile Image"></b-img>
               </picture>
             </b-col>
@@ -100,7 +100,7 @@
             <b-col class="feature__item-img" sm="12" md="6">
               <picture>
                 <source srcset="../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" type="image/webp" />
-                <source srcset="../assets/img/why-do-you-need/why_do_you_need_zmot-review.png" type="image/png" />
+                <!-- <source srcset="../assets/img/why-do-you-need/why_do_you_need_zmot-review.png" type="image/png" /> -->
                 <b-img src="../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" fluid alt="Why do you need zmot review Image"></b-img>
               </picture>
             </b-col>
@@ -132,8 +132,8 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/NeilPatel.webp" type="image/webp" />
-                            <source srcset="../assets/img/Specialist/NeilPatel.jpg" type="image/jpeg" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid alt="Neil Patel Photo"></b-img>
+                            <!-- <source srcset="../assets/img/Specialist/NeilPatel.jpg" type="image/jpeg" /> -->
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.webp" fluid alt="Neil Patel Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -157,7 +157,7 @@
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
                           <picture>
-                            <source srcset="../assets/img/Specialist/Jim_Lecinsk.webp" type="image/webp" />
+                            <!-- <source srcset="../assets/img/Specialist/Jim_Lecinsk.webp" type="image/webp" /> -->
                             <source srcset="../assets/img/Specialist/Jim_Lecinsk.jpeg" type="image/jpeg" />
                             <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.jpeg" fluid alt="Jim Lecinsk Photo"></b-img>
                           </picture>
@@ -184,8 +184,8 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/David_Meerman_Scott.webp" type="image/webp" />
-                            <source srcset="../assets/img/Specialist/David_Meerman_Scott.png" type="image/png" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.png" fluid alt="David Meerman Scott Photo"></b-img>
+                            <!-- <source srcset="../assets/img/Specialist/David_Meerman_Scott.png" type="image/png" /> -->
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.webp" fluid alt="David Meerman Scott Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -210,8 +210,8 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/avinash_kaushik.webp" type="image/webp" />
-                            <source srcset="../assets/img/Specialist/avinash_kaushik.png" type="image/png" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash_kaushik.png" fluid alt="Avinash Kaushik Photo"></b-img>
+                            <!-- <source srcset="../assets/img/Specialist/avinash_kaushik.png" type="image/png" /> -->
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash_kaushik.webp" fluid alt="Avinash Kaushik Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -236,8 +236,8 @@
                         <div class="sec__card-meta-avatar">
                           <picture>
                             <source srcset="../assets/img/Specialist/bryan_eisenberg.webp" type="image/webp" />
-                            <source srcset="../assets/img/Specialist/bryan_eisenberg.png" type="image/png" />
-                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan_eisenberg.png" fluid alt="Bryan Eisenberg Photo"></b-img>
+                            <!-- <source srcset="../assets/img/Specialist/bryan_eisenberg.png" type="image/png" /> -->
+                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan_eisenberg.webp" fluid alt="Bryan Eisenberg Photo"></b-img>
                           </picture>
                         </div>
                         <div class="spec__card-meta-details">
@@ -273,8 +273,8 @@
           <b-col md="6" sm="12" align-self="center">
             <picture>
               <source srcset="../assets/img/services/service-zmot_audit.webp" type="image/webp" />
-              <source srcset="../assets/img/services/service-zmot_audit.png" type="image/png" />
-              <img src="../assets/img/services/service-zmot_audit.png" alt="Service Zmot Audito Image" />
+              <!-- <source srcset="../assets/img/services/service-zmot_audit.png" type="image/png" /> -->
+              <img src="../assets/img/services/service-zmot_audit.webp" alt="Service Zmot Audito Image" />
             </picture>
           </b-col>
           <b-col md="6" sm="12">
@@ -320,7 +320,7 @@
           <b-col md="6" sm="12" align-self="center">
             <picture id="lectures">
               <source srcset="../assets/img/services/service-lecture.webp" type="image/webp" />
-              <source srcset="../assets/img/services/service-lecture.png" type="image/png" />
+              <!-- <source srcset="../assets/img/services/service-lecture.png" type="image/png" /> -->
               <img src="../assets/img/services/service-lecture.webp" alt="Service Lecture Image" />
             </picture>
           </b-col>
@@ -329,7 +329,7 @@
           <b-col md="6" sm="12" align-self="center">
             <picture id="courses">
               <source srcset="../assets/img/services/service-online_course.webp" type="image/webp" />
-              <source srcset="../assets/img/services/service-online_course.png" type="image/png" />
+              <!-- <source srcset="../assets/img/services/service-online_course.png" type="image/png" /> -->
               <img src="../assets/img/services/service-online_course.webp" alt="Service Online Course Image" />
             </picture>
           </b-col>
@@ -375,7 +375,7 @@
                 <span class="testimonial-item__author">
                   <picture>
                     <source srcset="../assets/img/Testominal/paulo-gomes.webp" type="image/webp" />
-                    <source srcset="../assets/img/Testominal/paulo-gomes.jpeg" type="image/jpeg" />
+                    <!-- <source srcset="../assets/img/Testominal/paulo-gomes.jpeg" type="image/jpeg" /> -->
                     <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/paulo-gomes.webp" fluid alt="Paulo gomes Photo"></b-img>
                   </picture>
                   Paulo Gomes
@@ -391,7 +391,7 @@
                 <span class="testimonial-item__author">
                   <picture>
                     <source srcset="../assets/img/Testominal/elvissilva.webp" type="image/webp" />
-                    <source srcset="../assets/img/Testominal/elvissilva.jpeg" type="image/jpeg" />
+                    <!-- <source srcset="../assets/img/Testominal/elvissilva.jpeg" type="image/jpeg" /> -->
                     <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/elvissilva.webp" fluid alt="Elvissilva Photo"></b-img>
                   </picture>
                   Elvis Silva
@@ -408,7 +408,7 @@
                 <span class="testimonial-item__author">
                   <picture>
                     <source srcset="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" type="image/webp" />
-                    <source srcset="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.png" type="image/png" />
+                    <!-- <source srcset="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.png" type="image/png" /> -->
                     <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" fluid alt="Eduardo Moiolli Congresso Apdespbr"></b-img>
                   </picture>
                   Eduardo Maiolli
@@ -480,7 +480,7 @@
       faArrowLeft,
       faArrowRight,
   } from '@fortawesome/free-solid-svg-icons'
-  import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+  // import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
 
   library.add(
       faUsers,
@@ -490,7 +490,7 @@
       faArrowRight,
   );
 
-  import NewsLetter from "@/components/NewsLetter.vue";
+  // import NewsLetter from "@/components/NewsLetter.vue";
 
   export default {
     head () {
@@ -531,8 +531,8 @@
       }
     },
     components: {
-      'font-awesome-icon': FontAwesomeIcon,
-      'NewsLetter': NewsLetter,
+      'font-awesome-icon': () => import('@fortawesome/vue-fontawesome'),
+      'NewsLetter': () => import('@/components/NewsLetter.vue'),
     },
     data: () => ({
         testimonial_avatar: {blank: false, width: 36, height: 36, class:'m1'},

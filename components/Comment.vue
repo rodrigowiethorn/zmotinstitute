@@ -56,13 +56,14 @@
 <script>
 
   import moment from "moment";
-  import AddComment from "./AddComment";
+  // import AddComment from "./AddComment";
 
   export default {
     name: "Comment",
     props: ["comment", "replies", "author", "postId"],
     components: {
-      "AddComment": AddComment
+      // "AddComment": AddComment
+      "AddComment": () => import('./AddComment')
     },
     data: () => ({
       children: null,

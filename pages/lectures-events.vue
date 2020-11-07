@@ -6,8 +6,8 @@
             <b-navbar-brand>
               <picture>
                 <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
-                <source srcset="../assets/img/zmot-logo.png" type="image/png" />
-                <b-img v-bind="logoProp" src="../assets/img/zmot-logo.png" fluid alt="zmot-institute white logo"></b-img>
+                <!-- <source srcset="../assets/img/zmot-logo.png" type="image/png" /> -->
+                <b-img v-bind="logoProp" src="../assets/img/zmot-logo.webp" fluid alt="zmot-institute white logo"></b-img>
               </picture>
             </b-navbar-brand>
           </nuxt-link>
@@ -68,7 +68,7 @@
 <script>
   import axios from "axios";
   import {hubSpotPortalId, hubSpotFormGuid} from "@/config";
-  import Loading from 'vue-loading-overlay';
+  // import Loading from 'vue-loading-overlay';
   import {telInputOption} from "@/config";
 
   export default {
@@ -117,7 +117,7 @@
       }
     },
     components: {
-      'Loading': Loading
+      'Loading': () => import('vue-loading-overlay'),
     },
     data: () => ({
       logoProp: {blank: false, width: 250, class: 'm2'},

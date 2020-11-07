@@ -75,6 +75,14 @@ module.exports = {
     'nuxt-ssr-cache',
     "nuxt-compress",
     [
+      '@nuxtjs/pwa',
+      {
+        meta: false,
+        icon: false,
+        manifest: false
+      }
+    ],
+    [
       'vue-sweetalert2/nuxt',
       {
         confirmButtonColor: '#41b882',
@@ -160,6 +168,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    analyze: true,
   },
   robots: {
     UserAgent: '*',

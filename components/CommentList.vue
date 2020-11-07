@@ -19,12 +19,13 @@
 </template>
 
 <script>
-  import Comment from "@/components/Comment";
+  // import Comment from "@/components/Comment";
   export default {
     name: "CommentList",
     props: ["author", "replies", "postId"],
     components: {
-      'Comment': Comment
+      // 'Comment': Comment
+      'Comment': () => import('@/components/Comment')
     },
     data: () => ({
       loading: true,

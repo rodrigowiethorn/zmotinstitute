@@ -40,9 +40,9 @@ html {
 
 </style>
 <script>
-  import MenuHeader from "@/components/MenuHeader.vue";
-  import Footer from "@/components/Footer.vue";
-  import Cookie from "@/components/Cookie.vue";
+  // import MenuHeader from "@/components/MenuHeader.vue";
+  // import Footer from "@/components/Footer.vue";
+  // import Cookie from "@/components/Cookie.vue";
 
   export default {
     head () {
@@ -71,7 +71,11 @@ html {
      ]
     }
   },
-    components: { MenuHeader, Footer, Cookie },
+    components: {
+      MenuHeader: () => import('@/components/MenuHeader.vue'),
+      Footer: () => import('@/components/Footer.vue'),
+      Cookie: () => import('@/components/Cookie.vue'),
+    },
     data: () => ({
       visibleHeaderFooter: true
     }),

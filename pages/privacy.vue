@@ -92,7 +92,7 @@
 <script>
 
 import axios from "axios";
-import Loading from 'vue-loading-overlay';
+// import Loading from 'vue-loading-overlay';
 
 export default {
     head () {
@@ -140,7 +140,7 @@ export default {
       }
     },
     components: {
-      'Loading': Loading
+      'Loading': () => import('vue-loading-overlay'),
     },
 }
 </script>

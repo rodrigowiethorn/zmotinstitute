@@ -44,10 +44,10 @@
 </template>
 
 <script>
-  import NewsLetter from "~/components/NewsLetter.vue";
+  // import NewsLetter from "~/components/NewsLetter.vue";
   import axios from 'axios';
   import moment from 'moment';
-  import Loading from 'vue-loading-overlay';
+  // import Loading from 'vue-loading-overlay';
   import 'vue-loading-overlay/dist/vue-loading.css';
 
   export default {
@@ -89,8 +89,8 @@
       }
     },
     components: {
-      'NewsLetter': NewsLetter,
-      'Loading': Loading,
+      'NewsLetter': () => import('~/components/NewsLetter.vue'),
+      'Loading': () => import('vue-loading-overlay'),
     },
     data () {
       return {
