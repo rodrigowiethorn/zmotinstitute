@@ -1,0 +1,212 @@
+[
+  {
+    "name": "blog___en",
+    "path": "/blog",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "url": "/blog",
+    "_name": "_7fdea49c"
+  },
+  {
+    "name": "contact___en",
+    "path": "/contact",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "url": "/contact",
+    "_name": "_7754b74c"
+  },
+  {
+    "name": "index___es",
+    "path": "/es",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "url": "/es",
+    "_name": "_08ee27fe"
+  },
+  {
+    "name": "lectures-events___en",
+    "path": "/lectures-events",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\lectures-events.vue",
+    "chunkName": "pages/lectures-events",
+    "url": "/lectures-events",
+    "_name": "_359a1c46"
+  },
+  {
+    "name": "online-courses___en",
+    "path": "/online-courses",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\online-courses.vue",
+    "chunkName": "pages/online-courses",
+    "url": "/online-courses",
+    "_name": "_e89fc27c"
+  },
+  {
+    "name": "privacy___en",
+    "path": "/privacy",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\privacy.vue",
+    "chunkName": "pages/privacy",
+    "url": "/privacy",
+    "_name": "_62fe7a98"
+  },
+  {
+    "name": "index___pt-br",
+    "path": "/pt-br",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "url": "/pt-br",
+    "_name": "_08ee27fe"
+  },
+  {
+    "name": "zmot-audit___en",
+    "path": "/zmot-audit",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\zmot-audit.vue",
+    "chunkName": "pages/zmot-audit",
+    "url": "/zmot-audit",
+    "_name": "_587e9eac"
+  },
+  {
+    "name": "zmot-audit___es",
+    "path": "/es/auditoria-zmot",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\zmot-audit.vue",
+    "chunkName": "pages/zmot-audit",
+    "url": "/es/auditoria-zmot",
+    "_name": "_587e9eac"
+  },
+  {
+    "name": "blog___es",
+    "path": "/es/blog",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "url": "/es/blog",
+    "_name": "_7fdea49c"
+  },
+  {
+    "name": "lectures-events___es",
+    "path": "/es/conferencias-eventos",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\lectures-events.vue",
+    "chunkName": "pages/lectures-events",
+    "url": "/es/conferencias-eventos",
+    "_name": "_359a1c46"
+  },
+  {
+    "name": "contact___es",
+    "path": "/es/contact",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "url": "/es/contact",
+    "_name": "_7754b74c"
+  },
+  {
+    "name": "online-courses___es",
+    "path": "/es/cursos-online",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\online-courses.vue",
+    "chunkName": "pages/online-courses",
+    "url": "/es/cursos-online",
+    "_name": "_e89fc27c"
+  },
+  {
+    "name": "privacy___es",
+    "path": "/es/privacidad",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\privacy.vue",
+    "chunkName": "pages/privacy",
+    "url": "/es/privacidad",
+    "_name": "_62fe7a98"
+  },
+  {
+    "name": "zmot-audit___pt-br",
+    "path": "/pt-br/auditoria-zmot",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\zmot-audit.vue",
+    "chunkName": "pages/zmot-audit",
+    "url": "/pt-br/auditoria-zmot",
+    "_name": "_587e9eac"
+  },
+  {
+    "name": "blog___pt-br",
+    "path": "/pt-br/blog",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "url": "/pt-br/blog",
+    "_name": "_7fdea49c"
+  },
+  {
+    "name": "contact___pt-br",
+    "path": "/pt-br/contact",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "url": "/pt-br/contact",
+    "_name": "_7754b74c"
+  },
+  {
+    "name": "online-courses___pt-br",
+    "path": "/pt-br/cursos-online",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\online-courses.vue",
+    "chunkName": "pages/online-courses",
+    "url": "/pt-br/cursos-online",
+    "_name": "_e89fc27c"
+  },
+  {
+    "name": "lectures-events___pt-br",
+    "path": "/pt-br/palestras-eventos",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\lectures-events.vue",
+    "chunkName": "pages/lectures-events",
+    "url": "/pt-br/palestras-eventos",
+    "_name": "_359a1c46"
+  },
+  {
+    "name": "privacy___pt-br",
+    "path": "/pt-br/privacidade",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\privacy.vue",
+    "chunkName": "pages/privacy",
+    "url": "/pt-br/privacidade",
+    "_name": "_62fe7a98"
+  },
+  {
+    "name": "blog-slug___es",
+    "path": "/es/blog/:slug",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_7e280354"
+  },
+  {
+    "name": "blog-slug___pt-br",
+    "path": "/pt-br/blog/:slug",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_7e280354"
+  },
+  {
+    "name": "blog-slug___en",
+    "path": "/blog/:slug",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_7e280354"
+  },
+  {
+    "name": "all___es",
+    "path": "/es/*",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\_.vue",
+    "chunkName": "pages/_",
+    "_name": "_235c5b0b"
+  },
+  {
+    "name": "all___pt-br",
+    "path": "/pt-br/*",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\_.vue",
+    "chunkName": "pages/_",
+    "_name": "_235c5b0b"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_08ee27fe"
+  },
+  {
+    "name": "all___en",
+    "path": "/*",
+    "component": "E:\\\\2020.11.2_Nuxt\\\\New folder\\\\zmotinstitute\\\\pages\\\\_.vue",
+    "chunkName": "pages/_",
+    "_name": "_235c5b0b"
+  }
+]
