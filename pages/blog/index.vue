@@ -5,10 +5,12 @@
         <nuxt-link
           v-for="post of posts" :key="post.id"
           :to="localePath({
-              name: 'blog-slug',
+              name: 'blog-slug', 
               params: { slug: post.slug }
           })"
-          class="blog--item" data-aos="fade-up">
+          class="blog--item" data-aos="fade-up"
+          onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'BlogAccess', 'blog-home',, false]);"
+          >
           <b-card no-body class="overflow-hidden" >
             <b-row no-gutters>
               <b-col md="4" sm="4" xs="12">

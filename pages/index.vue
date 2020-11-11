@@ -287,7 +287,9 @@
                   </p>
                 </div>
                 <nuxt-link :to="localePath('zmot-audit')">
-                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0"
+                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'GetQuote', 'zmot-audit',, false]);"
+                  >
                     <span>
                         {{$t('homepage.services.get_a_quote')}}
                     </span>
@@ -308,7 +310,9 @@
                   </p>
                 </div>
                 <nuxt-link :to="localePath('lectures-events')">
-                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0"
+                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'GetQuote', 'lectures-events',, false]);"
+                  >
                     <span>
                         {{$t('homepage.services.get_a_quote')}}
                     </span>
@@ -345,7 +349,9 @@
                   </p>
                 </div>
                 <nuxt-link :to="localePath('online-courses')">
-                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0">
+                  <a class="btn btn-purple rounded-pill" data-ga-slug="Get a Quote" role="button" tabindex="0"
+                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'GetQuote', 'online-courses',, false]);"
+                  >
                     <span>
                         {{$t('homepage.services.get_a_quote')}}
                     </span>
@@ -444,6 +450,7 @@
                       name: 'blog-slug',
                       params: { slug: post.slug }
                     })"
+                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'BlogAccess', 'homepage',, false]);"
                   >
                     {{post.title.rendered}}
                   </nuxt-link>
@@ -454,6 +461,7 @@
                     params: { slug: post.slug }
                   })"
                    class="btn btn-purple rounded-pill"
+                   onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'BlogAccess', 'homepage',, false]);"
                 >
                   {{$t('homepage.blog.read_more')}}
                 </nuxt-link>

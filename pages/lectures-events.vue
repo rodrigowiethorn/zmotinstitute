@@ -43,7 +43,9 @@
                   @expired="onExpired"
                 />
                 <div class="button-wrapper">
-                  <b-button type='submit'>
+                  <b-button type='submit'
+                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'LeadForm', 'lectures-events',, false]);"
+                  >
                     {{$t('lectures_events.submit')}}
                   </b-button>
                 </div>

@@ -36,7 +36,8 @@
                   @expired="onExpired"
                 />
                 <div class="button-wrapper">
-                  <b-button type='submit'>
+                  <b-button type='submit' 
+                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'LeadForm', 'zmot-audit',, false]);">
                     {{$t('zmot_audit.submit')}}
                   </b-button>
                 </div>
@@ -183,6 +184,7 @@
         } catch (error) {
           console.log('error:', error);
         }
+        //onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'Cookie', 'accept',, false]);"
       },
       showSuccessToast() {
         this.$swal({
