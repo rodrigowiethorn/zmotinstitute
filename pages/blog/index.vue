@@ -1,7 +1,7 @@
 <template>
   <div style="padding-top: 5rem;">
     <b-container v-if="!isLoading">
-      <section v-if="!!totalNum" id="BlogCard">
+      <section v-if="!!totalNum" id="blogs">
         <nuxt-link
           v-for="post of posts" :key="post.id"
           :to="localePath({
