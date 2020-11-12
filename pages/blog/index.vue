@@ -8,10 +8,10 @@
               name: 'blog-slug', 
               params: { slug: post.slug }
           })"
-          class="blog--item" data-aos="fade-up"
+          class="blog--item" data-aos="fade-up" id="blog-card"
           >
           <b-card no-body class="overflow-hidden" >
-            <b-row no-gutters id="blog-card">
+            <b-row no-gutters >
               <b-col md="4" sm="4" xs="12">
                 <b-card-img :src="post._embedded['wp:featuredmedia'][0].media_details.sizes.medium.source_url" alt="Post Image" class="rounded-0"></b-card-img>
               </b-col>
