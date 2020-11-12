@@ -44,7 +44,7 @@
                 />
                 <div class="button-wrapper">
                   <b-button type='submit'
-                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'LeadForm', 'lectures-events',, false]);"
+                  id="SubmitLeadForm"
                   >
                     {{$t('lectures_events.submit')}}
                   </b-button>

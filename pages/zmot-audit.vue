@@ -37,7 +37,8 @@
                 />
                 <div class="button-wrapper">
                   <b-button type='submit' 
-                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'LeadForm', 'zmot-audit',, false]);">
+                   id="SubmitLeadForm"
+                   >
                     {{$t('zmot_audit.submit')}}
                   </b-button>
                 </div>

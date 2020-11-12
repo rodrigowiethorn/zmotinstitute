@@ -43,7 +43,7 @@
                 />
                 <div class="button-wrapper">
                   <b-button type='submit'
-                  onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'LeadForm', 'online-courses',, false]);"
+                   id="SubmitLeadForm"
                   >
                     {{$t('online_courses.submit')}}
                   </b-button>

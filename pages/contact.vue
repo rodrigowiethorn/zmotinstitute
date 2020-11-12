@@ -17,7 +17,7 @@
                       <b-row>
                         <b-col md="6" sm="12" class="button-wrapper">
                           <a href="https://wa.me/5548988087120" target="_blank"
-                          onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'Contact', 'chat',, false]);"
+                          id="ChatOnline"
                           >
                             <b-button pill variant="white"
                             >
@@ -30,7 +30,7 @@
                         </b-col>
                         <b-col md="6" sm="12" class="button-wrapper">
                           <a href="#send-email"
-                          onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'Contact', 'email',, false]);"
+                          id="ChatEmail"
                           >
                             <b-button id="send-email" pill variant="white">{{$t('contact.banner.button.send_email')}}</b-button>
                           </a>
@@ -91,7 +91,7 @@
                       <b-col md="6" class="d-none d-lg-block d-md-block d-sm-none">
                         <!-- <b-button type="submit"  class="rounded-pill" variant="orange">{{$t('contact.form.send_email')}}</b-button> -->
                         <b-button type="submit"  class="btn-purple rounded-pill"
-                        onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'Contact', 'send-email',, false]);"
+                        id="FormSendEmail"
                         >{{$t('contact.form.send_email')}}</b-button>
                       </b-col>
                       <b-col sm="12" class="text-center text-md-left d-md-none d-lg-none d-sm-block">

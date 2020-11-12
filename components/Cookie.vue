@@ -11,7 +11,7 @@
             </b-col>
             <b-col md="2" offset-md="2">
                 <b-button @click="accept($event)" 
-                onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'Cookie', 'accept',, false]);"
+                id="CookieAccept"
                 class="button-cookie">{{ $t('cookie.accept') }}</b-button>
             </b-col>
         </b-row>

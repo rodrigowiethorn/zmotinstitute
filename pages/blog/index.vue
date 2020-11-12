@@ -1,7 +1,7 @@
 <template>
   <div style="padding-top: 5rem;">
     <b-container v-if="!isLoading">
-      <section v-if="!!totalNum" id="blogs">
+      <section v-if="!!totalNum" id="BlogCard">
         <nuxt-link
           v-for="post of posts" :key="post.id"
           :to="localePath({
@@ -9,7 +9,6 @@
               params: { slug: post.slug }
           })"
           class="blog--item" data-aos="fade-up"
-          onClick="_gaq.push(['_trackEvent', 'ButtonClicks', 'BlogAccess', 'blog-home',, false]);"
           >
           <b-card no-body class="overflow-hidden" >
             <b-row no-gutters>
