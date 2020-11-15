@@ -5,7 +5,7 @@
         <nuxt-link
           v-for="post of posts" :key="post.id"
           :to="localePath({
-              name: 'blog-slug', 
+              name: 'blog-slug',
               params: { slug: post.slug }
           })"
           class="blog--item" data-aos="fade-up" id="blog-card"
@@ -112,8 +112,18 @@
         this.currentPage = value;
       }
     },
+    async fetch () {
+      this.isLoading = true;
+      try {
+        const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts')
+        this.totalNum = result.data.length / 10 + 1;
+      } catch(e) {
+        this.totalNum = 0;
+      } finally {
+        this.initializeBlogContents();
+      }
+    },
     mounted: function() {
-      this.initializeBlogs();
       $nuxt.$emit('show-header-footer');
     },
     methods: {
@@ -122,17 +132,6 @@
       },
       linkGen: function(pageNum) {
         return pageNum === 1 ? '?page=1' : `?page=${pageNum}`
-      },
-      initializeBlogs: async function() {
-        this.isLoading = true;
-        try {
-          const result = await axios.get('https://thezmot.com/wp-json/wp/v2/posts')
-          this.totalNum = result.data.length / 10 + 1;
-        } catch(e) {
-          this.totalNum = 0;
-        } finally {
-          this.initializeBlogContents();
-        }
       },
       initializeBlogContents: async function() {
         this.isLoading = true;

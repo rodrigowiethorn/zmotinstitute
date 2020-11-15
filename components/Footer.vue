@@ -3,11 +3,14 @@
         <b-container>
             <b-row>
                 <b-col md="4" sm="12">
-                    <picture>
-                      <source srcset="../assets/img/zmot-logo.webp" type="image/webp" />
-                      <source srcset="../assets/img/zmot-logo.png" type="image/png" />
-                      <img v-bind="footerLogo" src="../assets/img/zmot-logo.png" alt="Zmot Logo" class="footer-new-holder-right-holder__brand footer-logo" />
-                    </picture>
+                    <b-img-lazy
+                      v-bind="footerLogo"
+                      :src="require('~/assets/img/zmot-logo.png').src"
+                      :srcset="require('~/assets/img/zmot-logo.png').srcSet"
+                      :blank-src="require('~/assets/img/zmot-logo.png').placeholder"
+                      class="footer-new-holder-right-holder__brand footer-logo"
+                      alt="Zmot Logo"
+                    />
                     <p>
                         {{$t('footer.text')}}
                     </p>
@@ -48,17 +51,8 @@
     </div>
 </template>
 <script>
-
-    import {library} from '@fortawesome/fontawesome-svg-core'
-    import {faFacebookF, faLinkedin, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-    import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
-
-    library.add(faFacebookF, faLinkedin, faInstagram, faTwitter);
     export default {
         name: "Footer",
-        components: {
-        'font-awesome-icon': FontAwesomeIcon,
-        },
         data: () => ({footerLogo: {blank: false, width: 300, class:'m2'}}),
         methods: {}
     };

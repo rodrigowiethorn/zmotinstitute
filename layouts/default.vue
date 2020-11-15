@@ -1,15 +1,15 @@
 <template>
   <div class="page">
     <MenuHeader v-if="visibleHeaderFooter"/>
-    <no-ssr>
+    <client-only>
       <nuxt />
-    </no-ssr>
-    <no-ssr>
+    </client-only>
+    <client-only>
       <Footer v-if="visibleHeaderFooter"/>
-    </no-ssr>
-    <no-ssr>
+    </client-only>
+    <client-only>
       <Cookie />
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 

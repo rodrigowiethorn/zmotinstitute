@@ -13,7 +13,8 @@ module.exports = {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1'
       },
-      { hid: 'description',
+      {
+        hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
       }
@@ -24,12 +25,23 @@ module.exports = {
       { rel: 'alternate', hreflang: 'en', href: 'https://zmotinstitute.com/' },
       { rel: 'alternate', hreflang: 'es' ,href: 'https://zmotinstitute.com/es' },
       { rel: 'alternate', hreflang: 'pt-br' ,href: 'https://zmotinstitute.com/pt-br' },
+      { rel: 'preconnect', href: 'https://connect.facebook.net/' },
+      { rel: 'preconnect', href: 'https://www.google-analytics.com/' }
     ]
   },
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
+  /*
+  ** Nuxt render configuration
+  ** See https://nuxtjs.org/api/configuration-render#static
+  */
+  render: {
+    static: {
+      maxAge: 1000 * 60 * 60 * 24 * 7 * 52
+    }
+  },
   /*
   ** Global CSS
   */
@@ -55,6 +67,10 @@ module.exports = {
     {
       src: '@/plugins/vue-tel-input',
       mode: 'client'
+    },
+    {
+      src: '@/plugins/icons',
+      mode: 'client'
     }
   ],
   router: {
@@ -64,13 +80,28 @@ module.exports = {
   */
   buildModules: [
   ],
+  pwa: {
+    icon: false
+  },
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
-    'nuxt-fontawesome',
+    '@nuxtjs/pwa',
+    ['nuxt-fontawesome', {
+      imports: [
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        },
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['fab']
+        }
+      ]
+    }],
     '@nuxtjs/robots',
     'nuxt-ssr-cache',
     "nuxt-compress",
@@ -160,6 +191,45 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    analyze: true,
+    transpile: [
+      'bootstrap-vue'
+    ],
+    extend (config, { isDev }) {
+      config.module.rules.unshift({
+        test: /\.jpe?g$/,
+        use: {
+          loader: 'responsive-loader',
+          options: {
+            name: 'images/[hash:hex:7]_[width]x.[ext]',
+            min: 320,
+            max: 2880,
+            steps: 9,
+            quality: 80,
+            placeholder: true,
+            placeholderSize: 32,
+            adapter: require('responsive-loader/sharp')
+          }
+        }
+      })
+
+      config.module.rules.unshift({
+        test: /\.png$/,
+        use: {
+          loader: 'responsive-loader',
+          options: {
+            name: 'images/[hash:hex:7]_[width]x.[ext]',
+            min: 320,
+            max: 2880,
+            steps: 9,
+            quality: 80,
+            placeholder: true,
+            placeholderSize: 32,
+            adapter: require('responsive-loader/sharp')
+          }
+        }
+      })
+    }
   },
   robots: {
     UserAgent: '*',
@@ -196,5 +266,11 @@ module.exports = {
   server: {
     port: 3000, // default: 3000
     host: '127.0.0.1' // default: localhost
+  },
+  manifest: {
+    name: 'Zmotinstitute',
+    short_name: 'Zmotinstitute',
+    lang: 'en',
+    display: 'standalone',
   }
 }
