@@ -26,7 +26,11 @@ module.exports = {
       { rel: 'alternate', hreflang: 'es' ,href: 'https://zmotinstitute.com/es' },
       { rel: 'alternate', hreflang: 'pt-br' ,href: 'https://zmotinstitute.com/pt-br' },
       { rel: 'preconnect', href: 'https://connect.facebook.net/' },
-      { rel: 'preconnect', href: 'https://www.google-analytics.com/' }
+      { rel: 'preconnect', href: 'https://www.google-analytics.com/' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' }
     ]
   },
   /*
@@ -81,7 +85,15 @@ module.exports = {
   buildModules: [
   ],
   pwa: {
-    icon: false
+    meta: {
+      title: 'Zmotinstitute',
+      author: 'Author',
+    },
+    manifest: {
+      name: 'Zmotinstitute',
+      short_name: 'zmotins',
+      lang: 'en',
+    }
   },
   /*
   ** Nuxt.js modules
@@ -191,7 +203,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    analyze: true,
     transpile: [
       'bootstrap-vue'
     ],
