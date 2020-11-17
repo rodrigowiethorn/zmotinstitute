@@ -125,7 +125,7 @@
       'Loading': Loading
     },
     data: () => ({
-      logoProp: {blank: false, width: 250, class: 'm2'},
+      logoProp: {blank: false, width: 250, height: '100%', class: 'm2'},
       email: "",
       name: "",
       surname: "",

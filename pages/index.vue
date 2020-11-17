@@ -16,16 +16,12 @@
               </div>
             </b-col>
             <b-col sm="12" md="6">
-<!--              <picture>-->
-<!--                <source srcset="../assets/img/header-zmot.webp" type="image/webp" />-->
-<!--                <source srcset="../assets/img/header-zmot.jpg" type="image/jpg" />-->
-<!--                <b-img src="../assets/img/header-zmot.jpg" fluid alt="women persona using cell phone, sitting on a side of a big cell phone with an ecommerce website. There is a nice landscape with plants"></b-img>-->
-<!--              </picture>-->
                 <b-img-lazy
                   :src="require('~/assets/img/header-zmot.jpg').src"
                   :srcset="require('~/assets/img/header-zmot.jpg').srcSet"
                   :blank-src="require('~/assets/img/header-zmot.jpg').placeholder"
                   fluid
+                  style="height: 100%; width: 100%;"
                   alt="women persona using cell phone, sitting on a side of a big cell phone with an ecommerce website. There is a nice landscape with plants"
                 />
             </b-col>
@@ -37,6 +33,7 @@
                 :srcset="require('~/assets/img/logos/google-white-logo.png').srcSet"
                 :blank-src="require('~/assets/img/logos/google-white-logo.png').placeholder"
                 fluid
+                style="height: 100%; width: 150px;"
                 alt="Google's logo white color"
               />
             </b-col>
@@ -46,6 +43,7 @@
                 :srcset="require('~/assets/img/logos/digitalks-white-logo.png').srcSet"
                 :blank-src="require('~/assets/img/logos/digitalks-white-logo.png').placeholder"
                 fluid
+                style="height: 100%; width: 150px;"
                 alt="Digitalk's logo white color"
               />
             </b-col>
@@ -55,6 +53,7 @@
                 :srcset="require('~/assets/img/logos/logo-profissional-de-ecommerce.png').srcSet"
                 :blank-src="require('~/assets/img/logos/logo-profissional-de-ecommerce.png').placeholder"
                 fluid
+                style="height: 100%; width: 150px;"
                 alt="Profissional de ecommerce logo white color"
               />
             </b-col>
@@ -64,6 +63,7 @@
                 :srcset="require('~/assets/img/logos/logo-startupi-white.png').srcSet"
                 :blank-src="require('~/assets/img/logos/logo-startupi-white.png').placeholder"
                 fluid
+                style="height: 100%; width: 150px;"
                 alt="Startupi's logo white color"
               />
             </b-col>
@@ -86,16 +86,12 @@
           <div class="feature__list">
             <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
               <b-col class="feature__item-img" sm="12" md="6">
-<!--                <picture>-->
-<!--                  <source srcset="../assets/img/why-do-you-need/searching_block.webp" type="image/webp" />-->
-<!--                  <source srcset="../assets/img/why-do-you-need/searching_block.png" type="image/png" />-->
-<!--                  <b-img src="../assets/img/why-do-you-need/searching_block.png" fluid alt="Why do you need Image"></b-img>-->
-<!--                </picture>-->
                 <b-img-lazy
                   :src="require('~/assets/img/why-do-you-need/searching_block.png').src"
                   :srcset="require('~/assets/img/why-do-you-need/searching_block.png').srcSet"
                   :blank-src="require('~/assets/img/why-do-you-need/searching_block.png').placeholder"
                   fluid
+                  style="height: 100%; width: 100%;"
                   alt="Why do you need Image"
                 />
               </b-col>
@@ -114,32 +110,24 @@
                 </div>
               </b-col>
               <b-col class="feature__item-img" sm="12" md="6">
-<!--                <picture>-->
-<!--                  <source srcset="../assets/img/why-do-you-need/service-mobile.webp" type="image/webp" />-->
-<!--                  <source srcset="../assets/img/why-do-you-need/service-mobile.png" type="image/png" />-->
-<!--                  <b-img src="../assets/img/why-do-you-need/service-mobile.webp" fluid alt="Service Mobile Image"></b-img>-->
-<!--                </picture>-->
                 <b-img-lazy
                   :src="require('~/assets/img/why-do-you-need/service-mobile.png').src"
                   :srcset="require('~/assets/img/why-do-you-need/service-mobile.png').srcSet"
                   :blank-src="require('~/assets/img/why-do-you-need/service-mobile.png').placeholder"
                   fluid
+                  style="height: 100%; width: 100%;"
                   alt="Service Mobile Image"
                 />
               </b-col>
             </b-row>
             <b-row class="feature__item" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
               <b-col class="feature__item-img" sm="12" md="6">
-<!--                <picture>-->
-<!--                  <source srcset="../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" type="image/webp" />-->
-<!--                  <source srcset="../assets/img/why-do-you-need/why_do_you_need_zmot-review.png" type="image/png" />-->
-<!--                  <b-img src="../assets/img/why-do-you-need/why_do_you_need_zmot-review.webp" fluid alt="Why do you need zmot review Image"></b-img>-->
-<!--                </picture>-->
                 <b-img-lazy
                   :src="require('~/assets/img/why-do-you-need/why_do_you_need_zmot-review.png').src"
                   :srcset="require('~/assets/img/why-do-you-need/why_do_you_need_zmot-review.png').srcSet"
                   :blank-src="require('~/assets/img/why-do-you-need/why_do_you_need_zmot-review.png').placeholder"
                   fluid
+                  style="height: 100%; width: 100%;"
                   alt="Why do you need zmot review Image"
                 />
               </b-col>
@@ -172,12 +160,6 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-<!--                          <picture>-->
-<!--                            <source srcset="../assets/img/Specialist/NeilPatel.webp" type="image/webp"/>-->
-<!--                            <source srcset="../assets/img/Specialist/NeilPatel.jpg" type="image/jpeg"/>-->
-<!--                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/NeilPatel.jpg" fluid-->
-<!--                                   alt="Neil Patel Photo"></b-img>-->
-<!--                          </picture>-->
                           <b-img-lazy
                             v-bind="specialist_avatar"
                             :src="require('~/assets/img/Specialist/NeilPatel.jpg').src"
@@ -207,12 +189,6 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-<!--                          <picture>-->
-<!--                            <source srcset="../assets/img/Specialist/Jim_Lecinsk.webp" type="image/webp"/>-->
-<!--                            <source srcset="../assets/img/Specialist/Jim_Lecinsk.jpeg" type="image/jpeg"/>-->
-<!--                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/Jim_Lecinsk.jpeg" fluid-->
-<!--                                   alt="Jim Lecinsk Photo"></b-img>-->
-<!--                          </picture>-->
                           <b-img-lazy
                             v-bind="specialist_avatar"
                             :src="require('~/assets/img/Specialist/Jim_Lecinsk.jpeg').src"
@@ -242,12 +218,6 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-<!--                          <picture>-->
-<!--                            <source srcset="../assets/img/Specialist/David_Meerman_Scott.webp" type="image/webp"/>-->
-<!--                            <source srcset="../assets/img/Specialist/David_Meerman_Scott.png" type="image/png"/>-->
-<!--                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/David_Meerman_Scott.png"-->
-<!--                                   fluid alt="David Meerman Scott Photo"></b-img>-->
-<!--                          </picture>-->
                           <b-img-lazy
                             v-bind="specialist_avatar"
                             :src="require('~/assets/img/Specialist/David_Meerman_Scott.png').src"
@@ -277,12 +247,6 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-<!--                          <picture>-->
-<!--                            <source srcset="../assets/img/Specialist/avinash_kaushik.webp" type="image/webp"/>-->
-<!--                            <source srcset="../assets/img/Specialist/avinash_kaushik.png" type="image/png"/>-->
-<!--                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/avinash_kaushik.png" fluid-->
-<!--                                   alt="Avinash Kaushik Photo"></b-img>-->
-<!--                          </picture>-->
                           <b-img-lazy
                             v-bind="specialist_avatar"
                             :src="require('~/assets/img/Specialist/avinash_kaushik.png').src"
@@ -312,12 +276,6 @@
                       </b-card-text>
                       <div class="spec__card-meta">
                         <div class="sec__card-meta-avatar">
-<!--                          <picture>-->
-<!--                            <source srcset="../assets/img/Specialist/bryan_eisenberg.webp" type="image/webp"/>-->
-<!--                            <source srcset="../assets/img/Specialist/bryan_eisenberg.png" type="image/png"/>-->
-<!--                            <b-img v-bind="specialist_avatar" src="../assets/img/Specialist/bryan_eisenberg.png" fluid-->
-<!--                                   alt="Bryan Eisenberg Photo"></b-img>-->
-<!--                          </picture>-->
                           <b-img-lazy
                             v-bind="specialist_avatar"
                             :src="require('~/assets/img/Specialist/bryan_eisenberg.png').src"
@@ -362,15 +320,11 @@
           </p>
           <b-row >
             <b-col md="6" sm="12" align-self="center">
-<!--              <picture>-->
-<!--                <source srcset="../assets/img/services/service-zmot_audit.webp" type="image/webp" />-->
-<!--                <source srcset="../assets/img/services/service-zmot_audit.png" type="image/png" />-->
-<!--                <img src="../assets/img/services/service-zmot_audit.png" alt="Service Zmot Audito Image" />-->
-<!--              </picture>-->
               <b-img-lazy
                 :src="require('~/assets/img/services/service-zmot_audit.png').src"
                 :srcset="require('~/assets/img/services/service-zmot_audit.png').srcSet"
                 :blank-src="require('~/assets/img/services/service-zmot_audit.png').placeholder"
+                style="height: 100%; width: 100%;"
                 alt="Service Zmot Audito Image"
               />
             </b-col>
@@ -417,30 +371,22 @@
               </b-card>
             </b-col>
             <b-col md="6" sm="12" align-self="center">
-<!--              <picture id="lectures">-->
-<!--                <source srcset="../assets/img/services/service-lecture.webp" type="image/webp" />-->
-<!--                <source srcset="../assets/img/services/service-lecture.png" type="image/png" />-->
-<!--                <img src="../assets/img/services/service-lecture.webp" alt="Service Lecture Image" />-->
-<!--              </picture>-->
               <b-img-lazy
                 :src="require('~/assets/img/services/service-lecture.png').src"
                 :srcset="require('~/assets/img/services/service-lecture.png').srcSet"
                 :blank-src="require('~/assets/img/services/service-lecture.png').placeholder"
+                style="height: 100%; width: 100%;"
                 alt="Service Lecture Image"
               />
             </b-col>
           </b-row>
           <b-row >
             <b-col md="6" sm="12" align-self="center">
-<!--              <picture id="courses">-->
-<!--                <source srcset="../assets/img/services/service-online_course.webp" type="image/webp" />-->
-<!--                <source srcset="../assets/img/services/service-online_course.png" type="image/png" />-->
-<!--                <img src="../assets/img/services/service-online_course.webp" alt="Service Online Course Image" />-->
-<!--              </picture>-->
               <b-img-lazy
                 :src="require('~/assets/img/services/service-online_course.png').src"
                 :srcset="require('~/assets/img/services/service-online_course.png').srcSet"
                 :blank-src="require('~/assets/img/services/service-online_course.png').placeholder"
+                style="height: 100%; width: 100%;"
                 alt="Service Online Course Image"
               />
             </b-col>
@@ -486,11 +432,6 @@
                     {{$t('homepage.what_say.talking_1')}}
                   </blockquote>
                   <span class="testimonial-item__author">
-<!--                    <picture>-->
-<!--                      <source srcset="../assets/img/Testominal/paulo-gomes.webp" type="image/webp" />-->
-<!--                      <source srcset="../assets/img/Testominal/paulo-gomes.jpeg" type="image/jpeg" />-->
-<!--                      <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/paulo-gomes.webp" fluid alt="Paulo gomes Photo"></b-img>-->
-<!--                    </picture>-->
                     <b-img-lazy
                       v-bind="testimonial_avatar"
                       :src="require('~/assets/img/Testominal/paulo-gomes.jpeg').src"
@@ -510,11 +451,6 @@
                     {{$t('homepage.what_say.talking_2')}}
                   </blockquote>
                   <span class="testimonial-item__author">
-<!--                    <picture>-->
-<!--                      <source srcset="../assets/img/Testominal/elvissilva.webp" type="image/webp" />-->
-<!--                      <source srcset="../assets/img/Testominal/elvissilva.jpeg" type="image/jpeg" />-->
-<!--                      <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/elvissilva.webp" fluid alt="Elvissilva Photo"></b-img>-->
-<!--                    </picture>-->
                     <b-img-lazy
                       v-bind="testimonial_avatar"
                       :src="require('~/assets/img/Testominal/elvissilva.jpeg').src"
@@ -535,11 +471,6 @@
                     {{$t('homepage.what_say.talking_3')}}
                   </blockquote>
                   <span class="testimonial-item__author">
-<!--                    <picture>-->
-<!--                      <source srcset="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" type="image/webp" />-->
-<!--                      <source srcset="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.png" type="image/png" />-->
-<!--                      <b-img v-bind="testimonial_avatar" src="../assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.webp" fluid alt="Eduardo Moiolli Congresso Apdespbr"></b-img>-->
-<!--                    </picture>-->
                     <b-img-lazy
                       v-bind="testimonial_avatar"
                       :src="require('~/assets/img/Testominal/Eduardo-Moiolli-Congresso-Apdespbr-2.png').src"
