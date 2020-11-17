@@ -282,6 +282,8 @@ module.exports = {
     name: 'Zmotinstitute',
     short_name: 'Zmotinstitute',
     lang: 'en',
+    start_url: '/',
     display: 'standalone',
+    background_color: '#505050'
   }
 }
