@@ -42,6 +42,7 @@ module.exports = {
   ** See https://nuxtjs.org/api/configuration-render#static
   */
   render: {
+    resourceHints: false,
     static: {
       maxAge: 1000 * 60 * 60 * 24 * 7 * 52
     }
