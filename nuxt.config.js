@@ -42,6 +42,7 @@ module.exports = {
   ** See https://nuxtjs.org/api/configuration-render#static
   */
   render: {
+    resourceHints: false,
     static: {
       maxAge: 1000 * 60 * 60 * 24 * 7 * 52
     }
@@ -279,9 +280,21 @@ module.exports = {
     host: '127.0.0.1' // default: localhost
   },
   manifest: {
-    name: 'Zmotinstitute',
-    short_name: 'Zmotinstitute',
+    name: 'zmotin',
+    short_name: 'zmotinstitute',
     lang: 'en',
+    start_url: '/?utm_source=homescreen',
     display: 'standalone',
+    background_color: '#505050'
+  },
+  workbox: {
+    offline: false,
+    runtimeCaching: [
+      {
+        urlPattern: '/*',
+        handler: 'networkFirst',
+        method: 'GET',
+      }
+    ]
   }
 }

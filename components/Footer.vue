@@ -53,7 +53,7 @@
 <script>
     export default {
         name: "Footer",
-        data: () => ({footerLogo: {blank: false, width: 300, class:'m2'}}),
+        data: () => ({footerLogo: {blank: false, width: 300, height: '100%', class:'m2'}}),
         methods: {}
     };
 </script>

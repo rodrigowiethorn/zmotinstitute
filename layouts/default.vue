@@ -83,6 +83,10 @@ html {
       $nuxt.$on('show-header-footer', () => {
         this.visibleHeaderFooter = true;
       });
+
+      const handler = () => {}
+
+      document.addEventListener('touchstart', handler, {passive: true});
     }
   }
 </script>
