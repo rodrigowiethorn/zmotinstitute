@@ -17,7 +17,11 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
-      }
+      },
+      {
+        name: 'theme-color',
+        content: '#999999'
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/zmot-institute-android-chrome-192x192.png' },
@@ -85,17 +89,6 @@ module.exports = {
   */
   buildModules: [
   ],
-  pwa: {
-    meta: {
-      title: 'Zmotinstitute',
-      author: 'Author',
-    },
-    manifest: {
-      name: 'Zmotinstitute',
-      short_name: 'zmotins',
-      lang: 'en',
-    }
-  },
   /*
   ** Nuxt.js modules
   */
@@ -283,7 +276,6 @@ module.exports = {
     name: 'zmotin',
     short_name: 'zmotinstitute',
     lang: 'en',
-    start_url: '/?utm_source=homescreen',
     display: 'standalone',
     background_color: '#505050'
   },
