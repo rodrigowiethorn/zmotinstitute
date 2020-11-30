@@ -20,9 +20,9 @@
       <section-say-about-us />
     </lazy-hydrate>
 
-    <lazy-hydrate when-visible>
+    <!-- <lazy-hydrate when-visible>
       <section-blogs />
-    </lazy-hydrate>
+    </lazy-hydrate> -->
 
     <client-only>
       <lazy-hydrate>
