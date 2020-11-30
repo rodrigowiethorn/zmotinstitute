@@ -16,20 +16,20 @@
 
       <b-nav-item-dropdown right class="burger-langpicker">
         <template slot="button-content">
-          <b-img v-if="flagVisible === 1" src="../assets/img/svg/en.svg" width="25" height="100%" alt="EN Flag"></b-img>
-          <b-img v-if="flagVisible === 2" src="../assets/img/svg/br.svg" width="25" height="100%" alt="BR Flag"></b-img>
-          <b-img v-if="flagVisible === 3" src="../assets/img/svg/es.svg" width="25" height="100%" alt="ES Flag"></b-img>
+          <b-img v-if="flagVisible === 1" src="../assets/img/svg/en.svg" width="25" alt="EN Flag"></b-img>
+          <b-img v-if="flagVisible === 2" src="../assets/img/svg/br.svg" width="25" alt="BR Flag"></b-img>
+          <b-img v-if="flagVisible === 3" src="../assets/img/svg/es.svg" width="25" alt="ES Flag"></b-img>
         </template>
         <b-dropdown-item :to="switchLocalePath('en')">
-          <b-img src="../assets/img/svg/en.svg" width="25" height="100%" alt="USA flag"></b-img>
+          <b-img src="../assets/img/svg/en.svg" width="25" alt="USA flag"></b-img>
           English
         </b-dropdown-item>
         <b-dropdown-item :to="switchLocalePath('pt-br')">
-          <b-img src="../assets/img/svg/br.svg" width="25" height="100%" alt="Brazillian flag"></b-img>
+          <b-img src="../assets/img/svg/br.svg" width="25" alt="Brazillian flag"></b-img>
           Português
         </b-dropdown-item>
         <b-dropdown-item :to="switchLocalePath('es')">
-          <b-img src="../assets/img/svg/es.svg" width="25" height="100%" alt="Spanish flag"></b-img>
+          <b-img src="../assets/img/svg/es.svg" width="25" alt="Spanish flag"></b-img>
           Español
         </b-dropdown-item>
       </b-nav-item-dropdown>
@@ -50,20 +50,20 @@
           </li>
           <b-nav-item-dropdown :text="localeToLang" right class="langpicker">
             <template slot="button-content">
-              <b-img v-if="flagVisible === 1" src="../assets/img/svg/en.svg" width="25" height="100%" alt="EN Flag"></b-img>
-              <b-img v-if="flagVisible === 2" src="../assets/img/svg/br.svg" width="25" height="100%" alt="BR Flag"></b-img>
-              <b-img v-if="flagVisible === 3" src="../assets/img/svg/es.svg" width="25" height="100%" alt="ES Flag"></b-img>
+              <b-img v-if="flagVisible === 1" src="../assets/img/svg/en.svg" width="25" alt="EN Flag"></b-img>
+              <b-img v-if="flagVisible === 2" src="../assets/img/svg/br.svg" width="25" alt="BR Flag"></b-img>
+              <b-img v-if="flagVisible === 3" src="../assets/img/svg/es.svg" width="25" alt="ES Flag"></b-img>
             </template>
             <b-dropdown-item :to="switchLocalePath('en')">
-              <b-img src="../assets/img/svg/en.svg" width="25" height="100%" alt="USA flag"></b-img>
+              <b-img src="../assets/img/svg/en.svg" width="25" alt="USA flag"></b-img>
               English
             </b-dropdown-item>
             <b-dropdown-item :to="switchLocalePath('pt-br')">
-              <b-img src="../assets/img/svg/br.svg" width="25" height="100%" alt="Brazillian flag"></b-img>
+              <b-img src="../assets/img/svg/br.svg" width="25" alt="Brazillian flag"></b-img>
               Português
             </b-dropdown-item>
             <b-dropdown-item :to="switchLocalePath('es')">
-              <b-img src="../assets/img/svg/es.svg" width="25" height="100%" alt="Spanish flag"></b-img>
+              <b-img src="../assets/img/svg/es.svg" width="25" alt="Spanish flag"></b-img>
               Español
             </b-dropdown-item>
           </b-nav-item-dropdown>
