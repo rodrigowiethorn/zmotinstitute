@@ -276,6 +276,7 @@ module.exports = {
     name: 'zmotin',
     short_name: 'zmotinstitute',
     lang: 'en',
+    start_url: '/',
     display: 'standalone',
     background_color: '#505050'
   },
